@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,77 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Crypto Quiz</title>
 </head>
-<body>
-    
 
+<body>
+    <!--Start Button for Quiz-->
+    <div class="start_btn">Start Quiz <i class="fas fa-play"></i></div>
+
+    <!--Rules Section-->
+    <div class="rule-box">
+        <div class="info-title"><span>Rules For the Game:</span></div>
+
+        <div class="rule-list">
+            <div class="info">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+            <div class="info">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+            <div class="info">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+            <div class="info">4. Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        </div>
+
+        <div class="buttons">
+            <button class="quit">Exit Quiz <i class="fas fa-power-off"></i></button>
+            <button class="continue">Continue</button>
+        </div>
+    </div>
+
+    <!--Quiz Area-->
+    <div class="quiz-box">
+        <header>
+            <div class="title">Crypto Quiz Game</div>
+            <div class="scores-div">
+                <div class="scores correct">Correct: 0</div>
+                <div class="scores incorrect">Incorrect: 0</div>
+            </div>
+        </header>
+
+        <section class="question-div">
+            <div class="question-text">
+                 <!--Inserted question from JavaScript -->
+            </div>
+            <div class="question-answers">
+                 <!--Inserted answers from JavaScript -->
+            </div>
+        </section>
+
+        
+        <!--Footer for Quiz Box-->
+        <footer>
+            <div class="total-questions">
+                <!--Question Count Number from JavaScript -->
+            </div>
+
+            <button class="next-btn">Next question</button>
+        </footer>
+
+    </div>
+
+     <!--Results Box For Quiz-->
+     <div class="results">
+        
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        
+        <div class="complete_text">You Completed the Crypto Quiz!</div>
+        
+        <div class="score_text">
+            <!-- Inserted Score Result from JavaScript -->
+        </div>
+        
+        <div class="buttons">
+            <button class="restart">Replay Quiz <i class="fas fa-reply"></i></button>
+            <button class="quit">Quit Quiz <i class="far fa-frown"></i></button>
+        </div>
+     </div>
 
 
 
@@ -20,4 +89,5 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/questions.js"></script>
 </body>
+
 </html>
