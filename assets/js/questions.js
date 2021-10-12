@@ -34,17 +34,6 @@ let questions = [
     ]
   },
   {
-    numb: 3,
-    question: "",
-    answer: "",
-    options: [
-      "",
-      "",
-      "",
-      ""
-    ]
-  },
-  {
     numb: 4,
     question: "",
     answer: "",
@@ -76,6 +65,53 @@ let questions = [
       "",
       ""
     ]
+  },
+  {
+    numb: 7,
+    question: "",
+    answer: "",
+    options: [
+      "",
+      "",
+      "",
+      ""
+    ]
 
   },
+  {
+    numb: 8,
+    question: "",
+    answer: "",
+    options: [
+      "",
+      "",
+      "",
+      ""
+    ]
+
+  },
+  {
+    numb: 9,
+    question: "",
+    answer: "",
+    options: [
+      "",
+      "",
+      "",
+      ""
+    ]
+
+  },
+  {
+    numb: 10,
+    question: "",
+    answer: "",
+    options: [
+      "",
+      "",
+      "",
+      ""
+    ]
+
+  }
 ];
