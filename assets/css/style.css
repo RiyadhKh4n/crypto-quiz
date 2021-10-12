@@ -55,7 +55,7 @@ h1,h2{
     background: white;
     color: #000;
     
-  }
+}
 
 .theback{
     position: absolute;
@@ -76,16 +76,17 @@ h1,h2{
 .game-title{
     margin-top: 40%;
     text-align: center;
-    color: #CF9FFF;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-
+    color: #006E91;
+    text-shadow: 1.3px 1.3px black;
 }
 
 .info-title{
-    color: #CF9FFF;
+    font-weight: bold;
+    color: #006E91;
     padding-top:1em;
-    font-size: 1.2em;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: 'Odibee';
+    font-size: 1.4em;
+    
 }
 
 .rules{
@@ -93,3 +94,36 @@ h1,h2{
     margin:2px;
     padding: 3px;
 }
+
+.button-div{
+    margin-top: 6em;
+    width:100%;
+}
+
+.buttons{
+    padding: 0.5em 1.2em;
+    margin: 0 0.1em 0.1em 1.5em;
+    border:0.14em solid rgba(255,255,255,0);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:#fff;
+    text-align: center;
+    transition: all 0.2s;
+    width: 90px;
+    height: 40px;
+}
+
+button:hover {
+    border-color: black;
+}
+
+.quit{
+    background-color: red;
+}
+
+.continue{
+    background-color: #50C878;
+}
+
+
