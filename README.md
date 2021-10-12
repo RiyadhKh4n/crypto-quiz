@@ -22,64 +22,80 @@ IMAGE FROM AMIRESPONSIVE HERE
 
 * ## User Stories
     * #### First Time Visitor Goals:
-      
-    * #### Returing Visitor Goals:
-       
-    * #### Frequent User Goals:
-        
+        a. As a First Time Visitor, I want to be able to provide my name at the beginning and see my score.
+        b. As a First Time Visitor, I want to see how many questions I got right and wrong.
+        c. As a First Time Visitor, once the game is finished I want to be able to play again.
+
+    * #### Returning Visitor Goals:
+       a. As a Returning Visitor, I want to be able to play Crypto Quiz and have the same experience as the first time.
+       b. As a Returning Visitor, I want to see new questions when I play.
+
+    * #### Frequent Visitor Goals:
+       a. As a Frequent Visitor, I want to see if any new questions have been added to the game.
+       b. As a Frequent Visitor, I want to see if I can beat my old score.
+
 * ## Design ~
 
     * Colour Scheme:
 
-        - 
+        The three main colours for Cryptools are #CF9FFF, #B1A8B9 and #FF9374. This colour palette was generated for me by using ColorSpace and selecting their Dotting Palette, of course black and white are prominent colours in the game aswell and are used interchangeably. I tried to stay as consistent as possible however depending on the part of the game the user is on the main colour changes. I chose these colours because my favourite colour is purple so I used it for the background, I then wanted to use colours that compliment #CF9FFF and not clash with it, which is where ColorSpace came in handy.
 
-        
+        ![Colour](docs/readme/colourcomp.png)
 
     * Typography:
 
-        -
+        The font I have decided to use for the questions of the game is [Odibee Sans](https://fonts.google.com/specimen/Odibee+Sans?query=Odibee) as this is a retro game looking font which is eye - catching and I think fit the game well. For the answers to the questions and any other infromation I will use [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed?query=Roboto+Condensed) as it is a more readable font as contrasts nicely with the main font for the website. An example of how they look together is below:
+
+        ![font](docs/readme/fontcomp.png)
 
     * Imagery & Videos:
 
-        - 
+        For Crypto Quiz there will be no videos linked as it is not necessary however I may add a few crypto related images throughout the game or in the background where I see fit.
 
     * Icons:
-        - I decided to use the Font Awesome icons. The icons that I chose fit in well with the overall theme of cryptocurrencies. The icons are styled in accordance with my website, with the same colors and font size.
+    
+        I decided to use the [Font Awesome](https://fontawesome.com/start) icons. The icons that I chose fit in well with the overall theme of cryptocurrencies. The icons are styled in accordance with my website, with the same colors and font size.
 
 * ## Scope ~
 
-    * 
+    * When creating Crypto Quiz I will take a waterfall approach when developing. That is, creating sections of the website at a time and ensuring they work as intended before going onto the next section. I will be able to break up development by choosing small elements to work on daily, ensuring the website can be built and published in a timely fashion. As this porject incorporates JavaScript a large majoirty of my time will be spend developing and testing the logic behind the game as opposed to the aesthetics of the game as it will have a fairly simple design. 
 
 * ## Structure ~
 
+    * I have chosen to create the game with a single html page which will have multiple sections which the user will see when playing the game, once they move onto the next part of the game the prvious sections will be hidden from view and the new section will be displayed to them. The game will not have a navigation bar at the top as I want the user to follow a set path when navigating the wesbite.
+
+    * On the 'index.html page', I will have multiple divs which will contain each section of the game, for example, the 'Start Section' which is the first thing that will load when they open the game. The next section will be the 'Rules Section' which will explain the rules of the quiz and give them the option to either quit or continue. The section after this will be the actual game e.g. 'Quiz Section', this is where the questions and answers will be presented to them, as well as this where their scores will be present. Once the game is complete, they will be met with the 'Results Section' which will show them their score and give the user the option to exit or play again. As mentioned before, once the user progresses to the next section all previous sections will be hidden to them.
 
 * ## Wireframes
 
     * I made some basic wireframes using Balsamiq at the beginning of the project, this allowed me to get a brief understadning of how I want Crypto Quiz to look as well as ensuring I have a rough model to follow. I found Balsamiq very helpful and easy to use, I didn't quite know what styling I wanted on my pages however I had a rough idea how I wanted the quiz to look. I knew how many pages I wanted my website to have and how the sections should link to one another. Balsamiq allowed me to create a visual of my idea and gave me a goal to work towards, below my wireframes.
 
-    * ### Start Game Wireframe
+    * ### Landing Page Wireframe
 
-    ![StartGame Wireframe]()
+    ![StartGame Wireframe](docs/wireframe/wireframe1.png)
 
 
-    * ### Instructions Page
+    * ### Instructions Page Wireframe
 
-    ![Instructions Wireframe]()
+    ![Instructions Wireframe](docs/wireframe/wireframe2.png)
 
-    * ### Quiz Wireframe
+    * ### Quiz Page Wireframe
 
-    ![Quiz]()
+    ![Quiz](docs/wireframe/wireframe3.png)
+
+    * ### Results Page Wireframe
+
+    ![Results](docs/wireframe/wireframe4.png)
 
 
 # Features ~
 
 Here describes the main features of the website and what the user can expect when viewing ~
+
 ## Existing Features:
 
 
-
 ## Features Left to Implement:
-
 
 # Technologies ~
 
@@ -114,6 +130,9 @@ Here describes the main features of the website and what the user can expect whe
 
 8. [TinyPNG](https://tinypng.com/):
     * This was used to compress all images used in the website as well as the README.md
+
+9. [ColourSpace](https://mycolor.space/):
+    * This was used to chose the colour palette for the website
 
 
 # Testing ~
