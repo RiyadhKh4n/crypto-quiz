@@ -1,6 +1,6 @@
 # Crypto Quiz
 
-[Link to Quiz Website Here]()
+[Link to Quiz Website Here](https://riyadhkh4n.github.io/crypto-quiz/)
 
 Crypto Quiz is a Javascript web application that is aimed at anyone who wishes to put their crypto knowledge to the test. This quiz is designed to test your knowledge and the questions are based from [Cryptools](https://riyadhkh4n.github.io/cryptools/), so having a read will give you all the infromation you need to pass the quiz. Questions and answer options will be produced on the screen one after the other in a randomised order, where the user will be given up to ten question. The user will then select the correct option or the option they think is correct, where their score will be logged letting them know how they did until they have answered all the questions. Once finished they will be met with a results screen allowing them to see how well they did and give them the option to play again or quit. 
 
