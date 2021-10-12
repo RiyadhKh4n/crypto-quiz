@@ -52,9 +52,9 @@ h1,h2{
     border-radius: 10px;
     backface-visibility: hidden;
     overflow: hidden;
-    background: #ffc728;
+    background: white;
     color: #000;
-    font-family: 'Odibee Sans', sans-serif;
+    
   }
 
 .theback{
@@ -70,5 +70,26 @@ h1,h2{
     color: #333;
     text-align: center;
     transform: rotateY(180deg);
-    font-family: 'Odibee Sans', sans-serif;
+   
+}
+
+.game-title{
+    margin-top: 40%;
+    text-align: center;
+    color: #CF9FFF;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+
+.info-title{
+    color: #CF9FFF;
+    padding-top:1em;
+    font-size: 1.2em;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.rules{
+    font-weight: bold;
+    margin:2px;
+    padding: 3px;
 }
