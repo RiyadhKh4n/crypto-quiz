@@ -2,7 +2,7 @@
 
 [Link to Quiz Website Here]()
 
-description
+Crypto Quiz is a Javascript web application that is aimed at anyone who wishes to put their crypto knowledge to the test. This quiz is designed to test your knowledge and the questions are based from [Cryptools](https://riyadhkh4n.github.io/cryptools/), so having a read will give you all the infromation you need to pass the quiz. Questions and answer options will be produced on the screen one after the other in a randomised order, where the user will be given up to ten question. The user will then select the correct option or the option they think is correct, where their score will be logged letting them know how they did until they have answered all the questions. Once finished they will be met with a results screen allowing them to see how well they did and give them the option to play again or quit. 
 
 ---
 IMAGE FROM AMIRESPONSIVE HERE
@@ -12,12 +12,13 @@ IMAGE FROM AMIRESPONSIVE HERE
 # User Experience (UX) ~
 
 * ## Vision
-   
+   Crypto Quiz is a game which aims to test your knowledge about the world of cryptocurrencies and to engage people who want to learn and get into the space, whether you are a complete beginner or want to expand what you already know. This game will take you through the core concepts of cryptocurrencies and and test everything you have learnt. As someone who is invested in crypto and really believes in the technology behind it, I would have loved to have an interactive game where I could have tested my knowledge so I am doing just that and creating it myself. I want this game to be inclusive and accessible for everyone, I want it to be engaging and to encourage the you into getting involved in the space.
 
 * ## Aims
-   
+   To give provide a platform for crypto newbies or experts to test what they know in an all in one game, and to allow them to quickly learn the core concepts of this complex industry giving them the opportunity to make smarter investment decisions, in a fun and interactive way. I want the game to be fun and have re-play value so I will make the questions random each time so you can play and get tested on different aspects of the industry. 
+
 * ## Target Audience
-    
+    There are a number of target audiences for this game due to the fact that crypto is for everyone. We welcome new and experienced people from ages, to come and learn adn test their knowledge about this fascinating industry. However, Crypto Quiz is mainly aimed at educating people who know nothing about crypto as it the questions will not be extremly diffuclt and just touch on the main aspects of the indusrty. 
 
 * ## User Stories
     * #### First Time Visitor Goals:
