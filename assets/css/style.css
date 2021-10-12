@@ -115,7 +115,7 @@ h1,h2{
 }
 
 button:hover {
-    border-color: black;
+    border-color: orange;
 }
 
 .quit{
