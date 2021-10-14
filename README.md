@@ -38,9 +38,9 @@ IMAGE FROM AMIRESPONSIVE HERE
 
     * Colour Scheme:
 
-        The three main colours for Cryptools are #CF9FFF, #B1A8B9 and #FF9374. This colour palette was generated for me by using ColorSpace and selecting their Dotting Palette, of course black and white are prominent colours in the game aswell and are used interchangeably. I tried to stay as consistent as possible however depending on the part of the game the user is on the main colour changes. I chose these colours because my favourite colour is purple so I used it for the background, I then wanted to use colours that compliment #CF9FFF and not clash with it, which is where ColorSpace came in handy.
+        The three main colours for Cryptools are #CF9FFF, #006E91 and #263A44. This colour palette was generated for me by using ColorSpace and selecting their Dotting Palette, of course black and white are prominent colours in the game aswell and are used interchangeably. I tried to stay as consistent as possible however depending on the part of the game the user is on the main colour changes. I chose these colours because my favourite colour is purple so I used it for the background, I then wanted to use colours that compliment #CF9FFF and not clash with it, which is where ColorSpace came in handy.
 
-        ![Colour](docs/readme/colourcomp.png)
+        ![Colour](docs/readme/colour.png)
 
     * Typography:
 
@@ -133,6 +133,9 @@ Here describes the main features of the website and what the user can expect whe
 
 9. [ColourSpace](https://mycolor.space/):
     * This was used to chose the colour palette for the website
+
+10. [Autoprefixer](https://autoprefixer.github.io/):
+    * It allowed me to write your CSS rules without vendor prefixes, it takes care of doing that based on current browser popularity and property support.
 
 
 # Testing ~

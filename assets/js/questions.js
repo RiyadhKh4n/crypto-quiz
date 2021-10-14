@@ -1,7 +1,7 @@
 // creating an array and passing the number, questions, options, and answers
 let questions = [
     {
-    numb: 1,
+
     question: "",
     answer: "",
     options: [
@@ -12,7 +12,6 @@ let questions = [
     ]
   },
   {
-    numb: 2,
     question: "",
     answer: "",
     options: [
@@ -23,7 +22,6 @@ let questions = [
     ]
   },
   {
-    numb: 3,
     question: "",
     answer: "",
     options: [
@@ -34,7 +32,6 @@ let questions = [
     ]
   },
   {
-    numb: 4,
     question: "",
     answer: "",
     options: [
@@ -45,7 +42,6 @@ let questions = [
     ]
   },
   {
-    numb: 5,
     question: "",
     answer: "",
     options: [
@@ -56,7 +52,6 @@ let questions = [
     ]
   },
   {
-    numb: 6,
     question: "",
     answer: "",
     options: [
@@ -67,7 +62,6 @@ let questions = [
     ]
   },
   {
-    numb: 7,
     question: "",
     answer: "",
     options: [
@@ -79,7 +73,6 @@ let questions = [
 
   },
   {
-    numb: 8,
     question: "",
     answer: "",
     options: [
@@ -91,7 +84,6 @@ let questions = [
 
   },
   {
-    numb: 9,
     question: "",
     answer: "",
     options: [
@@ -103,7 +95,6 @@ let questions = [
 
   },
   {
-    numb: 10,
     question: "",
     answer: "",
     options: [
