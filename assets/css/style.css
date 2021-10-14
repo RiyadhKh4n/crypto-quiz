@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Odibee Sans', sans-serif;
 }
 
 body{
@@ -77,6 +76,10 @@ h1,h2{
     text-align: center;
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
+}
+
+.hidden{
+    display: none;
 }
 
 .game-title{
@@ -168,13 +171,3 @@ h1,h2{
     color:white;
 }
 
-
-/*
-.hidden{
-    display: none;
-}
-*/
-
-.quiz-box{
-
-}
