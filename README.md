@@ -22,13 +22,14 @@ IMAGE FROM AMIRESPONSIVE HERE
 
 * ## User Stories
     * #### First Time Visitor Goals:
-        a. As a First Time Visitor, I want to be able to provide my name at the beginning and see my score.
+        a. As a First Time Visitor, I want to be able to set a new score when playing the quiz.
         b. As a First Time Visitor, I want to see how many questions I got right and wrong.
         c. As a First Time Visitor, once the game is finished I want to be able to play again.
 
     * #### Returning Visitor Goals:
        a. As a Returning Visitor, I want to be able to play Crypto Quiz and have the same experience as the first time.
        b. As a Returning Visitor, I want to see new questions when I play.
+       c. I want to be able to see my previous scores.
 
     * #### Frequent Visitor Goals:
        a. As a Frequent Visitor, I want to see if any new questions have been added to the game.
