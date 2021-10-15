@@ -13,8 +13,6 @@ body {
     margin: 0;
 }
 
-
-
 h1,
 h2 {
     font-family: 'Odibee';
@@ -180,12 +178,14 @@ h2 {
 
 /* Quiz Box */
 .quiz_box {
+    margin-top: 25vh;
+    margin-left: .6em;
     width: 300px;
     background: #fff;
     border-radius: 5px;
-    transform: translate(10px, 50%) scale(0.9);
     pointer-events: none;
     transition: all 0.3s ease;
+    
 
 }
 
@@ -267,10 +267,10 @@ section .option_list .option:last-child{
     margin-bottom: 0px;
 }
 
-section .option_list .option:hover{
+.option_list .option:hover{
     color: #004085;
-    background: #cce5ff;
-    border: 1px solid #b8daff;
+    background: red;
+    border: 1px solid green;
 }
 
 /* Correct and Incorrect Answers*/
@@ -326,7 +326,7 @@ footer .next-btn{
     background: #006E91;
     border: 2px solid #CF9FFF;
     line-height: 10px;
-    /*opacity: 0; */
+    opacity: 0; 
     pointer-events: none;
     transform: scale(0.95);
     transition: all 0.3s ease;
