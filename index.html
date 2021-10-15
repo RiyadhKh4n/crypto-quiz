@@ -21,7 +21,7 @@
                     <section class="fake-btn-section">
                         <button class="fake-btn buttons">Click Me</button>
                     </section>
-                    
+
                 </div>
                 <div class="theback">
                     <section class="info_box">
@@ -31,9 +31,9 @@
                             <span class="rules">2. You cannot exit from the Quiz while playing. </span>
                             <span class="rules">3. You'll get points on for correct answers. </span>
                             <span class="rules">4. No looking up the answers. </span>
-                            <span class="rules">5. Last but not least have fun! </span>       
+                            <span class="rules">5. Last but not least have fun! </span>
                         </div>
-                
+
                         <div class="button-div">
                             <button class="quit buttons back-card-button">Exit Quiz</button>
                             <button class="continue buttons back-card-button">Continue</button>
@@ -68,13 +68,15 @@
             <!-- footer of Quiz Box -->
             <footer>
                 <div class="total_que">
-                    <span><p>2</p>of<p>5</p>Questions</span>
+                    <span>
+                        <p>2</p>of<p>5</p>Questions
+                    </span>
                 </div>
 
                 <div class="footer-btn">
                     <button class="next-btn ">Next Question</button>
                 </div>
-                
+
             </footer>
         </div>
 
@@ -83,11 +85,49 @@
             <div class="icon">
                 <i class="fas fa-crown"></i>
             </div>
-            <div class="complete_text">You've completed the Quiz!</div>
-            <div class="score_text">
-                <!-- Inserted Score Result from JavaScript -->
+            <div class="congrat-text">You've completed the Quiz!</div>
+            <div class="leaderboard-container">
+                <div class="leaderboard">
+                    <header>
+                        <h1>Leaderboard</h1>
+                    </header>
+    
+                    <table>
+                        <thead>
+                            <tr id="headers">
+                                <th class="time-taken">Time:</th>
+                                <th class="points">Points:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                               <td class="time-taken">1:50</td>
+                               <td class="points">8/10</td>
+                           </tr>
+                           
+                           <tr>
+                            <td class="time-taken">1:70</td>
+                            <td class="points">10/10</td>
+                        </tr>
+
+                        <tr>
+                            <td class="time-taken">1:50</td>
+                            <td class="points">8/10</td>
+                        </tr>
+                        
+                        <tr>
+                         <td class="time-taken">3:40</td>
+                         <td class="points">1/10</td>
+                     </tr>
+                        </tbody>
+    
+                    </table>
+                </div>
             </div>
-            <div class="button">
+            
+
+            <div class="button result-btn">
+                <button class=" clear">Clear Board</button>
                 <button class=" continue">Replay Quiz</button>
                 <button class=" quit ">Quit Quiz ;(</button>
             </div>

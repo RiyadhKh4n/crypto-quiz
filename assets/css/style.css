@@ -342,20 +342,79 @@ footer .next-btn{
     box-shadow: 10px 10px rgba(0, 0, 0, .5);
 }
 
-.result_box .icon{
-  
-}
-
 .result_box .icon .fa-crown{
     padding: .5em 0;
     display: flex;
     align-content: center;
     justify-content: center;
     color:#004085;
-    font-size: 4em;
+    font-size: 100px;
 }
 
-.complete_text, .score_text{
-    padding: 0 10px 10px;
+.congrat-text{
+    margin: 0 10px 10px;
     font-size: 25px;
+    font-family: 'Roboto Condensed';
+    color:#CF9FFF;
+    font-weight: bold;
+   
+}
+.leaderboard-container{
+    width: 90%;
+}
+
+header {
+    background-color: #CF9FFF;
+    color: white;
+    text-transform: uppercase;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: relative;
+    padding-top: .5rem;
+    height: 3rem;
+}
+
+header h1{
+    text-align: center;
+}
+
+table {
+  background-color: #16181e;
+  color: #999;
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  overflow: hidden;
+}
+
+thead{
+    font-size: 0.8rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+tbody tr:nth-child(2n){
+    background: #263a44;
+}
+
+th {
+    padding: 1rem 0.5rem 0.5rem;
+}
+  
+tr{
+    text-align: center;
+}
+
+td {
+    padding: .25rem .25rem;
+  }
+
+.time-taken .points{
+    text-align: center;
+}
+
+.result-btn{
+    margin: 2em;
 }
