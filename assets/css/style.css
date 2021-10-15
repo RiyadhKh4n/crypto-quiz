@@ -178,15 +178,13 @@ h2 {
 
 /* Quiz Box */
 .quiz_box {
-    margin-top: 25vh;
-    margin-left: .6em;
+    margin-top: 8em;
+    margin-left: 2.3em;
     width: 300px;
     background: #fff;
     border-radius: 5px;
     pointer-events: none;
     transition: all 0.3s ease;
-    
-
 }
 
 .quiz_box header {
