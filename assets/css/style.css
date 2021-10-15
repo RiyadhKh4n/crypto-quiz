@@ -9,14 +9,11 @@
 
 body {
     background: #CF9FFF;
-    min-height: 100vh;
     flex-direction: column;
     margin: 0;
 }
 
-main {
-    flex-grow: 1;
-}
+
 
 h1,
 h2 {
@@ -183,13 +180,10 @@ h2 {
 
 /* Quiz Box */
 .quiz_box {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    width: 550px;
-    height: 500px;
+    width: 300px;
     background: #fff;
     border-radius: 5px;
+    transform: translate(10px, 50%) scale(0.9);
     pointer-events: none;
     transition: all 0.3s ease;
 
@@ -197,7 +191,6 @@ h2 {
 
 .quiz_box header {
     position: relative;
-    z-index: 2;
     height: 70px;
     padding: 0 30px;
     background: #fff;
@@ -209,8 +202,9 @@ h2 {
 }
 
 .quiz_box header .title {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 600;
+    color:#006E91;
 }
 
 .quiz_box header .timer {
@@ -218,6 +212,7 @@ h2 {
     background: #CF9FFF;
     border: 1px solid black;
     height: 45px;
+    margin-left: 10px;
     padding: 0 8px;
     border-radius: 5px;
     display: flex;
@@ -232,10 +227,107 @@ h2 {
     font-weight: bold;
 }
 
+.que_text{
+    margin: 20px;
+}
+
+.question-section .que_text .questions{
+    
+    font-size: 1.5em;
+    font-weight: 600;
+    color:#006E91;
+}
+
 .option_list .option {
     margin: 1em;
     display: flex;
-
 }
 
-/****************************************************************/
+.question-section .option_list{
+    display: block;
+}
+
+.question-section .option_list .option{
+    background: #CF9FFF;
+    border: 1px solid #263a44;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .option_list .option:last-child{
+    margin-bottom: 0px;
+}
+
+section .option_list .option:hover{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+}
+
+/* Correct and Incorrect Answers*/
+
+section .option_list .option.correct{
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+section .option_list .option.incorrect{
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+/* Quiz-Box Footer*/
+
+footer{
+    height: 60px;
+    margin-top: 3px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .total_que span {
+    display: flex;
+    user-select: none;
+    font-size: 18px;;
+}
+
+.total_que span p{
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.total_que span p:first-child{
+    padding-left: 0px;
+}
+
+footer .next-btn{
+    height: 50px;
+    margin-left: 5px;
+    padding: 0 5px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    background: #006E91;
+    border: 2px solid #CF9FFF;
+    line-height: 10px;
+    /*opacity: 0; */
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
