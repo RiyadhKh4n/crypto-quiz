@@ -19,7 +19,7 @@ h2 {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 /* Flip Card */
@@ -184,6 +184,13 @@ h2 {
     border-radius: 5px;
     pointer-events: none;
     transition: all 0.3s ease;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .quiz_box header {
@@ -338,8 +345,16 @@ footer .next-btn{
     border-radius: 10px;
     background-color: #fff;
     width: 300px;
-
     box-shadow: 10px 10px rgba(0, 0, 0, .5);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+
 }
 
 .result_box .icon .fa-crown{
@@ -347,7 +362,7 @@ footer .next-btn{
     display: flex;
     align-content: center;
     justify-content: center;
-    color:#004085;
+    color:#006E91;
     font-size: 100px;
 }
 
@@ -396,7 +411,7 @@ thead{
 
 
 tbody tr:nth-child(2n){
-    background: #004085;
+    background: #006E91;
 }
 
 th {
