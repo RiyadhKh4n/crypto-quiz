@@ -236,7 +236,6 @@ h2 {
 }
 
 .question-section .que_text .questions{
-    
     font-size: 1.5em;
     font-weight: 600;
     color:#006E91;
@@ -277,7 +276,7 @@ section .option_list .option:last-child{
     border: 1px solid green;
 }
 
-/* Correct and Incorrect Answers*/
+/*Correct and Incorrect Answers*/
 
 section .option_list .option.correct{
     color: #155724;
@@ -318,19 +317,20 @@ footer .total_que span {
 
 footer .next-btn{
     height: 50px;
+    width: 90px;
     margin-left: 5px;
     padding: 0 5px;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     border: none;
     outline: none;
     color: white;
-    border-radius: 5px;
+    border-radius: 20px;
     background: #006E91;
     border: 2px solid #CF9FFF;
     line-height: 10px;
-    opacity: 0; 
+    /* opacity: 0; */ 
     pointer-events: none;
     transform: scale(0.95);
     transition: all 0.3s ease;
@@ -385,7 +385,7 @@ header {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     position: relative;
-    padding-top: .5rem;
+    padding-top: .7rem;
     height: 3rem;
 }
 
@@ -433,9 +433,17 @@ td {
 
 .result-btn{
     margin: 2em;
+    
 }
 
 .clear{
-    background: #16181e;
+    background: #CF9FFF;
     color: #fff;
+    
+ 
+}
+
+.clear:hover{
+    background-color: #5D3FD3;
+    
 }
