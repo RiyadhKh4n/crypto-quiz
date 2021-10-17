@@ -92,7 +92,6 @@ let questions = [
       "A tool used in mining to generate the next transaction",
       "The competition between miners to not fully disclose transactions"
     ]
-
   },
   {
     question: "What is an advantage of Bitcoin?",
@@ -262,6 +261,46 @@ let questions = [
       "Softchains",
       "Another blockchain",
       "Layer 2's"
+    ]
+  },
+  {
+    question: "What is a Decentralised Exchange?",
+    answer: "A type of cryptocurrency exchange which allows for direct peer-to-peer cryptocurrency transactions",
+    options: [
+      "An exchange which is controlled by a single entity",
+      "An exchange which you can only hold cryptocurrencies, not buy or sell",
+      "An exchange which allows for direct peer-to-peer cryptocurrency transactions",
+      "An exchange which dont allow for peer-to-peer transactions"
+    ]
+  },
+  {
+    question: "What is a Centralised Exchange?",
+    answer: "A business that allows customers to trade cryptocurrencies or digital currencies for other assets",
+    options: [
+      "A business that allows customers to trade cryptocurrencies or digital currencies for other assets",
+      "An exchange which allows for peer-to-peer transactions to take place on the chain",
+      "An exchange where your private keys are held by you as opposed to held by a business",
+      "A business that allows customers to trade cryptocurrencies via a peer-to-peer manor"
+    ]
+  },
+  {
+    question: "What is the advantage of using a Decentralised Exchange?",
+    answer: "You have access to loads more tokens and you don't have to do KYC",
+    options: [
+      "You have access to loads more tokens and you don't have to do KYC",
+      "There is high volumes of liquidity meanining you dont have to worry about them running out of tokens",
+      "Speed and cost means transactions take place quicky with minimal fails",
+      "You can use trading bots to place trades for you"
+    ]
+  },
+  {
+    question: "What is the disadvantage of using a Decentralised Exchange?",
+    answer: "",
+    options: [
+      "You don't have custody of your private keys",
+      "There is manipulation and downtime on exchanges",
+      "Less security and your coins are at risk",
+      "Higher gas fees and order type limitations"
     ]
   }
 ];
