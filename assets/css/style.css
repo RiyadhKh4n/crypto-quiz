@@ -206,9 +206,10 @@ h2 {
 }
 
 .quiz_box header .title {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     color:#006E91;
+    text-align: center;
 }
 
 .quiz_box header .timer {
@@ -434,6 +435,18 @@ td {
 .result-btn{
     margin: 2em;
     
+}
+
+.replay{
+    background-color: #006E91;
+    border-color: #bdbdbd;
+    color: white;
+}
+
+.replay:hover{
+    background-color: #bdbdbd;
+    border-color: #006E91;
+    color: white;
 }
 
 .clear{
