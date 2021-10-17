@@ -178,7 +178,7 @@ h2 {
 
 /* Quiz Box */
 .quiz_box {
-   
+    box-shadow: 10px 10px rgba(0, 0, 0, .5);
     width: 300px;
     background: #fff;
     border-radius: 5px;
