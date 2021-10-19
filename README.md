@@ -114,7 +114,7 @@ Here describes the main features of the website and what the user can expect whe
 
     * The footer section holds the question count as well as the 'Next' button which will be made visible to the user once a selection has been made. The question count will iterate as they move through the questions until they reach to the final question which will be number 10. Where at that point the quiz section will be hidden from the user and the results box will be displayed.
 
-    ![Quiz1](docs/readme/quiz1.png)
+    ![Quiz1](docs/readme/quiz.png)
     ![Quiz2](docs/readme/quiz2.png)
 
 * ### Results Page
