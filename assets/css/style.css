@@ -306,7 +306,7 @@ footer .total_que span {
     display: flex;
     user-select: none;
     font-size: 18px;
-    ;
+
 }
 
 .total_que span p {
@@ -340,6 +340,11 @@ footer .next-btn {
     transition: all 0.3s ease;
 }
 
+footer .next-btn:hover {
+    background: #CF9FFF;
+    border: 2px solid #006E91;
+}
+
 /* Results PopUp*/
 
 .result_box {
@@ -350,15 +355,12 @@ footer .next-btn {
     background-color: #fff;
     width: 300px;
     box-shadow: 10px 10px rgba(0, 0, 0, .5);
-
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-
-
 }
 
 .result_box .icon .fa-crown {
@@ -461,4 +463,121 @@ td {
 .clear:hover {
     background-color: #5D3FD3;
 
+}
+
+@media only screen and (min-width: 768px) {
+    .maincontainer {
+        width: 500px;
+        height: 560px;
+    }
+
+    .game-title {
+        font-weight: bold;
+        color: #006E91;
+        font-family: 'Odibee';
+        font-size: 3em;
+    }
+
+    .fake-btn {
+        width: 175px;
+        height: 80px;
+        font-size: 1.5em;
+    }
+
+    .info-title {
+        font-size: 3em;
+    }
+
+    .info-list {
+        padding-top: 1em;
+    }
+
+    .rules {
+        font-weight: bold;
+        margin: 5px;
+        margin-left: 30px;
+        padding: 3px;
+        display: block;
+        text-align: left;
+        font-size: 1.6em;
+    }
+
+    .back-card-button {
+        width: 175px;
+        height: 80px;
+        font-size: 1.5em;
+    }
+
+    .quiz_box {
+        width: 600px;
+    }
+
+    .quiz_box header .title {
+        font-size: 2em;
+    }
+
+    .quiz_box header .timer {
+        border: 2px solid black;
+        height: 50px;
+        width: 185px;
+        margin-left: 8px;
+        padding: 0 6px;
+        justify-content: space-around;
+    }
+
+    .option_list .option {
+        margin: 1em;
+        display: flex;
+    }
+
+    .question-section .que_text .questions {
+        font-size: 30px;
+    }
+
+    .question-section .option_list .option {
+        border: 2px solid #263a44;
+        font-size: 20px;
+    }
+
+    footer {
+        height: 80px;
+    }
+
+    footer .total_que span {
+        display: flex;
+        user-select: none;
+        font-size: 25px;
+    }
+
+    footer .next-btn {
+        height: 60px;
+        width: 120px;
+        font-size: 30px;
+        border: 3px solid #CF9FFF;
+        letter-spacing: 1.5px;
+    }
+
+    .result_box {
+        width: 500px;
+    }
+
+    .result_box .icon .fa-crown {
+        font-size: 140px;
+    }
+
+    .congrat-text {
+        font-size: 35px;
+    }
+
+    thead {
+        font-size: 1rem;
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    tbody td{
+        font-size: 1.2rem;
+    }
+
+    
 }
