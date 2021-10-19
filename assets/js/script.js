@@ -9,7 +9,7 @@ const next_btn = quizBox.querySelector("next-btn");
 const option_list = document.querySelectorAll(".option");
 const clear_button = document.querySelector(".clear buttons");
 const replay_quiz = document.querySelector(".replay buttons");
-const exit_btn = document.querySelector(".quit buttons");
+const exit_btn = document.getElementById("quit")
 
 const timeText = document.querySelector(".timer .time-passed");
 const timeCount = document.querySelector(".timer .timer-sec");
@@ -22,3 +22,8 @@ start_btn.onclick = ()=>{
     quizBox.classList.remove("hidden"); //remove hidden from quiz
 }
 
+exit_btn.onclick = ()=>{
+    resultBox.classList.add("hidden"); //remove hidden from quiz
+    flipcard.classList.remove("hidden"); //hide flipcard
+   
+}
