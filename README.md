@@ -95,6 +95,36 @@ Here describes the main features of the website and what the user can expect whe
 
 ## Existing Features:
 
+* ### Landing Screen
+
+    * This is the first thing the player will see when the launch the website. They will be met with a flip card which when they hover over will dipslay the rules for the game. Or for mobile users, they will click the card which would then cause the card to flip over.
+
+    * Once the card has flipped over, the user will be able to click the 'Continue' button. If selected, this will cause the card to disapear and the quiz section of the game to appear for the users to begin playing. 
+
+    ![Front of Card](docs/readme/flipcardfront.png)
+     ![Back of Card](docs/readme/flipcardback.png)
+
+* ### Quiz Interface
+
+    * Here is the actual game part of the website. This is where the players will interact with and where all the questions and answers will be displayed for them to try and guess. It is made up of a header, main area and a footer. 
+
+    * The header holds the name for the quiz as well as a section which will count how long the user has been playing the quiz for. This time as well as their score will be saved to local storage and imputted into a score board where they can keep track of their previous attempts and try and beat old high scores.
+
+    * The main area is where the question will be displayed, as well as four buttons which will hold the possible answers to the questions. The user will have one chance to answer the question and hopefully make the right choice, if they do make the correct choice then their selection highlight in green, else their selection will go red and the correct answer will be highlighted in green.
+
+    * The footer section holds the question count as well as the 'Next' button which will be made visible to the user once a selection has been made. The question count will iterate as they move through the questions until they reach to the final question which will be number 10. Where at that point the quiz section will be hidden from the user and the results box will be displayed.
+
+    ![Quiz1](docs/readme/quiz1.png)
+    ![Quiz2](docs/readme/quiz2.png)
+
+* ### Results Page
+
+    * This is the final section of the game that the player will interact with. Once they have completed the quiz this screen will appear showing them their score as well as the time taken to complete the quiz. Once the user has played a couple games, their previous scores and times will be displayed in the score board for them to see.
+
+    * The user will also be met with three buttons which they can interact with, a 'Clear Board' button which when clicked will wipe the leaderboard of all old times and scores. The 'Replay Quiz' button which will reload the game so they are back at question one and can play through the quiz again. Finally, the 'Quit Quiz' button which will reload the whole website so they are met with the landing screen again.
+
+     * INSERT IMAGE ONCE STYLED *
+
 
 ## Features Left to Implement:
 

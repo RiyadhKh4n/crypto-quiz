@@ -116,7 +116,7 @@ h2 {
 }
 
 .button-div {
-    margin-top: 2.5em;
+    margin-top: .5em;
     width: 100%;
 }
 
@@ -208,12 +208,12 @@ h2 {
 .quiz_box header .title {
     font-size: 25px;
     font-weight: 600;
-    color:#006E91;
+    color: #006E91;
     text-align: center;
 }
 
 .quiz_box header .timer {
-    color:white;
+    color: white;
     background: #CF9FFF;
     border: 1px solid black;
     height: 45px;
@@ -227,19 +227,19 @@ h2 {
     font-weight: bold;
 }
 
-.quiz_box header .time-passed{
+.quiz_box header .time-passed {
     color: white;
     font-weight: bold;
 }
 
-.que_text{
+.que_text {
     margin: 20px;
 }
 
-.question-section .que_text .questions{
+.question-section .que_text .questions {
     font-size: 1.5em;
     font-weight: 600;
-    color:#006E91;
+    color: #006E91;
 }
 
 .option_list .option {
@@ -247,11 +247,11 @@ h2 {
     display: flex;
 }
 
-.question-section .option_list{
+.question-section .option_list {
     display: block;
 }
 
-.question-section .option_list .option{
+.question-section .option_list .option {
     background: #CF9FFF;
     border: 1px solid #263a44;
     color: white;
@@ -267,11 +267,11 @@ h2 {
     justify-content: space-between;
 }
 
-section .option_list .option:last-child{
+section .option_list .option:last-child {
     margin-bottom: 0px;
 }
 
-.option_list .option:hover{
+.option_list .option:hover {
     color: #004085;
     background: red;
     border: 1px solid green;
@@ -279,12 +279,13 @@ section .option_list .option:last-child{
 
 /*Correct and Incorrect Answers*/
 
-section .option_list .option.correct{
+section .option_list .option.correct {
     color: #155724;
     background: #d4edda;
     border: 1px solid #c3e6cb;
 }
-section .option_list .option.incorrect{
+
+section .option_list .option.incorrect {
     color: #721c24;
     background: #f8d7da;
     border: 1px solid #f5c6cb;
@@ -292,7 +293,7 @@ section .option_list .option.incorrect{
 
 /* Quiz-Box Footer*/
 
-footer{
+footer {
     height: 60px;
     margin-top: 3px;
     padding: 0 30px;
@@ -304,19 +305,20 @@ footer{
 footer .total_que span {
     display: flex;
     user-select: none;
-    font-size: 18px;;
+    font-size: 18px;
+    ;
 }
 
-.total_que span p{
+.total_que span p {
     font-weight: bold;
     padding: 0 5px;
 }
 
-.total_que span p:first-child{
+.total_que span p:first-child {
     padding-left: 0px;
 }
 
-footer .next-btn{
+footer .next-btn {
     height: 50px;
     width: 90px;
     margin-left: 5px;
@@ -330,8 +332,9 @@ footer .next-btn{
     border-radius: 20px;
     background: #006E91;
     border: 2px solid #CF9FFF;
+    letter-spacing: 1px;
     line-height: 10px;
-    /* opacity: 0; */ 
+    /* opacity: 0; */
     pointer-events: none;
     transform: scale(0.95);
     transition: all 0.3s ease;
@@ -339,7 +342,7 @@ footer .next-btn{
 
 /* Results PopUp*/
 
-.result_box{
+.result_box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -358,24 +361,25 @@ footer .next-btn{
 
 }
 
-.result_box .icon .fa-crown{
+.result_box .icon .fa-crown {
     padding: .5em 0;
     display: flex;
     align-content: center;
     justify-content: center;
-    color:#006E91;
+    color: #006E91;
     font-size: 100px;
 }
 
-.congrat-text{
+.congrat-text {
     margin: 0 10px 10px;
     font-size: 25px;
     font-family: 'Roboto Condensed';
-    color:#CF9FFF;
+    color: #CF9FFF;
     font-weight: bold;
-   
+
 }
-.leaderboard-container{
+
+.leaderboard-container {
     width: 90%;
 }
 
@@ -390,73 +394,71 @@ header {
     height: 3rem;
 }
 
-header h1{
+header h1 {
     text-align: center;
 }
 
 table {
-  background-color: #16181e;
-  color: #999;
-  width: 100%;
-  border-collapse: collapse;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  overflow: hidden;
+    background-color: #16181e;
+    color: #999;
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden;
 }
 
-thead{
+thead {
     font-size: 0.8rem;
     color: white;
     text-transform: uppercase;
 }
 
 
-tbody tr:nth-child(2n){
+tbody tr:nth-child(2n) {
     background: #006E91;
 }
 
 th {
     padding: 1rem 0.5rem 0.5rem;
 }
-  
-tr{
+
+tr {
     text-align: center;
-    color:white;
+    color: white;
 }
 
 td {
     padding: .25rem .25rem;
 }
 
-.time-taken .points{
+.time-taken .points {
     text-align: center;
 }
 
-.result-btn{
+.result-btn {
     margin: 2em;
-    
+
 }
 
-.replay{
+.replay {
     background-color: #006E91;
     border-color: #bdbdbd;
     color: white;
 }
 
-.replay:hover{
+.replay:hover {
     background-color: #bdbdbd;
     border-color: #006E91;
     color: white;
 }
 
-.clear{
+.clear {
     background: #CF9FFF;
     color: #fff;
-    
- 
 }
 
-.clear:hover{
+.clear:hover {
     background-color: #5D3FD3;
-    
+
 }
