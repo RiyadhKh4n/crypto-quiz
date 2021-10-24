@@ -318,7 +318,7 @@ footer .total_que span {
     padding-left: 0px;
 }
 
-footer .next-btn {
+footer #next-btn {
     height: 50px;
     width: 90px;
     margin-left: 5px;
@@ -334,13 +334,12 @@ footer .next-btn {
     border: 2px solid #CF9FFF;
     letter-spacing: 1px;
     line-height: 10px;
-    /* opacity: 0; */
     pointer-events: none;
     transform: scale(0.95);
     transition: all 0.3s ease;
 }
 
-footer .next-btn:hover {
+footer #next-btn:hover {
     background: #CF9FFF;
     border: 2px solid #006E91;
 }
@@ -549,7 +548,7 @@ td {
         font-size: 25px;
     }
 
-    footer .next-btn {
+    footer #next-btn {
         height: 60px;
         width: 120px;
         font-size: 30px;

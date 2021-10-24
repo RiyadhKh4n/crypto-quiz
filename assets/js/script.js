@@ -5,12 +5,12 @@ const resultBox = document.querySelector(".result_box");
 
 /* select the required buttons */
 const start_btn = document.getElementById("continue");
-const next_btn = quizBox.querySelector("next-btn");
+const next_btn = document.getElementById("next-btn");
 const option_list = document.querySelectorAll(".option");
 
-const clear_button = document.getElementById("clear-board");
-const replay_quiz = document.getElementById("replay")
-const exit_btn = document.getElementById("quit")
+const clearBoard_button = document.getElementById("clear-board");
+const replay_quiz = document.getElementById("replay");
+const exit_btn = document.getElementById("quit");
 
 const timeText = document.querySelector(".timer .time-passed");
 const timeCount = document.querySelector(".timer .timer-sec");
@@ -18,8 +18,11 @@ const timeCount = document.querySelector(".timer .timer-sec");
 const table_clear = document.querySelector('table > tbody');
 
 /* Initialsing / Declaring varibales needed for script */
-let counter;
+let que_count = 0;
 let que_numb = 1;
+let UserScore = 0;
+const MAX_QUESTIONS = 10;
+let initialTime = 0;
 
 start_btn.onclick = ()=>{
     flipcard.classList.add("hidden"); //hide flipcard
@@ -28,8 +31,7 @@ start_btn.onclick = ()=>{
 
 exit_btn.onclick = ()=>{
     resultBox.classList.add("hidden"); //hide results
-    flipcard.classList.remove("hidden"); //show flipcard
-   
+    flipcard.classList.remove("hidden"); //show flipcard 
 }
 
 replay_quiz.onclick = ()=>{
@@ -39,16 +41,47 @@ replay_quiz.onclick = ()=>{
     // add function which generates new questions 
 }
 
-clear_button.onClick = ()=>{
+clearBoard_button.onClick = ()=>{
 
+}
+
+next_btn.onClick = () =>{
+    if(que_count < MAX_QUESTIONS){
+        que_count++;
+        que_numb++;
+        document.querySelector(".qs-count").innerHTML=(que_numb);
+        displayQuestions();
+        next_btn.classList.add("hidden");
+    }else{
+        showResult();
+    }
+
+}
+
+function getRandomQuestion(min, max){
+    let step1 = max - min + 1;
+    let step2 = Math.random() * step1;
+    let result = Math.floor(step2) + min; 
+
+    return result;
 }
 
 /**
  * 
  * This will randomly display the questions to the user
  */
-function showQuestions(index){
-    
+function displayQuestions(index){
+    const questions_to_user = document.querySelector(".questions"); //store the question in var
+    const choices = document.querySelectorAll(".option"); //store the for options in the var choices
+
+    choices.forEach((choice) => {
+        choice.addEventListener("click", function(){
+
+        });
+    });
+
+    let index = getRandomQuestion(1, MAX_QUESTIONS);
+    result.innerText = questions[index];
 }
 
 /**
@@ -63,6 +96,15 @@ function optionSelected(answer){
  * 
  * This will cause the timer to increase when the user starts the quiz 
  */
-function startTimer(time){
+function startTimer(initialTime){
 
 }
+
+/**
+ * Will show the results of the game to the user
+ */
+function showResult(){
+
+}
+
+
