@@ -2,12 +2,13 @@
 
 [Link to Quiz Website Here](https://riyadhkh4n.github.io/crypto-quiz/)
 
-Crypto Quiz is a Javascript web application that is aimed at anyone who wishes to put their crypto knowledge to the test. This quiz is designed to test your knowledge and the questions are based from [Cryptools](https://riyadhkh4n.github.io/cryptools/), so having a read will give you all the infromation you need to pass the quiz. Questions and answer options will be produced on the screen one after the other in a randomised order, where the user will be given up to ten question. The user will then select the correct option or the option they think is correct, where their score will be logged letting them know how they did until they have answered all the questions. Once finished they will be met with a results screen allowing them to see how well they did and give them the option to play again or quit. 
+The purpose of this project is to create an Interactive Frontend Website using HTML, CSS and JavaScript. In order to do this I have built a Cryptocurrency Quiz game, where the users have to answer 10 questions about the industry.
+
+Crypto Quiz is a Javascript web application that is aimed at anyone who wishes to put their crypto knowledge to the test. This quiz is designed to test your knowledge and the questions are based from [Cryptools](https://riyadhkh4n.github.io/cryptools/), so having a read will give you a good foundation in order to succeed at the game. Questions and answers will be produced on the screen one after the other in a randomised order. The user will then select the correct option or the option they think is correct, where their score will be logged letting them know how they did. Once finished they will be met with a results screen allowing them to see their score give them the option to play again or quit. 
 
 ---
 IMAGE FROM AMIRESPONSIVE HERE
 ---
-
 
 # User Experience (UX) ~
 
@@ -22,14 +23,14 @@ IMAGE FROM AMIRESPONSIVE HERE
 
 * ## User Stories
     * #### First Time Visitor Goals:
-        a. As a First Time Visitor, I want to be able to set a new score when playing the quiz.
-        b. As a First Time Visitor, I want to see how many questions I got right and wrong.
+        a. As a First Time Visitor, I want to easily understand the purpose of the site and learn how to play the game.
+        b. As a First Time Visitor, I want the game to be enjoyable and challenging.
         c. As a First Time Visitor, once the game is finished I want to be able to play again.
 
     * #### Returning Visitor Goals:
-       a. As a Returning Visitor, I want to be able to play Crypto Quiz and have the same experience as the first time.
-       b. As a Returning Visitor, I want to see new questions when I play.
-       c. I want to be able to see my previous scores.
+       a. As a Returning Visitor, I want the questions to be different than the previous ones.
+       b. As a Returning Visitor, I want to be able to beat my previous scores.
+       c.  As a Returning Visitor, I want to be able to see my previous scores.
 
     * #### Frequent Visitor Goals:
        a. As a Frequent Visitor, I want to see if any new questions have been added to the game.

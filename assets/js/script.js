@@ -58,14 +58,6 @@ next_btn.onClick = () =>{
 
 }
 
-function getRandomQuestion(min, max){
-    let step1 = max - min + 1;
-    let step2 = Math.random() * step1;
-    let result = Math.floor(step2) + min; 
-
-    return result;
-}
-
 /**
  * 
  * This will randomly display the questions to the user
@@ -74,14 +66,7 @@ function displayQuestions(index){
     const questions_to_user = document.querySelector(".questions"); //store the question in var
     const choices = document.querySelectorAll(".option"); //store the for options in the var choices
 
-    choices.forEach((choice) => {
-        choice.addEventListener("click", function(){
-
-        });
-    });
-
-    let index = getRandomQuestion(1, MAX_QUESTIONS);
-    result.innerText = questions[index];
+    
 }
 
 /**
