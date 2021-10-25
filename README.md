@@ -129,7 +129,7 @@ Here describes the main features of the website and what the user can expect whe
 
     * The user will also be met with three buttons which they can interact with, a 'Clear Board' button which when clicked will wipe the leaderboard of all old times and scores. The 'Replay Quiz' button which will reload the game so they are back at question one and can play through the quiz again. Finally, the 'Quit Quiz' button which will reload the whole website so they are met with the landing screen again.
 
-     * INSERT IMAGE ONCE STYLED *
+    ![Result](docs/readme/result_page.png)
 
 
 
@@ -303,6 +303,8 @@ let timerRef = document.querySelector('.timer-sec');
 This will cause the time to actually change in real time when the user selected one of the buttons mentioned earlier. A working view of the timer can be seen below:
 
 ![Working Timer](docs/testing/working_time.png)
+
+---
 
 
 

@@ -351,7 +351,6 @@ exit_btn.onclick = ()=>{
     flipcard.classList.remove("hidden"); //show flipcard 
 }
 
-
 start_btn.onclick = ()=>{
     flipcard.classList.add("hidden"); //hide flipcard
     quizBox.classList.remove("hidden"); //remove hidden from quiz
@@ -360,7 +359,6 @@ start_btn.onclick = ()=>{
 start_btn.addEventListener('click', ()=>{
     int = setInterval(startTimer, 10);
 });
-
 
 replay_quiz.onclick = ()=>{
     resultBox.classList.add("hidden"); //hide results
