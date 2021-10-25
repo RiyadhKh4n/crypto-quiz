@@ -24,16 +24,21 @@ IMAGE FROM AMIRESPONSIVE HERE
 * ## User Stories
     * #### First Time Visitor Goals:
         a. As a First Time Visitor, I want to easily understand the purpose of the site and learn how to play the game.
+
         b. As a First Time Visitor, I want the game to be enjoyable and challenging.
+
         c. As a First Time Visitor, once the game is finished I want to be able to play again.
 
     * #### Returning Visitor Goals:
        a. As a Returning Visitor, I want the questions to be different than the previous ones.
+
        b. As a Returning Visitor, I want to be able to beat my previous scores.
+
        c.  As a Returning Visitor, I want to be able to see my previous scores.
 
     * #### Frequent Visitor Goals:
        a. As a Frequent Visitor, I want to see if any new questions have been added to the game.
+       
        b. As a Frequent Visitor, I want to see if I can beat my old score.
 
 * ## Design ~
@@ -127,6 +132,7 @@ Here describes the main features of the website and what the user can expect whe
      * INSERT IMAGE ONCE STYLED *
 
 
+
 ## Features Left to Implement:
 
 # Technologies ~
@@ -191,6 +197,35 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Website Testing (Solving Issues):
 ---
+
+The first problem I had to solve on the JavaScript side, was that I needed to randomly generate 10 questions for the user to go through from my question bank. In order to do this, I had to first create my questions which contain the question itself, the correct answer as well as a list of four potential answers.
+
+An output of some of the questions from the question bank is below: 
+![question](docs/testing/questiontest.png)
+
+Now that I have created a question bank, I have to then randomly select and store 10 questions from the total question bank which the users will answer. To do this I have created a function called displayQuestions() which holds the necessary code needed to generate and display the questions.
+
+```
+function displayQuestions(index){
+    const questions_to_user = document.querySelector(".questions"); //store the question in var
+    const choices = document.querySelectorAll(".option"); //store the for options in the var choices
+
+    for(let i = 0; i < 10; i++){
+        let game_question = {};
+        let generateQ = questions[Math.floor(Math.random() * questions.length)];
+        console.log(generateQ);
+    } 
+}
+```
+
+The main part of the function is the for loop which iterates 10 times, this is because I only want 10 questions to be displayed to the user. A variable called generateQ is created which stores the randomly selected questions from the question bank shown above. It uses Math.floor() and Math.random() which is needed in order to randomly select an element from my array. I then console.log() in order to test if I have correctly generated the questions.
+
+An output of the selected questions is below: 
+
+![FirstSet](docs/testing/firstset.png)
+![SecondSet](docs/testing/secondset.png)
+
+As you can see above, there are 10 questions which are selected and each time the program is run a different set of questions is selected meaning I have succesfully solved my problem. The next step is to then extract each element i.e question and answers and then display them in the html of the webpage.
 
 
 ##  Browser Compatibility & Responsivness
