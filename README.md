@@ -227,6 +227,84 @@ An output of the selected questions is below:
 
 As you can see above, there are 10 questions which are selected and each time the program is run a different set of questions is selected meaning I have succesfully solved my problem. The next step is to then extract each element i.e question and answers and then display them in the html of the webpage.
 
+---
+
+The next issue I faced when developing Crypto Quiz was that I knew I wanted to implement a timer function which would start once the user begins the quiz, and then end once the user has answered the last question. Their time paired with their score would then be saved to local storage and displayed on a leaderbaord which could be seen at the end. 
+
+To begin with I created and styled the section which would display how long they have been doing the quiz to the user:
+
+![timer](docs/testing/timer.png)
+
+Once it was styled I writting the functionality to which would allow the timer to start once the relevant buttons had been selected. I knew that there were two instances where I wanted the timer to begin; when they begin the quiz and if they decide to replay the quiz. The relevant buttons are displayed below: 
+
+
+![start](docs/testing/continue.png)
+![replay](docs/testing/replay.png)
+
+So, when the 'Continue' button and 'Replay Quiz' button are selected I want the timer to begin counting up.
+
+I began by adding an EventListener to the relevant button which can be seen below:
+
+```
+start_btn.addEventListener('click', ()=>{
+    int = setInterval(startTimer, 10);
+});
+
+replay_quiz.addEventListener('click', ()=>{
+    int = setInterval(startTimer, 10);
+});
+```
+
+The following code will listen out for the button to be interacted with by the user, hence the 'click' will call the EventListener. If either buttons are clicked then the variable int which was delcared at the beginning of the file will be passed the setInterval method which itself contains the starTimer method which will contain all the code which is responsible for the clock functionality. 
+
+The setInterval() method in JavaScript is used to repeat a specified function at every given time-interval. It evaluates an expression or calls a function at given intervals. This method continues the calling of function until the window is closed or the clearInterval() method is called.
+
+The startTimer() method is displayed below:
+
+```
+let [milliseconds, seconds, minutes] = [0,0,0];
+let int;
+```
+
+```
+ function startTimer(){
+    milliseconds += 10;
+    if(milliseconds == 1000){
+        milliseconds = 0;
+        seconds ++;
+        if(seconds == 60){
+            seconds = 0;
+            minutes++;
+            if(minutes == 60){
+                minutes = 0;
+            }
+        }
+    }
+
+    let m = minutes < 10 ? "0" + minutes : minutes;
+    let s = seconds < 10 ? "0" + seconds : seconds;
+    let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds; 
+
+    timerRef.innerHTML = `${m} : ${s} : ${ms}`;
+}
+```
+The first two lines of code create a variable which contains the relavant time intervants ie. ms, s and m and sets them all to zero. I then create another variable called int which is not initalised.
+
+The function doesnt take any parameters as it is not needed. The function starts with miliseconds (ms) and increases its value by 10. If the value of ms equals 1000 which is the same as 1 second then it should reset its value and then increase the seconds. This same logic continues but instead of 1000 seconds its 60 as there are 60 seconds in 1 minute. 
+
+Then three more variables are created against the respected time intervals I have chosen, and if else statements are created for each which will change their value depending if they meet the condition of being less than 10.
+
+Finally, I change the html by accessing the the timerRef variable:
+
+```
+let timerRef = document.querySelector('.timer-sec');
+```
+
+This will cause the time to actually change in real time when the user selected one of the buttons mentioned earlier. A working view of the timer can be seen below:
+
+![Working Timer](docs/testing/working_time.png)
+
+
 
 ##  Browser Compatibility & Responsivness
 ---

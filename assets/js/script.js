@@ -319,8 +319,8 @@ const replay_quiz = document.getElementById("replay");
 const exit_btn = document.getElementById("quit");
 
 let timerRef = document.querySelector('.timer-sec');
+let questionCount = document.getElementById("qs-count");
 
-const table_clear = document.querySelector('table > tbody');
 
 /* Initialsing varibales needed for script */
 let que_count = 0;
@@ -346,6 +346,12 @@ function displayQuestions(index){
     } 
 }
 
+exit_btn.onclick = ()=>{
+    resultBox.classList.add("hidden"); //hide results
+    flipcard.classList.remove("hidden"); //show flipcard 
+}
+
+
 start_btn.onclick = ()=>{
     flipcard.classList.add("hidden"); //hide flipcard
     quizBox.classList.remove("hidden"); //remove hidden from quiz
@@ -355,16 +361,12 @@ start_btn.addEventListener('click', ()=>{
     int = setInterval(startTimer, 10);
 });
 
-exit_btn.onclick = ()=>{
-    resultBox.classList.add("hidden"); //hide results
-    flipcard.classList.remove("hidden"); //show flipcard 
-}
 
 replay_quiz.onclick = ()=>{
     resultBox.classList.add("hidden"); //hide results
     quizBox.classList.remove("hidden"); //show flipcard
 
-    // add function which generates new questions 
+    displayQuestions(); 
 }
 
 replay_quiz.addEventListener('click', ()=>{
@@ -379,6 +381,8 @@ next_btn.onClick = () =>{
     if(que_count < MAX_QUESTIONS){
         que_count++;
         que_numb++;
+
+        questionCount.innerHTML = `${que_numb}`;
         document.querySelector(".qs-count").innerHTML=(que_numb);
         displayQuestions();
         next_btn.classList.add("hidden");
@@ -391,7 +395,7 @@ next_btn.onClick = () =>{
  * 
  * This will cause the timer to increase when the user starts the quiz 
  */
- function startTimer(initialTime){
+ function startTimer(){
     milliseconds += 10;
     if(milliseconds == 1000){
         milliseconds = 0;
@@ -409,7 +413,7 @@ next_btn.onClick = () =>{
     let s = seconds < 10 ? "0" + seconds : seconds;
     let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds; 
 
-    timerRef.innerHTML = ` ${m} : ${s} : ${ms}`;
+    timerRef.innerHTML = `${m} : ${s} : ${ms}`;
 }
 
 /**
