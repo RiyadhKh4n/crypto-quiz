@@ -243,29 +243,34 @@ h2 {
     color: #006E91;
 }
 
-.option_list .option {
-    margin: 1em;
-    display: flex;
-}
-
 .question-section .option_list {
     display: block;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .question-section .option_list .option {
-    background: #CF9FFF;
-    border: 1px solid #263a44;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 8px 15px;
-    font-size: 17px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    background: #CF9FFF;
+    border: 1px solid #263a44;
+    border-radius: 5px;
+    color: white;
+
+    font-weight: bold;
+    font-size: 17px;
+    
+    margin-bottom: 15px;
+    margin-right: 50px;
+
+    padding: 10px 10px;
+    
+    width: 100%;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 section .option_list .option:last-child {
@@ -526,11 +531,6 @@ td {
 
     .quiz_box .timer .time-passed{
         font-size: 20px;
-    }
-
-    .option_list .option {
-        margin: 1em;
-        display: flex;
     }
 
     .question-section .que_text .questions {
