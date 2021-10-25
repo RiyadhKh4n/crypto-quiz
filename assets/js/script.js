@@ -318,8 +318,7 @@ const clearBoard_button = document.getElementById("clear-board");
 const replay_quiz = document.getElementById("replay");
 const exit_btn = document.getElementById("quit");
 
-const timeText = document.querySelector(".timer .time-passed");
-const timeCount = document.querySelector(".timer .timer-sec");
+let timerRef = document.querySelector('.timer-sec');
 
 const table_clear = document.querySelector('table > tbody');
 
@@ -329,9 +328,10 @@ let que_numb = 1;
 let UserScore = 0;
 const MAX_QUESTIONS = 10;
 let initialTime = 0;
+let [milliseconds, seconds, minutes] = [0,0,0];
+let int;
 
-
-/**
+/** 
  * 
  * This will randomly display the questions to the user
  */
@@ -342,19 +342,18 @@ function displayQuestions(index){
     for(let i = 0; i < 10; i++){
         let game_question = {};
         let generateQ = questions[Math.floor(Math.random() * questions.length)];
-        game_question = generateQ[0];
-
-        console.log(game_question);
         console.log(generateQ);
-    }
-
-    
+    } 
 }
 
 start_btn.onclick = ()=>{
     flipcard.classList.add("hidden"); //hide flipcard
     quizBox.classList.remove("hidden"); //remove hidden from quiz
 }
+
+start_btn.addEventListener('click', ()=>{
+    int = setInterval(startTimer, 10);
+});
 
 exit_btn.onclick = ()=>{
     resultBox.classList.add("hidden"); //hide results
@@ -367,6 +366,10 @@ replay_quiz.onclick = ()=>{
 
     // add function which generates new questions 
 }
+
+replay_quiz.addEventListener('click', ()=>{
+    int = setInterval(startTimer, 10);
+});
 
 clearBoard_button.onClick = ()=>{
     // access local storage and clear <td></td>
@@ -386,19 +389,38 @@ next_btn.onClick = () =>{
 
 /**
  * 
+ * This will cause the timer to increase when the user starts the quiz 
+ */
+ function startTimer(initialTime){
+    milliseconds += 10;
+    if(milliseconds == 1000){
+        milliseconds = 0;
+        seconds ++;
+        if(seconds == 60){
+            seconds = 0;
+            minutes++;
+            if(minutes == 60){
+                minutes = 0;
+            }
+        }
+    }
+
+    let m = minutes < 10 ? "0" + minutes : minutes;
+    let s = seconds < 10 ? "0" + seconds : seconds;
+    let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds; 
+
+    timerRef.innerHTML = ` ${m} : ${s} : ${ms}`;
+}
+
+/**
+ * 
  * This will check if the users answer is the correct one
  */
 function findCorrect(answer){
 
 }
 
-/**
- * 
- * This will cause the timer to increase when the user starts the quiz 
- */
-function startTimer(initialTime){
 
-}
 
 /**
  * Will show the results of the game to the user

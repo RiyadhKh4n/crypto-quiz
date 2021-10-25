@@ -206,10 +206,10 @@ h2 {
 }
 
 .quiz_box header .title {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     color: #006E91;
-    text-align: center;
+    text-align: left;
 }
 
 .quiz_box header .timer {
@@ -223,13 +223,14 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 145px;
+    width: 200px;
     font-weight: bold;
 }
 
 .quiz_box header .time-passed {
     color: white;
     font-weight: bold;
+    font-size: 13px;
 }
 
 .que_text {
@@ -516,10 +517,15 @@ td {
     .quiz_box header .timer {
         border: 2px solid black;
         height: 50px;
-        width: 185px;
+        width: 250px;
         margin-left: 8px;
         padding: 0 6px;
         justify-content: space-around;
+       
+    }
+
+    .quiz_box .timer .time-passed{
+        font-size: 20px;
     }
 
     .option_list .option {
