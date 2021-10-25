@@ -306,7 +306,12 @@ This will cause the time to actually change in real time when the user selected 
 
 ---
 
+When testing accessibility contrast of the game I made ensured that all scores where above 5, and output of the test are below:
 
+![cont3](docs/testing/contrast3.png)
+![cont1](docs/testing/contrast1.png)
+![cont2](docs/testing/contrast2.png)
+![cont4](docs/testing/contrast4.png)
 
 ##  Browser Compatibility & Responsivness
 ---

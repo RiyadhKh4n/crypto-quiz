@@ -385,6 +385,7 @@ next_btn.onClick = () => {
         displayQuestions();
         next_btn.classList.add("hidden");
     } else {
+        clearInterval(int); //stops watch
         showResult();
     }
 };
