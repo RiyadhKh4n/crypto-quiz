@@ -302,7 +302,6 @@ let questions = [{
     }
 ];
 
-displayQuestions();
 
 /* select all elements for main divs */
 const flipcard = document.querySelector(".maincontainer");
@@ -330,19 +329,45 @@ const MAX_QUESTIONS = 10;
 let initialTime = 0;
 let [milliseconds, seconds, minutes] = [0, 0, 0];
 let int;
+let index = 0;
+let generateQ = {};
+
 
 /** 
  * 
  * This will randomly display the questions to the user
  */
-function displayQuestions(index) {
+function displayQuestions(que_count) {
     const questions_to_user = document.querySelector(".questions"); //store the question in var
     const choices = document.querySelectorAll(".option"); //store the for options in the var choices
 
-    for (let i = 0; i < 10; i++) {
-        let game_question = {};
-        let generateQ = questions[Math.floor(Math.random() * questions.length)];
-        console.log(generateQ);
+    for (let i = 0; i < MAX_QUESTIONS; i++) {
+        generateQ = questions123[Math.floor(Math.random() * questions123.length)];
+    }
+}
+
+function showQuetions(currentQuestion){
+    const questions_to_user = document.getElementById("question"); //store the question in var
+    questions_to_user.innerText = currentQuestion.question;
+    console.log(questions_to_user);
+    // get id for all btns
+    //.inner to all the ans1,2,3,4
+    
+    //creating a new span and div tag for question and option and passing the value using array index
+    /*let que_tag = '<span class="questions">'+ questions[index].question +'</span>';
+    var option_tag = 
+     '<div class="option"><span>'+ questions[index].ans1 +'</span></div>'
+    +'<div class="option"><span>'+ questions[index].ans2 +'</span></div>'
+    +'<div class="option"><span>'+ questions[index].ans3 +'</span></div>'
+    +'<div class="option"><span>'+ questions[index].ans4 +'</span></div>'
+    questions_to_user.innerHTML = que_tag; //adding new span tag inside que_tag
+    option_list.innerText = option_tag; //adding new div tag inside option_tag*/
+    
+    const option = document.querySelectorAll(".option");
+    
+    // set onclick attribute to all available options
+    for(i=0; i < option.length; i++){
+        option[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
 
@@ -351,20 +376,26 @@ exit_btn.onclick = () => {
     flipcard.classList.remove("hidden"); //show flipcard 
 }
 
-start_btn.onclick = () => {
-    flipcard.classList.add("hidden"); //hide flipcard
-    quizBox.classList.remove("hidden"); //remove hidden from quiz
-}
+// start_btn.onclick = () => {
+//     flipcard.classList.add("hidden"); //hide flipcard
+//     quizBox.classList.remove("hidden"); //remove hidden from quiz
+// }
 
 start_btn.addEventListener('click', () => {
     int = setInterval(startTimer, 10);
+    flipcard.classList.add("hidden"); //hide flipcard
+    quizBox.classList.remove("hidden"); //remove hidden from quiz
+    displayQuestions(que_count);
+    showQuetions(generateQ[que_count]);
+    
 });
 
 replay_quiz.onclick = () => {
     resultBox.classList.add("hidden"); //hide results
     quizBox.classList.remove("hidden"); //show flipcard
 
-    displayQuestions();
+    que_count = 0;
+   
 }
 
 replay_quiz.addEventListener('click', () => {
@@ -379,10 +410,9 @@ next_btn.onClick = () => {
     if (que_count < MAX_QUESTIONS) {
         que_count++;
         que_numb++;
-
+        showQuetions(generateQ[que_count]);
         questionCount.innerHTML = `${que_numb}`;
-        document.querySelector(".qs-count").innerHTML = (que_numb);
-        displayQuestions();
+        document.querySelector(".qs-count").innerText = (que_numb);
         next_btn.classList.add("hidden");
     } else {
         clearInterval(int); //stops watch
@@ -431,3 +461,4 @@ function findCorrect(answer) {
 function showResult() {
 
 }
+

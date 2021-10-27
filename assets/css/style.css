@@ -18,10 +18,6 @@ h2 {
     font-family: 'Odibee';
 }
 
-.hidden {
-    display: none !important;
-}
-
 /* Flip Card */
 
 .maincontainer {
@@ -99,7 +95,7 @@ h2 {
     color: #006E91;
     padding-top: 1em;
     font-family: 'Odibee';
-    font-size: 1.4em;
+    font-size: 2em;
 }
 
 .info-list {
@@ -179,7 +175,7 @@ h2 {
 /* Quiz Box */
 .quiz_box {
     box-shadow: 10px 10px rgba(0, 0, 0, .5);
-    width: 300px;
+    width: 90%;
     background: #fff;
     border-radius: 5px;
     pointer-events: none;
@@ -222,8 +218,8 @@ h2 {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 200px;
+    justify-content: space-evenly;
+    width: 65%;
     font-weight: bold;
 }
 
@@ -465,7 +461,6 @@ td {
 
 .clear:hover {
     background-color: #5D3FD3;
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -488,7 +483,7 @@ td {
     }
 
     .info-title {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .info-list {
@@ -502,7 +497,7 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 
     .back-card-button {
@@ -583,4 +578,8 @@ td {
     }
 
 
+}
+
+.hidden {
+    display: none;
 }

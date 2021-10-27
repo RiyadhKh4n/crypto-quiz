@@ -15,7 +15,7 @@
 <body>
     <main>
         <!-- Start Quiz Div -->
-        <div class="maincontainer ">
+        <div class="maincontainer  ">
             <div class="thecard">
                 <div class="thefront">
                     <h1 class="game-title">Welcome To The Crypto Quiz</h1>
@@ -50,19 +50,19 @@
                 <div class="title">Crypto Quiz</div>
                 <div class="timer">
                     <div class="time-passed">Time Passed: </div>
-                    <div class="timer-sec">00:00:000</div>
+                    <div class="timer-sec">00:00:00</div>
                 </div>
             </header>
 
             <section class="question-section">
                 <div class="que_text">
-                    <span class="questions"></span>
+                    <span id="question" class="questions"></span>
                 </div>
                 <div class="option_list">
-                    <button class="option"></button>
-                    <button class="option"></button>
-                    <button class="option"></button>
-                    <button class="option"></button>
+                    <button id="ans1" class="option"></button>
+                    <button id="ans2"  class="option"></button>
+                    <button id="ans3" class="option"></button>
+                    <button id="ans4"  class="option"></button> 
                 </div>
             </section>
 
@@ -135,8 +135,8 @@
 
 
         <script src="https://kit.fontawesome.com/164cadf278.js" crossorigin="anonymous"></script>
-        <script src="assets/js/script.js"></script>
         <script src="assets/js/questions.js"></script>
+        <script src="assets/js/script.js"></script>
     </main>
 </body>
 
