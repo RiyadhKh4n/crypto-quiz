@@ -1,5 +1,7 @@
+/* jshint esversion: 8 */
+
 // creating an array and passing the number, questions, options, and answers
-let questions123 = [{
+let questions = [{
 
     question: "How much has Bitcoin's value grown since it started?",
     answer: "1000%",

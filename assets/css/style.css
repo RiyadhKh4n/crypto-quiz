@@ -233,6 +233,10 @@ h2 {
     margin: 20px;
 }
 
+#question{
+    font-family: Odibee Sans;
+}
+
 .question-section .que_text .questions {
     font-size: 1.5em;
     font-weight: 600;
