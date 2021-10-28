@@ -28,7 +28,7 @@ let questions = [{
     ans1: "The U.S Government",
     ans2: "A group of hackers",
     ans3: "Steve Jobs",
-    ans4: "Riyadh Khan"
+    ans4: "Satoshi Nakamoto"
   },
   {
     question: "What is a Private Key?",

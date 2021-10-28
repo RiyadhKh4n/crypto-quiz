@@ -81,7 +81,7 @@ replay_quiz.addEventListener('click', () => {
 
     que_count = 0;
     generateQuestions();
-    showQuestions(generateQ[que_count]);
+    showQuestions(generateQ);
 });
 
 //The Clear Board Button
