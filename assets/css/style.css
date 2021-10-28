@@ -273,14 +273,15 @@ h2 {
     transition: all 0.3s ease;
 }
 
+.option:hover{
+    background: red;
+    color: orange;
+}
+
 section .option_list .option:last-child {
     margin-bottom: 0px;
 }
 
-.option:hover {
-    background: red;
-    color: black;
-}
 
 /*Correct and Incorrect Answers*/
 
@@ -341,13 +342,18 @@ footer #next-btn {
     pointer-events: none;
     transform: scale(0.95);
     transition: all 0.3s ease;
+}  
+
+#next-btn{
+    background: green;
+    color: red;
 }
 
-#next-btn:hover {
-    background: #CF9FFF;
-    border: 2px solid #006E91;
+footer button.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
 }
-
 /* Results PopUp*/
 
 .result_box {

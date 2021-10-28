@@ -10,7 +10,7 @@ Crypto Quiz is a Javascript web application that is aimed at anyone who wishes t
 IMAGE FROM AMIRESPONSIVE HERE
 ---
 
-# User Experience (UX) ~
+# User Experience (UX) 
 
 * ## Vision
    Crypto Quiz is a game which aims to test your knowledge about the world of cryptocurrencies and to engage people who want to learn and get into the space, whether you are a complete beginner or want to expand what you already know. This game will take you through the core concepts of cryptocurrencies and and test everything you have learnt. As someone who is invested in crypto and really believes in the technology behind it, I would have loved to have an interactive game where I could have tested my knowledge so I am doing just that and creating it myself. I want this game to be inclusive and accessible for everyone, I want it to be engaging and to encourage the you into getting involved in the space.
@@ -41,7 +41,7 @@ IMAGE FROM AMIRESPONSIVE HERE
        
        b. As a Frequent Visitor, I want to see if I can beat my old score.
 
-* ## Design ~
+* ## Design 
 
     * Colour Scheme:
 
@@ -63,11 +63,11 @@ IMAGE FROM AMIRESPONSIVE HERE
     
         I decided to use the [Font Awesome](https://fontawesome.com/start) icons. The icons that I chose fit in well with the overall theme of cryptocurrencies. The icons are styled in accordance with my website, with the same colors and font size.
 
-* ## Scope ~
+* ## Scope 
 
     * When creating Crypto Quiz I will take a waterfall approach when developing. That is, creating sections of the website at a time and ensuring they work as intended before going onto the next section. I will be able to break up development by choosing small elements to work on daily, ensuring the website can be built and published in a timely fashion. As this porject incorporates JavaScript a large majoirty of my time will be spend developing and testing the logic behind the game as opposed to the aesthetics of the game as it will have a fairly simple design. 
 
-* ## Structure ~
+* ## Structure 
 
     * I have chosen to create the game with a single html page which will have multiple sections which the user will see when playing the game, once they move onto the next part of the game the prvious sections will be hidden from view and the new section will be displayed to them. The game will not have a navigation bar at the top as I want the user to follow a set path when navigating the wesbite.
 
@@ -95,7 +95,7 @@ IMAGE FROM AMIRESPONSIVE HERE
     ![Results](docs/wireframe/wireframe4.png)
 
 
-# Features ~
+# Features 
 
 Here describes the main features of the website and what the user can expect when viewing ~
 
@@ -135,7 +135,7 @@ Here describes the main features of the website and what the user can expect whe
 
 ## Features Left to Implement:
 
-# Technologies ~
+# Technologies 
 
 ## Languages Used
 
@@ -176,7 +176,7 @@ Here describes the main features of the website and what the user can expect whe
     * It allowed me to write your CSS rules without vendor prefixes, it takes care of doing that based on current browser popularity and property support.
 
 
-# Testing ~
+# Testing 
 
 ## Initial Testing
 
@@ -365,7 +365,7 @@ Crypto Quiz when being viewed at mobile small (320px):
    
 ## Bugs
 
-# Deployment ~
+# Deployment 
 
 ## GitHub Pages
 
@@ -413,7 +413,7 @@ $ git clone https://github.com/RiyadhKh4n/crypto-quiz
 > Unpacking objects: 100% (10/10), done.
 ```
 
-# Credits ~
+# Credits 
 
 ## Content:
 * All information on the website was taken from different souces as well as a large marjority being my own - Links to all sources are below:

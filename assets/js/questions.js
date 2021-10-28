@@ -3,6 +3,7 @@
 // creating an array and passing the number, questions, options, and answers
 let questions = [{
 
+    questionID: 1,
     question: "How much has Bitcoin's value grown since it started?",
     answer: "1000%",
 
@@ -12,6 +13,7 @@ let questions = [{
     ans4: "850%"
   },
   {
+    questionID: 2,
     question: "What is a smart contract?",
     answer: "Programs stored on a blockchain that run when predetermined conditions are met",
 
@@ -22,6 +24,7 @@ let questions = [{
 
   },
   {
+    questionID: 3,
     question: "Who invented Bitcoin?",
     answer: "Satoshi Nakamoto",
 
@@ -31,6 +34,7 @@ let questions = [{
     ans4: "Satoshi Nakamoto"
   },
   {
+    questionID: 4,
     question: "What is a Private Key?",
     answer: "The ability to access the Blockchain",
 
@@ -41,6 +45,7 @@ let questions = [{
 
   },
   {
+    questionID: 5,
     question: "What is a Bitcoin Block?",
     answer: "A Bitcoin Transaction",
 
@@ -51,6 +56,7 @@ let questions = [{
 
   },
   {
+    questionID: 6,
     question: "What is cold storage?",
     answer: "Storing your Private key offline",
 
@@ -61,6 +67,7 @@ let questions = [{
 
   },
   {
+    questionID: 7,
     question: "What is a Blockchain?",
     answer: "A set of blocks containing transactions",
 
@@ -72,6 +79,7 @@ let questions = [{
 
   },
   {
+    questionID: 8,
     question: "How many Bitcoins will ever be mined?",
     answer: "21 Million",
 
@@ -83,6 +91,7 @@ let questions = [{
 
   },
   {
+    questionID: 9,
     question: "What is Proof of Work?",
     answer: "The competition between miners to find the correct hash",
 
@@ -93,6 +102,7 @@ let questions = [{
 
   },
   {
+    questionID: 10,
     question: "What is an advantage of Bitcoin?",
     answer: "The total money supply is pre-determined",
 
@@ -103,6 +113,7 @@ let questions = [{
 
   },
   {
+    questionID: 11,
     question: "What is the second largest cryptocurrency?",
     answer: "Ethereum",
 
@@ -113,6 +124,7 @@ let questions = [{
 
   },
   {
+    questionID: 12,
     question: "What is Proof of Stake?",
     answer: "A type of consensus mechanism used to validate cryptocurrency transactions",
 
@@ -123,6 +135,7 @@ let questions = [{
 
   },
   {
+    questionID: 13,
     question: "How long is a Bitcoin Block?",
     answer: "10 Minutes",
 
@@ -133,6 +146,7 @@ let questions = [{
 
   },
   {
+    questionID: 14,
     question: "When was the Bitcoin software first released?",
     answer: "2012",
 
@@ -143,6 +157,7 @@ let questions = [{
 
   },
   {
+    questionID: 15,
     question: "What is Ether’s connection to Ethereum?",
     answer: "Ether is a cryptocurrency, Ethereum is a blockchain platform",
 
@@ -153,6 +168,7 @@ let questions = [{
 
   },
   {
+    questionID: 16,
     question: "Which of these cryptocurrencies is the oldest?",
     answer: "Dogecoin",
 
@@ -163,6 +179,7 @@ let questions = [{
 
   },
   {
+    questionID: 17,
     question: "What is a CBDC?",
     answer: "A digital currency issued by a central bank",
 
@@ -173,6 +190,7 @@ let questions = [{
 
   },
   {
+    questionID: 18,
     question: "What is staking?",
     answer: "Pledging your tokens for use to help verify transactions",
 
@@ -183,6 +201,7 @@ let questions = [{
 
   },
   {
+    questionID: 19,
     question: "What is a rug pull?",
     answer: "The crypto equivalent of a pump and dump",
 
@@ -193,6 +212,7 @@ let questions = [{
 
   },
   {
+    questionID: 20,
     question: "Why is Cardano often described as a green coin?",
     answer: "The method for verifying transactions is different and less energy intensive than for Bitcoin",
 
@@ -203,6 +223,7 @@ let questions = [{
 
   },
   {
+    questionID: 21,
     question: "What are Tokenomics?",
     answer: "The science of the tokens economy",
 
@@ -213,6 +234,7 @@ let questions = [{
 
   },
   {
+    questionID: 22,
     question: "What is Total Supply?",
     answer: "The number of tokens that exist at present, excluding any that might have gotten burned",
 
@@ -223,6 +245,7 @@ let questions = [{
 
   },
   {
+    questionID: 23,
     question: "What is a stable coin?",
     answer: "Cryptocurrencies where the price is designed to be pegged to a cryptocurrency",
 
@@ -233,6 +256,7 @@ let questions = [{
 
   },
   {
+    questionID: 24,
     question: "Who should have access to your private key?",
     answer: "You and only you",
 
@@ -243,6 +267,7 @@ let questions = [{
 
   },
   {
+    questionID: 25,
     question: "What is a DApp?",
     answer: "A decentralised app",
 
@@ -253,6 +278,7 @@ let questions = [{
 
   },
   {
+    questionID: 26,
     question: "What are the sidechains built for scalability on top of other blockchain called?",
     answer: "Layer 2's",
 
@@ -263,6 +289,7 @@ let questions = [{
 
   },
   {
+    questionID: 27,
     question: "What is a Decentralised Exchange?",
     answer: "A type of cryptocurrency exchange which allows for direct peer-to-peer cryptocurrency transactions",
 
@@ -273,6 +300,7 @@ let questions = [{
 
   },
   {
+    questionID: 28,
     question: "What is a Centralised Exchange?",
     answer: "A business that allows customers to trade cryptocurrencies or digital currencies for other assets",
 
@@ -283,6 +311,7 @@ let questions = [{
 
   },
   {
+    questionID: 29,
     question: "What is the advantage of using a Decentralised Exchange?",
     answer: "You have access to loads more tokens and you don't have to do KYC",
 
@@ -293,6 +322,7 @@ let questions = [{
 
   },
   {
+    questionID: 30,
     question: "What is the disadvantage of using a Decentralised Exchange?",
     answer: "",
 

@@ -23,13 +23,14 @@ let [milliseconds, seconds, minutes] = [0, 0, 0];
 let int;
 let UserTime;
 
-let que_count = 0; //internal value used to iterating
+let que_count = 1; //internal value used to iterating
 let que_numb = 1; //the value the user will see
 const MAX_QUESTIONS = 10;
 
 let UserScore = 0;
 
-let generateQ = [];
+let generateQ = new Object;
+let duplicate = [];
 
 
 // generateQuestions();
@@ -41,9 +42,9 @@ let generateQ = [];
 function generateQuestions() {
     for (let i = 0; i < MAX_QUESTIONS; i++) {
         generateQ = questions[Math.floor(Math.random() * questions.length)];
-        console.log(generateQ);
-    }
+    }    
 }
+
 
 function showQuestions(currentQuestion){
     let questions_to_user = document.getElementById("question"); 
@@ -61,6 +62,14 @@ function showQuestions(currentQuestion){
     }else{
         que_count++;
     } 
+
+}
+
+/**
+ * Will remove any duplicate questions from the randomly selected questions in generateQuestions
+ */
+function removeDuplicates(){
+
 }
 
 //The Continue Button
