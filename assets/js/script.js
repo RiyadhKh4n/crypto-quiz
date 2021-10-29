@@ -24,16 +24,45 @@ let int;
 let UserTime;
 
 let que_count = 1; //internal value used to iterating
-let que_numb = 1; //the value the user will see
+let question_numb = 1; //the value the user will see
 const MAX_QUESTIONS = 10;
 
 let UserScore = 0;
 
 let generateQ = new Object;
-let duplicate = [];
+let gameQuestions = [];
+let currentQuestion = {};
 
 
-// generateQuestions();
+
+/**
+ * This event listener listens for the DOM to load, once it does it calls the function to initialise variables
+ * the function that starts the game 
+ */
+document.addEventListener('DOMContentLoaded', function () {
+    initialseVariables();
+    startGame();
+});
+
+/** This function sets all the variables to the condition they should be in to start the game, this function should be called
+ * before the game either begins or restarts
+ */
+function initialseVariables() {
+    [milliseconds, seconds, minutes] = [0, 0, 0];
+    int;
+    UserTime;
+    UserScore = 0;
+    que_count = 1; //internal value used to iterating
+    question_numb = 1; //the value the user will see
+}
+
+/**
+ * This function calls the generateQuestion function when the DOM loads
+ */
+function startGame() {
+    generateQuestions();
+
+}
 
 /** 
  * 
@@ -42,75 +71,91 @@ let duplicate = [];
 function generateQuestions() {
     for (let i = 0; i < MAX_QUESTIONS; i++) {
         generateQ = questions[Math.floor(Math.random() * questions.length)];
-    }    
+        console.log(generateQ);
+    }
 }
 
-
-function showQuestions(currentQuestion){
-    let questions_to_user = document.getElementById("question"); 
+function showQuestions(currentQuestion) {
+    let questions_to_user = document.getElementById("question");
     questions_to_user.innerHTML = currentQuestion.question;
-   
+
 
     //Get relevant ids for all answer btns
     document.getElementById("ans1").innerText = currentQuestion.ans1;
     document.getElementById("ans2").innerText = currentQuestion.ans2;
     document.getElementById("ans3").innerText = currentQuestion.ans3;
-    document.getElementById("ans4").innerText = currentQuestion.ans4; 
-    
-    if(que_count > 9){
+    document.getElementById("ans4").innerText = currentQuestion.ans4;
+
+    if (que_count > 9) {
         que_count = 0;
-    }else{
+    } else {
         que_count++;
-    } 
+    }
 
 }
 
 /**
  * Will remove any duplicate questions from the randomly selected questions in generateQuestions
  */
-function removeDuplicates(){
+function removeDuplicates() {
 
 }
 
-//The Continue Button
-start_btn.addEventListener('click', () => {
-    flipcard.classList.add("hidden"); 
-    quizBox.classList.remove("hidden"); 
-    int = setInterval(startTimer, 10);
-    generateQuestions();
-    showQuestions(generateQ);
-    
-});
-
-//The Replay Button
-replay_quiz.addEventListener('click', () => {
-    int = setInterval(startTimer, 10);
+/**
+ * Function which is called when the user wants to replay the quiz
+ */
+function resetGame(){
     resultBox.classList.add("hidden"); //hide results
     quizBox.classList.remove("hidden"); //show flipcard
 
-    que_count = 0;
-    generateQuestions();
+    int = setInterval(startTimer, 10);
+    initialseVariables();
+    startGame();
+    showQuestions(generateQ);
+}
+
+/**
+ * Function which is called when the user Quits the quiz
+ */
+function exitGame(){
+    resultBox.classList.add("hidden"); //hide results
+    flipcard.classList.remove("hidden"); //show flipcard 
+
+    initialseVariables();
+    startGame();
+    showQuestions(generateQ);
+}
+
+//The Continue Button
+start_btn.addEventListener("click", function() {
+    flipcard.classList.add("hidden");
+    quizBox.classList.remove("hidden");
+    int = setInterval(startTimer, 10);
     showQuestions(generateQ);
 });
 
+//The Replay Button
+replay_quiz.addEventListener("click", function() {
+    resetGame()
+});
+
 //The Clear Board Button
-clearBoard_button.addEventListener('click', () => {
+clearBoard_button.addEventListener("click", function() {
     // access local storage and clear <td></td>
     localStorage.clear();
 });
 
 // The Quit Quiz Button
-exit_btn.addEventListener('click',() => {
-    resultBox.classList.add("hidden"); //hide results
-    flipcard.classList.remove("hidden"); //show flipcard 
+exit_btn.addEventListener("click", function() {
+   exitGame();
 });
 
-next_btn.onClick = () => {
+next_btn.addEventListener("click", function() {
     if (que_count < MAX_QUESTIONS) {
         que_count++;
-        que_numb++;
+        question_numb++;
         showQuestions(generateQ[que_count]);
-        
+
         //need to increment question count for user every time its clicked
         next_btn.classList.add("hidden");
     } else {
@@ -118,7 +163,7 @@ next_btn.onClick = () => {
         UserTime = int; //saves time?
         showResult();
     }
-};
+});
 
 /**
  * 

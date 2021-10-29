@@ -187,6 +187,7 @@ h2 {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  
 }
 
 .quiz_box header {
@@ -253,35 +254,43 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background: #CF9FFF;
     border: 1px solid #263a44;
     border-radius: 5px;
     color: white;
-
     font-weight: bold;
     font-size: 17px;
-
+    padding: 10px 10px;
     margin-bottom: 15px;
     margin-right: 50px;
-
-    padding: 10px 10px;
-
     width: 100%;
-
     cursor: pointer;
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 10000 !important;
 }
 
 .option:hover{
-    background: red;
-    color: orange;
+    background: red !important;
+    color: orange !important;
+ }
+
+/* #ans1:hover{
+    background-color: red;
 }
+#ans2:hover{
+    background-color: red;
+}
+#ans3:hover{
+    background-color: red;
+}
+#ans4:hover{
+    background-color: red;
+} */
 
 section .option_list .option:last-child {
     margin-bottom: 0px;
 }
-
 
 /*Correct and Incorrect Answers*/
 
@@ -344,7 +353,7 @@ footer #next-btn {
     transition: all 0.3s ease;
 }  
 
-#next-btn{
+#next-btn:hover{
     background: green;
     color: red;
 }
