@@ -152,7 +152,7 @@ exit_btn.addEventListener("click", function () {
 
 next_btn.addEventListener("click", function () {
     if (que_count < MAX_QUESTIONS) {
-        console.log("akjhfdasdhakjs");
+        console.log("Next Button is working");
         que_count++;
         question_numb++;
         showQuestions(generateQ[que_count]);

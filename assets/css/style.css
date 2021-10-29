@@ -272,8 +272,7 @@ body {
 }
 
 button[id^=ans].option:hover{
-    color: red;
-    background: green;
+    background: #263a44;
 }
 
 /* #ans1:hover{
@@ -355,8 +354,8 @@ footer #next-btn {
 }  
 
 #next-btn:hover{
-    background: green;
-    color: red;
+    background: #5D3FD3;
+    border-color: #bdbdbd;
 }
 
 footer button.show{
