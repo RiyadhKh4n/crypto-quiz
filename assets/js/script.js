@@ -104,7 +104,7 @@ function removeDuplicates() {
 /**
  * Function which is called when the user wants to replay the quiz
  */
-function resetGame(){
+function resetGame() {
     resultBox.classList.add("hidden"); //hide results
     quizBox.classList.remove("hidden"); //show flipcard
 
@@ -117,7 +117,7 @@ function resetGame(){
 /**
  * Function which is called when the user Quits the quiz
  */
-function exitGame(){
+function exitGame() {
     resultBox.classList.add("hidden"); //hide results
     flipcard.classList.remove("hidden"); //show flipcard 
 
@@ -127,7 +127,7 @@ function exitGame(){
 }
 
 //The Continue Button
-start_btn.addEventListener("click", function() {
+start_btn.addEventListener("click", function () {
     flipcard.classList.add("hidden");
     quizBox.classList.remove("hidden");
     int = setInterval(startTimer, 10);
@@ -135,29 +135,30 @@ start_btn.addEventListener("click", function() {
 });
 
 //The Replay Button
-replay_quiz.addEventListener("click", function() {
+replay_quiz.addEventListener("click", function () {
     resetGame()
 });
 
 //The Clear Board Button
-clearBoard_button.addEventListener("click", function() {
+clearBoard_button.addEventListener("click", function () {
     // access local storage and clear <td></td>
     localStorage.clear();
 });
 
 // The Quit Quiz Button
-exit_btn.addEventListener("click", function() {
-   exitGame();
+exit_btn.addEventListener("click", function () {
+    exitGame();
 });
 
-next_btn.addEventListener("click", function() {
+next_btn.addEventListener("click", function () {
     if (que_count < MAX_QUESTIONS) {
+        console.log("akjhfdasdhakjs");
         que_count++;
         question_numb++;
         showQuestions(generateQ[que_count]);
 
         //need to increment question count for user every time its clicked
-        next_btn.classList.add("hidden");
+        //hide the #next-btn from the user
     } else {
         clearInterval(int); //stops watch
         UserTime = int; //saves time?

@@ -1,5 +1,6 @@
 /* import google font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
 
 * {
     margin: 0;
@@ -13,10 +14,6 @@ body {
     margin: 0;
 }
 
-h1,
-h2 {
-    font-family: 'Odibee';
-}
 
 /* Flip Card */
 
@@ -94,7 +91,7 @@ h2 {
     font-weight: bold;
     color: #006E91;
     padding-top: 1em;
-    font-family: 'Odibee';
+    font-family: "Odibee Sans";
     font-size: 2em;
 }
 
@@ -178,7 +175,7 @@ h2 {
     width: 90%;
     background: #fff;
     border-radius: 5px;
-    pointer-events: none;
+   
     transition: all 0.3s ease;
 
     position: absolute;
@@ -203,10 +200,12 @@ h2 {
 }
 
 .quiz_box header .title {
-    font-size: 20px;
+    font-size: 26px;
+    letter-spacing: 2px;
     font-weight: 600;
     color: #006E91;
     text-align: center;
+    font-family: 'Odibee Sans', cursive;
 }
 
 .quiz_box header .timer {
@@ -235,7 +234,9 @@ h2 {
 }
 
 #question{
-    font-family: Odibee Sans;
+    font-family: "Odibee Sans";
+    font-size: 25px;
+    letter-spacing: 2px;
 }
 
 .question-section .que_text .questions {
@@ -270,10 +271,10 @@ h2 {
     z-index: 10000 !important;
 }
 
-.option:hover{
-    background: red !important;
-    color: orange !important;
- }
+button[id^=ans].option:hover{
+    color: red;
+    background: green;
+}
 
 /* #ans1:hover{
     background-color: red;
@@ -348,7 +349,7 @@ footer #next-btn {
     border: 2px solid #CF9FFF;
     letter-spacing: 1px;
     line-height: 10px;
-    pointer-events: none;
+   
     transform: scale(0.95);
     transition: all 0.3s ease;
 }  
@@ -360,7 +361,7 @@ footer #next-btn {
 
 footer button.show{
     opacity: 1;
-    pointer-events: auto;
+   
     transform: scale(1);
 }
 /* Results PopUp*/
@@ -393,7 +394,7 @@ footer button.show{
 .congrat-text {
     margin: 0 10px 10px;
     font-size: 25px;
-    font-family: 'Roboto Condensed';
+    font-family: "Roboto Condensed";
     color: #CF9FFF;
     font-weight: bold;
 
@@ -491,7 +492,7 @@ td {
     .game-title {
         font-weight: bold;
         color: #006E91;
-        font-family: 'Odibee';
+        font-family: "Odibee Sans";
         font-size: 3em;
     }
 
