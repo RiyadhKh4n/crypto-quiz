@@ -313,6 +313,43 @@ When testing accessibility contrast of the game I made ensured that all scores w
 ![cont2](docs/testing/contrast2.png)
 ![cont4](docs/testing/contrast4.png)
 
+When assessing the accessibility score of the answer buttons they score under 5 due to the colour contrasting so I changed the background of the buttons in order to improve the score.
+
+![cont5](docs/tetsing/failedscore.png)]
+
+By changing the background-color to #006E91 I was able to get the score to 5.77 which meant it passed the accessibility test
+
+![cont6](docs/testing/changedfail.png)
+
+I still wanted to have the buttons to have a :hover affect with the background-color being #CF9FFF so in order to do this I also changed the font color to be #263A44 allowing me to get an accessibility score of 5.67
+
+![cont7](docs/testing/hoverbtn.png)
+
+```
+button[id^=ans].option:hover{
+   background: #CF9FFF;
+   color: #263a44;
+}
+```
+
+I had to change the colour of the timer text as this was giving be a score below 3, therefore I changed the font colour to #263a44 in order to get my score back above 5.
+
+![cont8](docs/testing/timepassed.png)
+
+When checking the results page several elements failed the accessibility test so I played with the colours of the background and font in order to get the best score possible
+
+![cont9](docs/testing/resultsfailed.png)
+![cont10](docs/testing/congratsfixed.png)
+![cont11](docs/testing/cont111.png)
+![cont12](docs/testing/title.png)
+![cont13](docs/testing/btnres.png)
+![cont14](docs/testing/btnresult.png)
+![cont15](docs/testing/clearbtn.png)
+![cont16](docs/testing/newclearbtn.png)
+
+
+
+
 ##  Browser Compatibility & Responsivness
 ---
 
