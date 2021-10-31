@@ -85,7 +85,7 @@ body {
     text-align: center;
     color: #006E91;
     text-shadow: 1.3px 1.3px black;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .info-title {
@@ -94,7 +94,7 @@ body {
     padding-top: 1em;
     font-family: "Odibee Sans";
     letter-spacing: 2px;
-  
+    font-size: 1.5em;
 }
 
 .info-list {
@@ -276,19 +276,6 @@ button[id^=ans].option:hover{
    color: #263a44;
 }
 
-/* #ans1:hover{
-    background-color: red;
-}
-#ans2:hover{
-    background-color: red;
-}
-#ans3:hover{
-    background-color: red;
-}
-#ans4:hover{
-    background-color: red;
-} */
-
 section .option_list .option:last-child {
     margin-bottom: 0px;
 }
@@ -307,6 +294,9 @@ section .option_list .option.incorrect {
     border: 1px solid #f5c6cb;
 }
 
+section .option_list .option.disabled{
+    pointer-events: none;
+}
 /* Quiz-Box Footer*/
 
 footer {
@@ -361,9 +351,9 @@ footer #next-btn {
 
 footer button.show{
     opacity: 1;
-   
     transform: scale(1);
 }
+
 /* Results PopUp*/
 
 .result_box {
@@ -498,7 +488,6 @@ td {
     .game-title {
         font-weight: bold;
         color: #006E91;
-        font-family: "Odibee Sans";
         font-size: 3em;
     }
 
@@ -509,7 +498,7 @@ td {
     }
 
     .info-title {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .info-list {

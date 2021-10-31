@@ -31,7 +31,7 @@ let UserScore = 0;
 
 let generateQ = new Object;
 let gameQuestions = [];
-let currentQuestion = {};
+let index = {};
 
 
 
@@ -61,7 +61,6 @@ function initialseVariables() {
  */
 function startGame() {
     generateQuestions();
-
 }
 
 /** 
@@ -75,23 +74,15 @@ function generateQuestions() {
     }
 }
 
-function showQuestions(currentQuestion) {
+function showQuestions(index) {
     let questions_to_user = document.getElementById("question");
-    questions_to_user.innerHTML = currentQuestion.question;
-
+    questions_to_user.innerHTML = index.question;
 
     //Get relevant ids for all answer btns
-    document.getElementById("ans1").innerText = currentQuestion.ans1;
-    document.getElementById("ans2").innerText = currentQuestion.ans2;
-    document.getElementById("ans3").innerText = currentQuestion.ans3;
-    document.getElementById("ans4").innerText = currentQuestion.ans4;
-
-    if (que_count > 9) {
-        que_count = 0;
-    } else {
-        que_count++;
-    }
-
+    document.getElementById("ans1").innerText = index.ans1;
+    document.getElementById("ans2").innerText = index.ans2;
+    document.getElementById("ans3").innerText = index.ans3;
+    document.getElementById("ans4").innerText = index.ans4;
 }
 
 /**
@@ -155,7 +146,7 @@ next_btn.addEventListener("click", function () {
         console.log("Next Button is working");
         que_count++;
         question_numb++;
-        showQuestions(generateQ[que_count]);
+        showQuestions(inde);
 
         //need to increment question count for user every time its clicked
         //hide the #next-btn from the user
@@ -195,8 +186,25 @@ function startTimer() {
  * 
  * This will check if the users answer is the correct one
  */
-function findCorrect(answer) {
+function optionSelected(answer){
+    let userAns = answer.textContent; //getting user selected option
+    let correcAns = generateQ[que_count].answer; //getting correct answer from array
 
+    const options = document.querySelectorAll(".option_list");
+    const allOptions = options.children.length; //getting all option items
+    
+    if(userAns == correcAns){ //if user selected option is equal to array's correct answer
+        UserScore += 1; //upgrading score value with 1
+        answer.classList.add("correct"); //adding green color to correct selected option
+    }else{
+        answer.classList.add("incorrect"); //adding red color to correct selected option
+        correcAns.classList.add(".correct");
+    }
+
+    for(i=0; i < allOptions; i++){
+        options.children[i].classList.add("disabled"); //once user select an option then disabled all options
+    }
+    next_btn.classList.add("show"); //show the next button if user selected any option
 }
 
 /**
