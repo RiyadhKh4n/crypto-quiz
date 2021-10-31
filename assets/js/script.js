@@ -8,7 +8,7 @@ const resultBox = document.querySelector(".result_box");
 /* select the required buttons */
 const start_btn = document.getElementById("continue");
 const next_btn = document.getElementById("next-btn");
-const option_list = document.querySelectorAll(".option");
+// const option_list = document.querySelectorAll(".option");
 
 const clearBoard_button = document.getElementById("clear-board");
 const replay_quiz = document.getElementById("replay");
@@ -23,15 +23,15 @@ let [milliseconds, seconds, minutes] = [0, 0, 0];
 let int;
 let UserTime;
 
-let que_count = 1; //internal value used to iterating
-let question_numb = 1; //the value the user will see
-const MAX_QUESTIONS = 10;
+// let que_count = 0; //internal value used to iterating
+// let question_numb = 1; //the value the user will see
+const MAX_QUESTIONS = 9;
 
 let UserScore = 0;
 
 let generateQ = new Object;
 let gameQuestions = [];
-let index = {};
+let questionBank = {};
 
 
 
@@ -42,6 +42,7 @@ let index = {};
 document.addEventListener('DOMContentLoaded', function () {
     initialseVariables();
     startGame();
+    
 });
 
 /** This function sets all the variables to the condition they should be in to start the game, this function should be called
@@ -52,7 +53,7 @@ function initialseVariables() {
     int;
     UserTime;
     UserScore = 0;
-    que_count = 1; //internal value used to iterating
+    que_count = 0; //internal value used to iterating
     question_numb = 1; //the value the user will see
 }
 
@@ -74,15 +75,23 @@ function generateQuestions() {
     }
 }
 
-function showQuestions(index) {
+function showQuestions(questionBank) {
     let questions_to_user = document.getElementById("question");
-    questions_to_user.innerHTML = index.question;
+    questions_to_user.innerHTML = questionBank.question;
 
     //Get relevant ids for all answer btns
-    document.getElementById("ans1").innerText = index.ans1;
-    document.getElementById("ans2").innerText = index.ans2;
-    document.getElementById("ans3").innerText = index.ans3;
-    document.getElementById("ans4").innerText = index.ans4;
+    document.getElementById("ans1").innerText = questionBank.ans1;
+    document.getElementById("ans2").innerText = questionBank.ans2;
+    document.getElementById("ans3").innerText = questionBank.ans3;
+    document.getElementById("ans4").innerText = questionBank.ans4;
+
+    // const option = option_list123.querySelectorAll(".option_list");
+
+    // set onclick attribute to all available options
+    const option_list = document.querySelectorAll(".option");
+    for(i=0; i < option_list.length; i++){
+        option_list[i].setAttribute("onclick", "optionSelected(this)");
+    }
 }
 
 /**
@@ -98,6 +107,7 @@ function removeDuplicates() {
 function resetGame() {
     resultBox.classList.add("hidden"); //hide results
     quizBox.classList.remove("hidden"); //show flipcard
+    next_btn.classList.remove("show"); //hide the next button
 
     int = setInterval(startTimer, 10);
     initialseVariables();
@@ -143,16 +153,14 @@ exit_btn.addEventListener("click", function () {
 
 next_btn.addEventListener("click", function () {
     if (que_count < MAX_QUESTIONS) {
-        console.log("Next Button is working");
+        console.log("Next Button is working question" + que_count);
         que_count++;
         question_numb++;
-        showQuestions(inde);
-
-        //need to increment question count for user every time its clicked
-        //hide the #next-btn from the user
+        showQuestions(questions[que_count]); //works when questions is passed
+        questionCount.innerText = question_numb;
     } else {
         clearInterval(int); //stops watch
-        UserTime = int; //saves time?
+        UserTime = timerRef; //saves time?
         showResult();
     }
 });
@@ -188,28 +196,36 @@ function startTimer() {
  */
 function optionSelected(answer){
     let userAns = answer.textContent; //getting user selected option
-    let correcAns = generateQ[que_count].answer; //getting correct answer from array
+    let correcAns = questions[que_count].answer; //getting correct answer from array
 
     const options = document.querySelectorAll(".option_list");
-    const allOptions = options.children.length; //getting all option items
+    // const allOptions = options.children.length; //getting all option items
     
     if(userAns == correcAns){ //if user selected option is equal to array's correct answer
         UserScore += 1; //upgrading score value with 1
         answer.classList.add("correct"); //adding green color to correct selected option
+        next_btn.classList.remove("hide"); //show the next button if user selected any option
+       
     }else{
         answer.classList.add("incorrect"); //adding red color to correct selected option
-        correcAns.classList.add(".correct");
+        correcAns.classList.add("correct");
+        next_btn.classList.remove("hide"); //show the next button if user selected any option
+       
     }
 
     for(i=0; i < allOptions; i++){
         options.children[i].classList.add("disabled"); //once user select an option then disabled all options
     }
-    next_btn.classList.add("show"); //show the next button if user selected any option
+    // next_btn.classList.add("show"); //show the next button if user selected any option
 }
 
 /**
  * Will show the results of the game to the user
  */
-function showResult() {
+ function showResult(){
+    quizBox.classList.remove("activeQuiz"); 
+    resultBox.classList.add("activeResult"); 
 
-}
+    //add user time to table & local storage
+    //add user score to table & local storage
+    }

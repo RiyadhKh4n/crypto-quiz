@@ -87,8 +87,6 @@ let questions = [{
     ans2: "20 Million",
     ans3: "21 Billion",
     ans4: "20 Billion"
-
-
   },
   {
     questionID: 9,
@@ -99,7 +97,6 @@ let questions = [{
     ans2: "The competition between miners to find the correct hash",
     ans3: "A tool used in mining to generate the next transaction",
     ans4: "The competition between miners to not fully disclose transactions"
-
   },
   {
     questionID: 10,
@@ -110,7 +107,6 @@ let questions = [{
     ans2: "Your grandma will be totally ok to use it to buy groceries",
     ans3: "The total money supply is pre-determined",
     ans4: "It's in-built Inflation"
-
   },
   {
     questionID: 11,
@@ -121,7 +117,6 @@ let questions = [{
     ans2: "Cardano",
     ans3: "Ripple",
     ans4: "Dodge"
-
   },
   {
     questionID: 12,
@@ -268,12 +263,12 @@ let questions = [{
   },
   {
     questionID: 25,
-    question: "What is a DApp?",
+    question: "What is a Decentralised Application?",
     answer: "A decentralised app",
 
-    ans1: "A decentralised app",
-    ans2: "A dog breed",
-    ans3: "An Ethereum token",
+    ans1: "An application which runs on a decentralised computing system",
+    ans2: "An application which runs off the use of smart contracts",
+    ans3: "An token which can be used on centralised browesers like Google",
     ans4: "An app that you can only access with crypto"
 
   },

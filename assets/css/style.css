@@ -281,7 +281,6 @@ section .option_list .option:last-child {
 }
 
 /*Correct and Incorrect Answers*/
-
 section .option_list .option.correct {
     color: #155724;
     background: #d4edda;
@@ -298,7 +297,6 @@ section .option_list .option.disabled{
     pointer-events: none;
 }
 /* Quiz-Box Footer*/
-
 footer {
     height: 60px;
     margin-top: 3px;
@@ -308,13 +306,16 @@ footer {
     justify-content: space-between;
 }
 
+.total_que{
+    font-family: "Roboto Condensed";
+}
 footer .total_que span {
     display: flex;
     user-select: none;
     font-size: 18px;
 }
 
-.total_que span p {
+.total_que span span {
     font-weight: bold;
     padding: 0 5px;
 }
@@ -349,9 +350,8 @@ footer #next-btn {
     border-color: #bdbdbd;
 }
 
-footer button.show{
-    opacity: 1;
-    transform: scale(1);
+.hide{
+    display: none;
 }
 
 /* Results PopUp*/
