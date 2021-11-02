@@ -128,7 +128,8 @@ start_btn.addEventListener("click", function () {
     flipcard.classList.add("hidden");
     quizBox.classList.remove("hidden");
     int = setInterval(startTimer, 10);
-    showQuestions(questions);
+    next_btn.classList.add("hidden");
+    showQuestions(questions[que_count]);
 });
 
 //The Replay Button
@@ -149,7 +150,7 @@ exit_btn.addEventListener("click", function () {
 
 next_btn.addEventListener("click", function () {
     if (que_count < MAX_QUESTIONS) {
-        
+        next_btn.classList.add("hidden");
         const options = document.querySelectorAll(".option_list");
         const allOptions = options.length; //getting all option items
     
@@ -204,23 +205,25 @@ function optionSelected(answer){
     let correcAns = questions[que_count].answer; //getting correct answer from array
     console.log("[This is correct answer] " + correcAns);
 
+    const options = document.querySelectorAll(".option_list");
+
     if(userAns == correcAns){ //if user selected option is equal to array's correct answer
-        UserScore += 1; //upgrading score value with 1
-        
+        UserScore += 1; 
         console.log("UserScore: " + UserScore);
+        // userAns[options].classList.add("correct"); 
        
     }else{
         UserScore == UserScore;
         console.log("UserScore: " + UserScore);
     }
 
-    const options = document.querySelectorAll(".option_list");
     const allOptions = options.length; //getting all option items
 
     for(i=0; i < allOptions; i++){
         options[i].classList.add("disabled"); //once user select an option then disabled all options
     }
     // next_btn.classList.add("show"); //show the next button if user selected any option
+    next_btn.classList.remove("hidden");
 }
 
 /**
