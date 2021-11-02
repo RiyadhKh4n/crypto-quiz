@@ -19,8 +19,9 @@ let questions = [{
 
     ans1: "A computer protocol that runs 24/7",
     ans2: "A cloud-based contract stored on a blockchain",
-    ans3: "Artificial intelligence assisted contract",
-    ans4: "Programs stored on a blockchain that run when predetermined conditions are met"
+    ans3: "Programs stored on a blockchain that run when predetermined conditions are met",
+    ans4: "Artificial intelligence assisted contract",
+    
 
   },
   {
@@ -29,9 +30,10 @@ let questions = [{
     answer: "Satoshi Nakamoto",
 
     ans1: "The U.S Government",
-    ans2: "A group of hackers",
-    ans3: "Steve Jobs",
-    ans4: "Satoshi Nakamoto"
+    ans2: "Satoshi Nakamoto",
+    ans3: "A group of hackers",
+    ans4: "Steve Jobs",
+    
   },
   {
     questionID: 4,

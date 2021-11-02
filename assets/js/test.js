@@ -57,8 +57,7 @@ restart_quiz.onclick = ()=>{
     startTimer(timeValue); //calling startTimer function
     startTimerLine(widthValue); //calling startTimerLine function
     timeText.textContent = "Time Left"; //change the text of timeText to Time Left
-    next_btn.classList.remove("show"); //hide the next button
-}
+    
 
 // if quitQuiz button clicked
 quit_quiz.onclick = ()=>{

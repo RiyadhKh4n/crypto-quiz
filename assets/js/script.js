@@ -17,7 +17,6 @@ const exit_btn = document.getElementById("quit");
 let timerRef = document.querySelector('.timer-sec');
 let questionCount = document.getElementById("qs-count");
 
-
 /* Initialsing varibales needed for script */
 let [milliseconds, seconds, minutes] = [0, 0, 0];
 let int;
@@ -33,16 +32,13 @@ let generateQ = new Object;
 let gameQuestions = [];
 let questionBank = {};
 
-
-
 /**
  * This event listener listens for the DOM to load, once it does it calls the function to initialise variables
  * the function that starts the game 
  */
 document.addEventListener('DOMContentLoaded', function () {
     initialseVariables();
-    startGame();
-    
+    startGame(); 
 });
 
 /** This function sets all the variables to the condition they should be in to start the game, this function should be called
@@ -112,7 +108,7 @@ function resetGame() {
     int = setInterval(startTimer, 10);
     initialseVariables();
     startGame();
-    showQuestions(generateQ);
+    showQuestions(questions);
 }
 
 /**
@@ -132,7 +128,7 @@ start_btn.addEventListener("click", function () {
     flipcard.classList.add("hidden");
     quizBox.classList.remove("hidden");
     int = setInterval(startTimer, 10);
-    showQuestions(generateQ);
+    showQuestions(questions);
 });
 
 //The Replay Button
@@ -153,7 +149,15 @@ exit_btn.addEventListener("click", function () {
 
 next_btn.addEventListener("click", function () {
     if (que_count < MAX_QUESTIONS) {
-        console.log("Next Button is working question" + que_count);
+        
+        const options = document.querySelectorAll(".option_list");
+        const allOptions = options.length; //getting all option items
+    
+        for(i=0; i < allOptions; i++){
+            options[i].classList.remove("disabled"); //once user select an option then disabled all options
+        }
+
+        console.log("Question" + que_count);
         que_count++;
         question_numb++;
         showQuestions(questions[que_count]); //works when questions is passed
@@ -196,25 +200,25 @@ function startTimer() {
  */
 function optionSelected(answer){
     let userAns = answer.textContent; //getting user selected option
+    console.log("[This is user answer] " + userAns);
     let correcAns = questions[que_count].answer; //getting correct answer from array
+    console.log("[This is correct answer] " + correcAns);
 
-    const options = document.querySelectorAll(".option_list");
-    // const allOptions = options.children.length; //getting all option items
-    
     if(userAns == correcAns){ //if user selected option is equal to array's correct answer
         UserScore += 1; //upgrading score value with 1
-        answer.classList.add("correct"); //adding green color to correct selected option
-        next_btn.classList.remove("hide"); //show the next button if user selected any option
+        
+        console.log("UserScore: " + UserScore);
        
     }else{
-        answer.classList.add("incorrect"); //adding red color to correct selected option
-        correcAns.classList.add("correct");
-        next_btn.classList.remove("hide"); //show the next button if user selected any option
-       
+        UserScore == UserScore;
+        console.log("UserScore: " + UserScore);
     }
 
+    const options = document.querySelectorAll(".option_list");
+    const allOptions = options.length; //getting all option items
+
     for(i=0; i < allOptions; i++){
-        options.children[i].classList.add("disabled"); //once user select an option then disabled all options
+        options[i].classList.add("disabled"); //once user select an option then disabled all options
     }
     // next_btn.classList.add("show"); //show the next button if user selected any option
 }

@@ -293,7 +293,7 @@ section .option_list .option.incorrect {
     border: 1px solid #f5c6cb;
 }
 
-section .option_list .option.disabled{
+.disabled{
     pointer-events: none;
 }
 /* Quiz-Box Footer*/
