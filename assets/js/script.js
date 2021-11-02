@@ -27,9 +27,8 @@ let UserTime;
 const MAX_QUESTIONS = 9;
 
 let UserScore = 0;
-
+const savedScores =  JSON.parse(localStorage.getItem('scores')) || [];
 let generateQ = [];
-// let gameQuestions = [];
 let questionBank = {};
 
 /**
@@ -67,7 +66,7 @@ function startGame() {
 function generateQuestions() {
     for (let i = 0; i < MAX_QUESTIONS; i++) {
         generateQ = questions[Math.floor(Math.random() * questions.length)];
-        console.log(generateQ);
+        // console.log(generateQ);
     }
 }
 
@@ -103,12 +102,12 @@ function removeDuplicates() {
 function resetGame() {
     resultBox.classList.add("hidden"); //hide results
     quizBox.classList.remove("hidden"); //show flipcard
-    next_btn.classList.remove("show"); //hide the next button
+    next_btn.classList.add("hidden");
 
     int = setInterval(startTimer, 10);
     initialseVariables();
     startGame();
-    showQuestions(questions);
+    showQuestions(questions[que_count]);
 }
 
 /**
@@ -118,9 +117,16 @@ function exitGame() {
     resultBox.classList.add("hidden"); //hide results
     flipcard.classList.remove("hidden"); //show flipcard 
 
+    const options = document.querySelectorAll(".option_list");
+    const allOptions = options.length; //getting all option items
+
+    for (i = 0; i < allOptions; i++) {
+        options[i].classList.remove("disabled"); //once user select an option then disabled all options
+    }
+    
     initialseVariables();
     startGame();
-    showQuestions(generateQ);
+    showQuestions(questions[que_count]);
 }
 
 //The Continue Button
@@ -163,9 +169,10 @@ next_btn.addEventListener("click", function () {
         showQuestions(questions[que_count]); //works when questions is passed
         questionCount.innerText = question_numb;
     } else {
+        showResult();
         clearInterval(int); //stops watch
         UserTime = timerRef; //saves time?
-        showResult();
+        
     }
 });
 
@@ -198,7 +205,7 @@ function startTimer() {
  * 
  * This will check if the users answer is the correct one
  */
-function optionSelected(answer, questionBank) {
+function optionSelected(answer) {
     let userAns = answer.textContent; //getting user selected option
     console.log("[This is user answer] " + userAns);
     let correcAns = questions[que_count].answer; //getting correct answer from array
@@ -213,7 +220,6 @@ function optionSelected(answer, questionBank) {
     } else {
         UserScore == UserScore;
         console.log("UserScore: " + UserScore);
-
         //add green colour to correct correctAns
         //add red colour to their userAns
     }
@@ -229,9 +235,12 @@ function optionSelected(answer, questionBank) {
  * Will show the results of the game to the user
  */
 function showResult() {
-    quizBox.classList.remove("activeQuiz");
-    resultBox.classList.add("activeResult");
+    quizBox.classList.add("hidden");
+    resultBox.classList.remove("hidden");
 
-    //add user time to table & local storage
-    //add user score to table & local storage
+    savedScores.push(UserScore);
+    console.log(savedScores);
+    localStorage.setItem('points', JSON.stringify(savedScores));
+    // localStorage.setItem('time', [milliseconds, seconds, minutes]);
+
 }
