@@ -66,7 +66,6 @@ let questions = [{
     ans2: "Running a Bitcoin node offline",
     ans3: "Cooling your mining equipment with extra fans to stop over heating",
     ans4: "Storing your Private key offline"
-
   },
   {
     questionID: 7,
@@ -77,8 +76,6 @@ let questions = [{
     ans2: "The Bitcoin software protocol",
     ans3: "A set of blocks containing transactions",
     ans4: "A set of transactions"
-
-
   },
   {
     questionID: 8,

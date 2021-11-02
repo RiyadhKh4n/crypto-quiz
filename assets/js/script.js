@@ -28,8 +28,8 @@ const MAX_QUESTIONS = 9;
 
 let UserScore = 0;
 
-let generateQ = new Object;
-let gameQuestions = [];
+let generateQ = [];
+// let gameQuestions = [];
 let questionBank = {};
 
 /**
@@ -38,7 +38,7 @@ let questionBank = {};
  */
 document.addEventListener('DOMContentLoaded', function () {
     initialseVariables();
-    startGame(); 
+    startGame();
 });
 
 /** This function sets all the variables to the condition they should be in to start the game, this function should be called
@@ -85,7 +85,7 @@ function showQuestions(questionBank) {
 
     // set onclick attribute to all available options
     const option_list = document.querySelectorAll(".option");
-    for(i=0; i < option_list.length; i++){
+    for (i = 0; i < option_list.length; i++) {
         option_list[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
@@ -153,12 +153,11 @@ next_btn.addEventListener("click", function () {
         next_btn.classList.add("hidden");
         const options = document.querySelectorAll(".option_list");
         const allOptions = options.length; //getting all option items
-    
-        for(i=0; i < allOptions; i++){
+
+        for (i = 0; i < allOptions; i++) {
             options[i].classList.remove("disabled"); //once user select an option then disabled all options
         }
 
-        console.log("Question" + que_count);
         que_count++;
         question_numb++;
         showQuestions(questions[que_count]); //works when questions is passed
@@ -199,7 +198,7 @@ function startTimer() {
  * 
  * This will check if the users answer is the correct one
  */
-function optionSelected(answer){
+function optionSelected(answer, questionBank) {
     let userAns = answer.textContent; //getting user selected option
     console.log("[This is user answer] " + userAns);
     let correcAns = questions[que_count].answer; //getting correct answer from array
@@ -207,32 +206,32 @@ function optionSelected(answer){
 
     const options = document.querySelectorAll(".option_list");
 
-    if(userAns == correcAns){ //if user selected option is equal to array's correct answer
-        UserScore += 1; 
+    if (userAns == correcAns) { //if user selected option is equal to array's correct answer
+        UserScore += 1;
         console.log("UserScore: " + UserScore);
-        // userAns[options].classList.add("correct"); 
-       
-    }else{
+        //add green colour to btn
+    } else {
         UserScore == UserScore;
         console.log("UserScore: " + UserScore);
+
+        //add green colour to correct correctAns
+        //add red colour to their userAns
     }
 
-    const allOptions = options.length; //getting all option items
-
-    for(i=0; i < allOptions; i++){
-        options[i].classList.add("disabled"); //once user select an option then disabled all options
+    const allOptions = options.length; 
+    for (i = 0; i < allOptions; i++) {
+        options[i].classList.add("disabled");
     }
-    // next_btn.classList.add("show"); //show the next button if user selected any option
     next_btn.classList.remove("hidden");
 }
 
 /**
  * Will show the results of the game to the user
  */
- function showResult(){
-    quizBox.classList.remove("activeQuiz"); 
-    resultBox.classList.add("activeResult"); 
+function showResult() {
+    quizBox.classList.remove("activeQuiz");
+    resultBox.classList.add("activeResult");
 
     //add user time to table & local storage
     //add user score to table & local storage
-    }
+}
