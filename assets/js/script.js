@@ -8,7 +8,6 @@ const resultBox = document.querySelector(".result_box");
 /* select the required buttons */
 const start_btn = document.getElementById("continue");
 const next_btn = document.getElementById("next-btn");
-// const option_list = document.querySelectorAll(".option");
 
 const clearBoard_button = document.getElementById("clear-board");
 const replay_quiz = document.getElementById("replay");
@@ -17,22 +16,26 @@ const exit_btn = document.getElementById("quit");
 let timerRef = document.querySelector('.timer-sec');
 let questionCount = document.getElementById("qs-count");
 
-/* Initialsing varibales needed for script */
+const highScoresList = document.getElementById("user-infromation");
+/* Initialsing varibales relating to time */
 let [milliseconds, seconds, minutes] = [0, 0, 0];
 let int;
 let UserTime;
 
-// let que_count = 0; //internal value used to iterating
-// let question_numb = 1; //the value the user will see
+/* Initialsing varibales which hold values*/
 const MAX_QUESTIONS = 9;
-
+let timeTaken;
 let UserScore = 0;
-const savedScores =  JSON.parse(localStorage.getItem('scores')) || [];
+
+/* Initialing variable which hold objects / arrays */
+const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];
+const savedScores =  JSON.parse(localStorage.getItem('highScores')) || [];
 let generateQ = [];
-let questionBank = {};
+
+
 
 /**
- * This event listener listens for the DOM to load, once it does it calls the function to initialise variables
+* This event listener listens for the DOM to load, once it does it calls the function to initialise variables
  * the function that starts the game 
  */
 document.addEventListener('DOMContentLoaded', function () {
@@ -66,7 +69,6 @@ function startGame() {
 function generateQuestions() {
     for (let i = 0; i < MAX_QUESTIONS; i++) {
         generateQ = questions[Math.floor(Math.random() * questions.length)];
-        // console.log(generateQ);
     }
 }
 
@@ -104,6 +106,13 @@ function resetGame() {
     quizBox.classList.remove("hidden"); //show flipcard
     next_btn.classList.add("hidden");
 
+    const options = document.querySelectorAll(".option_list");
+    const allOptions = options.length; //getting all option items
+
+    for (i = 0; i < allOptions; i++) {
+        options[i].classList.remove("disabled"); //once user select an option then disabled all options
+    }
+
     int = setInterval(startTimer, 10);
     initialseVariables();
     startGame();
@@ -123,7 +132,7 @@ function exitGame() {
     for (i = 0; i < allOptions; i++) {
         options[i].classList.remove("disabled"); //once user select an option then disabled all options
     }
-    
+
     initialseVariables();
     startGame();
     showQuestions(questions[que_count]);
@@ -145,8 +154,9 @@ replay_quiz.addEventListener("click", function () {
 
 //The Clear Board Button
 clearBoard_button.addEventListener("click", function () {
-    // access local storage and clear <td></td>
-    localStorage.clear();
+    localStorage.clear('points');
+    localStorage.clear('time');
+    userInformation.style.display = "none";
 });
 
 // The Quit Quiz Button
@@ -168,11 +178,11 @@ next_btn.addEventListener("click", function () {
         question_numb++;
         showQuestions(questions[que_count]); //works when questions is passed
         questionCount.innerText = question_numb;
+
     } else {
         showResult();
-        clearInterval(int); //stops watch
-        UserTime = timerRef; //saves time?
-        
+        clearInterval(int); 
+        UserTime = timeTaken; 
     }
 });
 
@@ -199,6 +209,8 @@ function startTimer() {
     let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
 
     timerRef.innerHTML = `${m} : ${s} : ${ms}`;
+
+    timeTaken = `${m} : ${s} : ${ms}`;
 }
 
 /**
@@ -207,9 +219,7 @@ function startTimer() {
  */
 function optionSelected(answer) {
     let userAns = answer.textContent; //getting user selected option
-    console.log("[This is user answer] " + userAns);
     let correcAns = questions[que_count].answer; //getting correct answer from array
-    console.log("[This is correct answer] " + correcAns);
 
     const options = document.querySelectorAll(".option_list");
 
@@ -238,9 +248,16 @@ function showResult() {
     quizBox.classList.add("hidden");
     resultBox.classList.remove("hidden");
 
-    savedScores.push(UserScore);
-    console.log(savedScores);
-    localStorage.setItem('points', JSON.stringify(savedScores));
-    // localStorage.setItem('time', [milliseconds, seconds, minutes]);
-
+    addValuesToLocalStorage(UserScore, timeTaken);
+  
 }
+
+function addValuesToLocalStorage(score, time){
+    savedScores.push(score);
+    localStorage.setItem('points', JSON.stringify(savedScores));
+
+    savedTimes.push(time);
+    localStorage.setItem('time', JSON.stringify(savedTimes));
+  
+}
+
