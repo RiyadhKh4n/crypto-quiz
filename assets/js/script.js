@@ -154,8 +154,7 @@ replay_quiz.addEventListener("click", function () {
 
 //The Clear Board Button
 clearBoard_button.addEventListener("click", function () {
-    localStorage.clear('points');
-    localStorage.clear('time');
+    localStorage.clear();
     userInformation.style.display = "none";
 });
 
@@ -172,6 +171,7 @@ next_btn.addEventListener("click", function () {
 
         for (i = 0; i < allOptions; i++) {
             options[i].classList.remove("disabled"); //once user select an option then disabled all options
+           
         }
 
         que_count++;
@@ -226,10 +226,11 @@ function optionSelected(answer) {
     if (userAns == correcAns) { //if user selected option is equal to array's correct answer
         UserScore += 1;
         console.log("UserScore: " + UserScore);
-        //add green colour to btn
+        answer.classList.add("correct");
     } else {
         UserScore == UserScore;
         console.log("UserScore: " + UserScore);
+        answer.classList.add("incorrect");
         //add green colour to correct correctAns
         //add red colour to their userAns
     }

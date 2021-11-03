@@ -81,7 +81,7 @@ body {
 }
 
 .game-title {
-    margin-top: 40%;
+    margin-top: 30%;
     text-align: center;
     color: #006E91;
     text-shadow: 1.3px 1.3px black;
@@ -593,7 +593,292 @@ td {
         font-size: 1.2rem;
     }
 
+    .result-btn1{
+        margin: 3px;
+    }
+}
 
+@media only screen and (min-width: 1024px) {
+    .maincontainer {
+        width: 700px;
+        height: 760px;
+    }
+
+    .game-title {
+        font-weight: bold;
+        color: #006E91;
+        font-size: 6em;
+    }
+
+    .fake-btn {
+        width: 200px;
+        height: 110px;
+        font-size: 2.5em;
+    }
+
+    .info-title {
+        font-size: 4em;
+    }
+
+    .info-list {
+        padding-top: 1em;
+    }
+
+    .rules {
+        font-weight: bold;
+        margin: 5px;
+        margin-left: 30px;
+        padding: 3px;
+        display: block;
+        text-align: left;
+        font-size: 2.2em;
+    }
+
+    .back-card-button {
+        width: 200px;
+        height: 110px;
+        font-size: 2em;
+        
+    }
+
+    .quiz_box {
+        width: 800px;
+    }
+
+    .quiz_box header .title {
+        font-size: 3em;
+    }
+
+    .quiz_box header .timer {
+        border: 2px solid black;
+        height: 50px;
+        width: 250px;
+        margin-left: 8px;
+        padding: 0 6px;
+        justify-content: space-around;
+    }
+
+    .quiz_box .timer .time-passed {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+
+    #question{
+        font-size: 50px;
+    }
+
+    .question-section .option_list .option {
+        border: 2px solid #263a44;
+        font-size: 35px;
+    }
+
+    footer {
+        height: 100px;
+    }
+
+    footer .total_que span {
+        display: flex;
+        user-select: none;
+        font-size: 40px;
+    }
+
+    footer #next-btn {
+        height: 80px;
+        width: 140px;
+        font-size: 40px;
+        border: 3px solid #CF9FFF;
+        letter-spacing: 1.5px;
+    }
+
+    .result_box {
+        width: 800px;
+    }
+
+    .result_box .icon .fa-crown {
+        font-size: 200px;
+        padding: .3em 0;
+    }
+
+    .congrat-text {
+        font-size: 50px;
+    }
+
+    thead {
+        font-size: 1.5rem;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    tbody td {
+        font-size: 1.3rem;
+    }
+
+    .result-btn1{
+        margin: 5px;
+    }
+
+    #clear-board{
+        width: 150px;
+        height: 80px;
+        font-size: 1.2em;
+    }
+
+    #replay{
+        width: 150px;
+        height: 80px;
+        font-size: 1.2em;
+    }
+
+    #quit{
+        width: 150px;
+        height: 80px;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .maincontainer {
+        width: 1000px;
+        height: 1060px;
+    }
+
+    .game-title {
+        font-weight: bold;
+        color: #006E91;
+        font-size: 10em;
+    }
+
+    .fake-btn {
+        width: 300px;
+        height: 180px;
+        font-size: 3em;
+    }
+
+    .info-title {
+        font-size: 5em;
+    }
+
+    .info-list {
+        padding-top: 2em;
+    }
+
+    .rules {
+        font-weight: bold;
+        margin: 5px;
+        margin-left: 30px;
+        padding: 3px;
+        display: block;
+        text-align: left;
+        font-size: 3.5em;
+    }
+
+    .back-card-button {
+        width: 300px;
+        height: 180px;
+        font-size: 2em;
+        
+    }
+
+    .quiz_box {
+        width: 1000px;
+    }
+
+    .quiz_box header .title {
+        font-size: 4em;
+    }
+
+    .quiz_box header .timer {
+        border: 2px solid black;
+        height: 55px;
+        width: 300px;
+        margin-left: 8px;
+        padding: 0 6px;
+        justify-content: space-around;
+    }
+
+    .quiz_box .timer .time-passed {
+        font-size: 22px;
+        margin-bottom: 1px;
+    }
+
+    .quiz_box .timer .timer-sec{
+        font-size: 22px;
+    }
+    #question{
+        font-size: 60px;
+    }
+
+    .question-section .option_list .option {
+        border: 2px solid #263a44;
+        font-size: 45px;
+    }
+
+    footer {
+        height: 105px;
+    }
+
+    footer .total_que span {
+        display: flex;
+        user-select: none;
+        font-size: 50px;
+    }
+
+    footer #next-btn {
+        height: 90px;
+        width: 150px;
+        font-size: 45px;
+        border: 3px solid #CF9FFF;
+        letter-spacing: 1.5px;
+    }
+
+    .result_box {
+        width: 1000px;
+    }
+
+    .result_box .icon .fa-crown {
+        font-size: 225px;
+        padding: .3em 0;
+    }
+
+    .congrat-text {
+        font-size: 60px;
+    }
+
+    .leaderboard header h1{
+        font-size: 2rem;
+    }
+
+    thead {
+        font-size: 1.5rem;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    tbody td {
+        font-size: 1.3rem;
+    }
+
+    .result-btn1{
+        margin: 10px;
+    }
+
+    #clear-board{
+        width: 200px;
+        height: 100px;
+        font-size: 1.6em;
+    }
+
+    #replay{
+        width: 200px;
+        height: 100px;
+        font-size: 1.6em;
+    }
+
+    #quit{
+        width: 200px;
+        height: 100px;
+        font-size: 1.6em;
+    }
 }
 
 .hidden {

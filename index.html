@@ -16,7 +16,7 @@
 <body>
     <main>
         <!-- Start Quiz Div -->
-        <div class="maincontainer  ">
+        <div class="maincontainer hidden">
             <div class="thecard">
                 <div class="thefront">
                     <h1 class="game-title">Welcome To The Crypto Quiz</h1>
@@ -71,7 +71,7 @@
             <footer>
                 <div class="total_que">
                     <span>
-                        <span id="qs-count">1</span>/<span>10</span>Questions
+                        Question <span id="qs-count">1</span>/ 10</span>
                     </span>
                 </div>
 
@@ -83,7 +83,7 @@
         </div>
 
         <!-- Result Box -->
-        <section class="result_box hidden">
+        <section class="result_box ">
             <div class="icon">
                 <i class="fas fa-crown"></i>
             </div>
@@ -109,9 +109,9 @@
             </div>
 
             <div class="button result-btn">
-                <button id="clear-board" class="clear buttons">Clear Board</button>
-                <button id="replay" class="replay buttons">Replay Quiz</button>
-                <button id="quit" class="quit buttons">Quit Quiz </button>
+                <button id="clear-board" class="clear buttons result-btn1">Clear Board</button>
+                <button id="replay" class="replay buttons result-btn1">Replay Quiz</button>
+                <button id="quit" class="quit buttons result-btn1">Quit Quiz </button>
             </div>
         </section>
 
