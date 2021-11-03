@@ -263,7 +263,7 @@ let questions = [{
   {
     questionID: 25,
     question: "What is a Decentralised Application?",
-    answer: "A decentralised app",
+    answer: "An application which runs on a decentralised computing system",
 
     ans1: "An application which runs on a decentralised computing system",
     ans2: "An application which runs off the use of smart contracts",
@@ -325,5 +325,72 @@ let questions = [{
     ans3: "Less security and your coins are at risk",
     ans4: "Higher gas fees and order type limitations"
 
-  }
+  },
+  {
+    questionID: 31,
+    question: "Why was Ethereum created?",
+    answer: "To enable developers to build and publish smart contracts and distributed applications",
+
+    ans1: "To be a platform where NFTs can be minted on and to overtake Bitcoin",
+    ans2: "To enable developers to build and publish smart contracts and distributed applications",
+    ans3: "To be a store of value for the whole crypto space and allow for new development",
+    ans4: "To enable developers to build centralised appliactions which run quickly and are scalable"
+
+  },
+  {
+    questionID: 32,
+    question: "Where do you store Cryptocurrencies?",
+    answer: "On a Blockchain",
+
+    ans1: "On a Blockchain",
+    ans2: "On a Chain Wallet",
+    ans3: "On a private key",
+    ans4: "In a Bank Account"
+
+  },
+  {
+    questionID: 33,
+    question: "What is a cryptocurrency fund?",
+    answer: "A portfolio containing a variety of digital assets",
+
+    ans1: "A way for people new to crypto to get their hands on some coins",
+    ans2: "An opportunity that's only available to high net worth individuals",
+    ans3: "A portfolio containing a variety of digital assets",
+    ans4: "A crowdfunding initiative to launch a new cryptocurrency"
+
+  },
+  {
+    questionID: 34,
+    question: "What does HODL stand for?",
+    answer: "Hold On For Dear Life",
+
+    ans1: "Hold On For Dear Life",
+    ans2: "Heros Only Die Last",
+    ans3: "Holy Crypto Only Dies Lonely",
+    ans4: "Hold Only Until Debts Leave"
+
+  },
+  {
+    questionID: 35,
+    question: "What are the most important features to look for in a token fund platform?",
+    answer: "Liquidity, a wide choice of popular cryptocurrencies and a dashboard to help control the overal performance",
+
+    ans1: "A platform where portfolio managers have full control over investor funds",
+    ans2: "A crypto-only platform where bank card deposits are not accepted",
+    ans3: "Liquidity, a wide choice of popular cryptocurrencies and a dashboard to help control the overal performance",
+    ans4: "Scalability and security, meaning that the fund will likely do very well in the future"
+
+  },
+  {
+    questionID: 36,
+    question: "How Do Bitcoin Miners Make Money?",
+    answer: "Through transaction fees and block rewards",
+
+    ans1: "Through transaction fees and block rewards",
+    ans2: "Transaction fees only",
+    ans3: "The block reward only",
+    ans4: "They earn a salary"
+
+  },
+
 ];

@@ -23,16 +23,15 @@ let int;
 let UserTime;
 
 /* Initialsing varibales which hold values*/
-const MAX_QUESTIONS = 9;
+const MAX_QUESTIONS = 10;
 let timeTaken;
 let UserScore = 0;
 
-/* Initialing variable which hold objects / arrays */
+/* Initialing variable which hold arrays */
 const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];
 const savedScores = JSON.parse(localStorage.getItem('highScores')) || [];
-let generateQ = [];
 
-
+let randomQuestionArray = [];
 
 /**
  * This event listener listens for the DOM to load, once it does it calls the function to initialise variables
@@ -40,7 +39,6 @@ let generateQ = [];
  */
 document.addEventListener('DOMContentLoaded', function () {
     initialseVariables();
-    startGame();
 });
 
 /** This function sets all the variables to the condition they should be in to start the game, this function should be called
@@ -68,9 +66,14 @@ function startGame() {
  */
 function generateQuestions() {
     for (let i = 0; i < MAX_QUESTIONS; i++) {
-        generateQ = questions[Math.floor(Math.random() * questions.length)];
+        let RandomQuestions = questions[Math.floor(Math.random() * questions.length)];
+        randomQuestionArray.push(RandomQuestions); 
     }
+
+    console.log(randomQuestionArray);
 }
+
+
 
 function showQuestions(questionBank) {
     let questions_to_user = document.getElementById("question");
@@ -114,9 +117,11 @@ function resetGame() {
     }
 
     int = setInterval(startTimer, 10);
+    randomQuestionArray = [];
     initialseVariables();
     startGame();
-    showQuestions(questions[que_count]);
+    showQuestions(randomQuestionArray[que_count]);
+    
 }
 
 /**
@@ -133,9 +138,8 @@ function exitGame() {
         options[i].classList.remove("disabled"); //once user select an option then disabled all options
     }
 
+    randomQuestionArray = [];
     initialseVariables();
-    startGame();
-    showQuestions(questions[que_count]);
 }
 
 //The Continue Button
@@ -144,7 +148,8 @@ start_btn.addEventListener("click", function () {
     quizBox.classList.remove("hidden");
     int = setInterval(startTimer, 10);
     next_btn.classList.add("hidden");
-    showQuestions(questions[que_count]);
+    generateQuestions();
+    showQuestions(randomQuestionArray[que_count]);
 });
 
 //The Replay Button
@@ -164,7 +169,7 @@ exit_btn.addEventListener("click", function () {
 });
 
 next_btn.addEventListener("click", function () {
-    if (que_count < MAX_QUESTIONS) {
+    if (que_count < 9) {
         next_btn.classList.add("hidden");
         const options = document.querySelectorAll(".option_list");
         const allOptions = options.length; //getting all option items
@@ -176,7 +181,7 @@ next_btn.addEventListener("click", function () {
 
         que_count++;
         question_numb++;
-        showQuestions(questions[que_count]); //works when questions is passed
+        showQuestions(randomQuestionArray[que_count]); //works when questions is passed
         questionCount.innerText = question_numb;
 
     } else {
@@ -219,18 +224,18 @@ function startTimer() {
  */
 function optionSelected(answer) {
     let userAns = answer.textContent; //getting user selected option
-    let correcAns = questions[que_count].answer; //getting correct answer from array
+    let correcAns = randomQuestionArray[que_count].answer; //getting correct answer from array
 
     const options = document.querySelectorAll(".option_list");
 
     if (userAns == correcAns) { //if user selected option is equal to array's correct answer
         UserScore += 1;
         console.log("UserScore: " + UserScore);
-        answer.classList.add("correct");
+      
     } else {
         UserScore == UserScore;
         console.log("UserScore: " + UserScore);
-        answer.classList.add("incorrect");
+       
         //add green colour to correct correctAns
         //add red colour to their userAns
     }
