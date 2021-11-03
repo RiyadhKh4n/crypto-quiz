@@ -21,7 +21,7 @@ let questions = [{
     ans2: "A cloud-based contract stored on a blockchain",
     ans3: "Programs stored on a blockchain that run when predetermined conditions are met",
     ans4: "Artificial intelligence assisted contract",
-    
+
 
   },
   {
@@ -33,7 +33,7 @@ let questions = [{
     ans2: "Satoshi Nakamoto",
     ans3: "A group of hackers",
     ans4: "Steve Jobs",
-    
+
   },
   {
     questionID: 4,

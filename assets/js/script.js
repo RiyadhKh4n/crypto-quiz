@@ -29,13 +29,13 @@ let UserScore = 0;
 
 /* Initialing variable which hold objects / arrays */
 const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];
-const savedScores =  JSON.parse(localStorage.getItem('highScores')) || [];
+const savedScores = JSON.parse(localStorage.getItem('highScores')) || [];
 let generateQ = [];
 
 
 
 /**
-* This event listener listens for the DOM to load, once it does it calls the function to initialise variables
+ * This event listener listens for the DOM to load, once it does it calls the function to initialise variables
  * the function that starts the game 
  */
 document.addEventListener('DOMContentLoaded', function () {
@@ -171,7 +171,7 @@ next_btn.addEventListener("click", function () {
 
         for (i = 0; i < allOptions; i++) {
             options[i].classList.remove("disabled"); //once user select an option then disabled all options
-           
+
         }
 
         que_count++;
@@ -181,8 +181,8 @@ next_btn.addEventListener("click", function () {
 
     } else {
         showResult();
-        clearInterval(int); 
-        UserTime = timeTaken; 
+        clearInterval(int);
+        UserTime = timeTaken;
     }
 });
 
@@ -235,7 +235,7 @@ function optionSelected(answer) {
         //add red colour to their userAns
     }
 
-    const allOptions = options.length; 
+    const allOptions = options.length;
     for (i = 0; i < allOptions; i++) {
         options[i].classList.add("disabled");
     }
@@ -250,15 +250,14 @@ function showResult() {
     resultBox.classList.remove("hidden");
 
     addValuesToLocalStorage(UserScore, timeTaken);
-  
+
 }
 
-function addValuesToLocalStorage(score, time){
+function addValuesToLocalStorage(score, time) {
     savedScores.push(score);
     localStorage.setItem('points', JSON.stringify(savedScores));
 
     savedTimes.push(time);
     localStorage.setItem('time', JSON.stringify(savedTimes));
-  
-}
 
+}

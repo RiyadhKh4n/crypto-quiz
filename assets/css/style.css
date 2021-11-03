@@ -14,7 +14,6 @@ body {
     margin: 0;
 }
 
-
 /* Flip Card */
 
 .maincontainer {
@@ -157,7 +156,6 @@ body {
     background-color: #006E91;
     border-color: #bdbdbd;
     color: white;
-
 }
 
 .continue {
@@ -185,7 +183,6 @@ body {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  
 }
 
 .quiz_box header {
@@ -234,7 +231,7 @@ body {
     margin: 20px;
 }
 
-#question{
+#question {
     font-family: "Odibee Sans";
     font-size: 25px;
     letter-spacing: 2px;
@@ -257,7 +254,6 @@ body {
     align-items: center;
     justify-content: space-between;
     background: #006E91;
-  
     border-radius: 5px;
     color: white;
     font-weight: bold;
@@ -269,12 +265,11 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    
 }
 
-button[id^=ans].option:hover{
-   background: #CF9FFF;
-   color: #263a44;
+button[id^=ans].option:hover {
+    background: #CF9FFF;
+    color: #263a44;
 }
 
 section .option_list .option:last-child {
@@ -294,9 +289,10 @@ section .option_list .option.incorrect {
     border: 1px solid #f5c6cb;
 }
 
-.disabled{
+.disabled {
     pointer-events: none;
 }
+
 /* Quiz-Box Footer*/
 footer {
     height: 60px;
@@ -307,9 +303,10 @@ footer {
     justify-content: space-between;
 }
 
-.total_que{
+.total_que {
     font-family: "Roboto Condensed";
 }
+
 footer .total_que span {
     display: flex;
     user-select: none;
@@ -341,21 +338,21 @@ footer #next-btn {
     border: 2px solid #CF9FFF;
     letter-spacing: 1px;
     line-height: 10px;
-   
+
     transform: scale(0.95);
     transition: all 0.3s ease;
-}  
+}
 
-#next-btn:hover{
+#next-btn:hover {
     background: #5D3FD3;
     border-color: #bdbdbd;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-/* Results PopUp*/
+/* Results Screen*/
 
 .result_box {
     display: flex;
@@ -435,7 +432,7 @@ th {
     padding: 0.5rem 0.5rem 0.5rem;
 }
 
-#headers{
+#headers {
     background: #006E91;
 }
 
@@ -593,7 +590,7 @@ td {
         font-size: 1.2rem;
     }
 
-    .result-btn1{
+    .result-btn1 {
         margin: 3px;
     }
 }
@@ -638,7 +635,7 @@ td {
         width: 200px;
         height: 110px;
         font-size: 2em;
-        
+
     }
 
     .quiz_box {
@@ -663,7 +660,7 @@ td {
         margin-bottom: 3px;
     }
 
-    #question{
+    #question {
         font-size: 50px;
     }
 
@@ -713,23 +710,23 @@ td {
         font-size: 1.3rem;
     }
 
-    .result-btn1{
+    .result-btn1 {
         margin: 5px;
     }
 
-    #clear-board{
+    #clear-board {
         width: 150px;
         height: 80px;
         font-size: 1.2em;
     }
 
-    #replay{
+    #replay {
         width: 150px;
         height: 80px;
         font-size: 1.2em;
     }
 
-    #quit{
+    #quit {
         width: 150px;
         height: 80px;
         font-size: 1.2em;
@@ -776,7 +773,7 @@ td {
         width: 300px;
         height: 180px;
         font-size: 2em;
-        
+
     }
 
     .quiz_box {
@@ -801,10 +798,11 @@ td {
         margin-bottom: 1px;
     }
 
-    .quiz_box .timer .timer-sec{
+    .quiz_box .timer .timer-sec {
         font-size: 22px;
     }
-    #question{
+
+    #question {
         font-size: 60px;
     }
 
@@ -844,7 +842,7 @@ td {
         font-size: 60px;
     }
 
-    .leaderboard header h1{
+    .leaderboard header h1 {
         font-size: 2rem;
     }
 
@@ -858,23 +856,23 @@ td {
         font-size: 1.3rem;
     }
 
-    .result-btn1{
+    .result-btn1 {
         margin: 10px;
     }
 
-    #clear-board{
+    #clear-board {
         width: 200px;
         height: 100px;
         font-size: 1.6em;
     }
 
-    #replay{
+    #replay {
         width: 200px;
         height: 100px;
         font-size: 1.6em;
     }
 
-    #quit{
+    #quit {
         width: 200px;
         height: 100px;
         font-size: 1.6em;
