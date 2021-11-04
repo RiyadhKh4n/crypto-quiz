@@ -7,7 +7,7 @@ The purpose of this project is to create an Interactive Frontend Website using H
 Crypto Quiz is a Javascript web application that is aimed at anyone who wishes to put their crypto knowledge to the test. This quiz is designed to test your knowledge and the questions are based from [Cryptools](https://riyadhkh4n.github.io/cryptools/), so having a read will give you a good foundation in order to succeed at the game. Questions and answers will be produced on the screen one after the other in a randomised order. The user will then select the correct option or the option they think is correct, where their score will be logged letting them know how they did. Once finished they will be met with a results screen allowing them to see their score give them the option to play again or quit. 
 
 ---
-IMAGE FROM AMIRESPONSIVE HERE
+![AmIResponsive](docs/readme/amIresponsive.png)
 ---
 
 # User Experience (UX) 
@@ -419,7 +419,7 @@ function exitGame() {
     randomQuestionArray = [];
     initialseVariables();
 }
-``
+```
 
 
 ##  Browser Compatibility & Responsivness
