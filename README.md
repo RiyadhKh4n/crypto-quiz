@@ -437,24 +437,32 @@ The output of Crypto Quiz when being viewed on Firefox can be seen below:
 
 ![firefox]()
 
-Crypto Quiz when being viewed at 1600px:
-
-![1600px]()
-
 Crypto Quiz when being viewed at 1440px:
 
-![1140px]()
+![1140px](docs/testing/1440px.png)
+![1140px](docs/testing/1440px1.png)
+![1140px](docs/testing/1440px2.png)
+![1140px](docs/testing/1440px3.png)
 
 Crypto Quiz when being viewed at 1024px: 
 
-![1024px]()
+![1024px](docs/testing/1024px1.png)
+![1024px](docs/testing/1024px.png)
+![1024px](docs/testing/1024px2.png)
+![1024px](docs/testing/1024px3.png)
 
 Crypto Quiz when being viewed at 768px:
 
-![768px]()
+![768px](docs/testing/768px.png)
+![768px](docs/testing/768px1.png)
+![768px](docs/testing/768px2.png)
+![768px](docs/testing/768px3.png)
 
 Crypto Quiz when being viewed at mobile (425px):
 
+![425px](docs/testing/425px1.png)
+![425px](docs/testing/425pxup.png)
+![425px](docs/testing/425px3.png)
 ![425px]()
 
 Crypto Quiz when being viewed at mobile small (320px):

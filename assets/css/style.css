@@ -737,7 +737,7 @@ td {
 @media only screen and (min-width: 1440px) {
     .maincontainer {
         width: 1000px;
-        height: 1060px;
+        height: 1000px;
     }
 
     .game-title {
