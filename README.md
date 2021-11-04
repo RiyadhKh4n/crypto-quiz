@@ -347,7 +347,79 @@ When checking the results page several elements failed the accessibility test so
 ![cont15](docs/testing/clearbtn.png)
 ![cont16](docs/testing/newclearbtn.png)
 
+--- 
+A problem I was having with my code was that my generateQuestions() and showQuestions(questionBank) functions were not working as intended. generateQuestions() takes in no parameters and its purpose is to randomly chose 10 questions from questions.js that will display to the user. I was able to get the questions generating fine but it is when I passed the questions which were held in RandomQuestions to showQuestions(questionBank) were the error occured, it would not let me access the individual elements of each question in questions.js. After several hours of debugging and getting help from Tutor Support I realised the error was occuring because although I was generating the questions I was not pushing them to the array correctly.
 
+In order to fix the problem I declared an array called randomQuestionArray and set its contents to empty
+
+```
+let randomQuestionArray = [];
+```
+
+I then created a variable called RandomQuestions which would store the 10 randomly selected questions from questions[]
+
+```
+ let RandomQuestions = questions[Math.floor(Math.random() * questions.length)];
+```
+
+Within the for loop which ran 10 times, I would push the contents of RandomQuestions to randomQuestionArray allowing me to have the questions in an indexed way which I could access later on.
+
+```
+randomQuestionArray.push(RandomQuestions); 
+```
+
+As a test I console.log(randomQuestionArray) and ran the program twice to see if questions would generate and be different each time, the output is below:
+
+![array](docs/testing/arrayoutput.png)
+![array2](docs/testing/arrayoutput2.png)
+
+As you can see I now have questions randomly generating each time the program is run which I can now access via index. This now meant when I wanted to call the function I could pass in que_count which is a varibale which increments as the user moves through the game allowing them to see the correct question and interact with the game as intended.
+
+```
+showQuestions(randomQuestionArray[que_count]);
+```
+
+However, the problems did not stop there. After running the game several times I found that sometimes 20 questions would generate and this would happen when the user selected either the 'Replay' or 'Quit' buttons at the end of the game. This was due to my exitGame() and resetGame() functions calling startGame() meaning a new batch of questions would be generated before the old batch were removed. In order to fix this issue, I changed how the functions worked ensuring I cleared the randomQuestionArray before new questions were generated.
+
+The updated and working funcitons are displayed below:
+
+```
+function resetGame() {
+    resultBox.classList.add("hidden"); 
+    quizBox.classList.remove("hidden"); 
+    next_btn.classList.add("hidden");
+
+    const options = document.querySelectorAll(".option_list");
+    const allOptions = options.length; //getting all option items
+
+    for (i = 0; i < allOptions; i++) {
+        options[i].classList.remove("disabled"); //once user select an option then disabled all options
+    }
+
+    int = setInterval(startTimer, 10);
+    randomQuestionArray = []; //clears array
+    initialseVariables(); //resets variable values
+    startGame(); // called generateQuestions()
+    showQuestions(randomQuestionArray[que_count]);  
+}
+```
+
+```
+function exitGame() {
+    resultBox.classList.add("hidden"); 
+    flipcard.classList.remove("hidden"); 
+
+    const options = document.querySelectorAll(".option_list");
+    const allOptions = options.length; //getting all option items
+
+    for (i = 0; i < allOptions; i++) {
+        options[i].classList.remove("disabled"); //once user select an option then disabled all options
+    }
+
+    randomQuestionArray = [];
+    initialseVariables();
+}
+``
 
 
 ##  Browser Compatibility & Responsivness

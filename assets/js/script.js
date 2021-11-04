@@ -69,7 +69,6 @@ function generateQuestions() {
         let RandomQuestions = questions[Math.floor(Math.random() * questions.length)];
         randomQuestionArray.push(RandomQuestions); 
     }
-
     console.log(randomQuestionArray);
 }
 
@@ -120,8 +119,7 @@ function resetGame() {
     randomQuestionArray = [];
     initialseVariables();
     startGame();
-    showQuestions(randomQuestionArray[que_count]);
-    
+    showQuestions(randomQuestionArray[que_count]);  
 }
 
 /**
