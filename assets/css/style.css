@@ -312,18 +312,21 @@ footer {
     justify-content: space-between;
 }
 
-.total_que {
-    font-family: "Roboto Condensed";
-}
-
 footer .total_que span {
     display: flex;
     user-select: none;
     font-size: 18px;
+    font-family: "Roboto Condensed";
+}
+
+footer .total_que #qs-count{
+    font-family: "Roboto Condensed";
+    color: #006E91;
+    font-style: none;
 }
 
 .total_que span span {
-    font-weight: bold;
+   
     padding: 0 5px;
 }
 
@@ -342,7 +345,7 @@ footer #next-btn {
     border: none;
     outline: none;
     color: white;
-    border-radius: 20px;
+    border-radius: 30px;
     background: #006E91;
     border: 2px solid #CF9FFF;
     letter-spacing: 1px;

@@ -16,11 +16,11 @@ const exit_btn = document.getElementById("quit");
 let timerRef = document.querySelector('.timer-sec');
 let questionCount = document.getElementById("qs-count");
 
-// const highScoresList = document.getElementById("user-infromation");
 /* Initialsing varibales relating to time */
 let [milliseconds, seconds, minutes] = [0, 0, 0];
 let int;
 let UserTime;
+let question_numb;
 
 /* Initialsing varibales which hold values*/
 const MAX_QUESTIONS = 10;
@@ -63,8 +63,8 @@ function initialseVariables() {
     int;
     UserTime;
     UserScore = 0;
-    que_count = 0; //internal value used to iterating
-    question_numb = 1; //the value the user will see
+    que_count = 0; 
+    question_numb = 1; 
 }
 
 /**
@@ -132,6 +132,7 @@ function resetGame() {
     int = setInterval(startTimer, 10);
     randomQuestionArray = [];
     initialseVariables();
+    questionCount.innerText = question_numb;
     startGame();
     showQuestions(randomQuestionArray[que_count]);  
 }
@@ -152,6 +153,7 @@ function exitGame() {
 
     randomQuestionArray = [];
     initialseVariables();
+    questionCount.innerText = question_numb;
 }
 
 //The Continue Button
@@ -162,6 +164,7 @@ start_btn.addEventListener("click", function () {
     next_btn.classList.add("hidden");
     generateQuestions();
     showQuestions(randomQuestionArray[que_count]);
+    console.log(question_numb);
 });
 
 //The Replay Button
@@ -187,8 +190,7 @@ next_btn.addEventListener("click", function () {
         const allOptions = options.length; //getting all option items
 
         for (i = 0; i < allOptions; i++) {
-            options[i].classList.remove("disabled"); //once user select an option then disabled all options
-
+            options[i].classList.remove("disabled"); 
         }
 
         que_count++;
