@@ -392,5 +392,144 @@ let questions = [{
     ans4: "They earn a salary"
 
   },
+  {
+    questionID: 37,
+    question: "What does P2P stand for?",
+    answer: "Peer to Peer",
 
+    ans1: "Password to Password",
+    ans2: "Peer to Peer",
+    ans3: "Product to Product",
+    ans4: "Private Key to Private Key"
+  },
+  {
+    questionID: 38,
+    question: "What is a node?",
+    answer: "A computer on a Blockchain network",
+
+    ans1: "A type of cryptocurrency",
+    ans2: "A blockchain",
+    ans3: "A computer on a Blockchain network",
+    ans4: "An exchange"
+  },
+  {
+    questionID: 39,
+    question: "What is a node?",
+    answer: "A computer on a Blockchain network",
+
+    ans1: "A type of cryptocurrency",
+    ans2: "A blockchain",
+    ans3: "A computer on a Blockchain network",
+    ans4: "An exchange"
+  },
+  {
+    questionID: 40,
+    question: "Where is the least safe place to store you crypto assets?",
+    answer: "On an exchange",
+
+    ans1: "In your pocket",
+    ans2: "On an exchange",
+    ans3: "On a hot wallet",
+    ans4: "At your work desk"
+  },
+  {
+    questionID: 41,
+    question: "What is a miner?",
+    answer: "On an exchange",
+
+    ans1: "A type of blockchain",
+    ans2: "An algorithm that predicts the next part of the chain",
+    ans3: "A person doing calculations to verify a transaction",
+    ans4: "Computers that validate and process blockchain transactions"
+  },
+  {
+    questionID: 42,
+    question: "Where can you buy cryptocurrency?",
+    answer: "All of the above",
+
+    ans1: "A private transaction",
+    ans2: "An exchange",
+    ans3: "A Bitcoin ATM",
+    ans4: "All of the above"
+  },
+  {
+    questionID: 43,
+    question: "What is the term for when a blockchain splits?",
+    answer: "A fork",
+
+    ans1: "A fork",
+    ans2: "A merger",
+    ans3: "A sidechain",
+    ans4: "A division"
+  },
+  {
+    questionID: 44,
+    question: "What is a genesis block?",
+    answer: "The first block on the Blockchain",
+
+    ans1: "The first block after each halving",
+    ans2: "A special block that cannot be seen by anyone",
+    ans3: "The second transaction of a Blockchain",
+    ans4: "The first block on the Blockchain"
+  },
+  {
+    questionID: 45,
+    question: "Asymmetric encryption uses:",
+    answer: "Public and Private keys",
+
+    ans1: "Public keys only",
+    ans2: "Private keys only",
+    ans3: "Public and Private keys",
+    ans4: "Proof of Stake"
+  },
+  {
+    questionID: 46,
+    question: "Which of these was the first meme coin?",
+    answer: "Dogecoin",
+
+    ans1: "XRP",
+    ans2: "Floki",
+    ans3: "Dogecoin",
+    ans4: "Shiba Inu"
+  },
+  {
+    questionID: 47,
+    question: "Who created Ethereum?",
+    answer: "Vitalik Buterin",
+
+    ans1: "Chris Larsen",
+    ans2: "Vitalik Buterin",
+    ans3: "Charles Hoskinson",
+    ans4: "Anatoly Yakovenko"
+  },
+  {
+    questionID: 48,
+    question: "What year did BTC first hit $50,000?",
+    answer: "2021",
+
+    ans1: "2017",
+    ans2: "2021",
+    ans3: "2020",
+    ans4: "2018"
+  },
+  {
+    questionID: 49,
+    question: "What is Circulating Supply?",
+    answer: "The number of cryptocurrency coins or tokens that are publicly available and circulating in the market",
+
+    ans1: "The number of cryptocurrency coins or tokens that will be publicly available and circulating in the market after release",
+    ans2: "The number of cryptocurrency coins or tokens that are publicly available and circulating in the market",
+    ans3: "The number of cryptocurrency coins or tokens that are publicly available including the coins that are burnt",
+    ans4: "The number of cryptocurrency coins or tokens that will be publicly available once all the coins are mined"
+  },
+  {
+    questionID: 50,
+    question: "What is an NFT?",
+    answer: "A unique and non-interchangeable unit of data stored on a digital ledger",
+
+    ans1: "A unique and non-interchangeable unit of data stored on a hard drive",
+    ans2: "A unique and interchangeable unit of data stored on a digital ledger",
+    ans3: "A unique and non-interchangeable unit of data stored on a digital ledger",
+    ans4: "A unique and interchangeable unit of data stored on a cloud computer"
+  }
 ];

@@ -32,20 +32,10 @@ const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];
 const savedScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 let score = 0;
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const highScores = JSON.parse(localStorage.getItem("123")) || [];
 const highScoresList = document.getElementById("user-infromation");
 
 let randomQuestionArray = [];
-
-highScoresList.innerHTML = highScores.map(score => {
-    return `
-    <tr>
-        <td> ${score.UserTime} </td>
-        <td> ${score.UserScore} </td>
-    </tr>
-    `;
-}).join("");
-
 
 /**
  * This event listener listens for the DOM to load, once it does it calls the function to initialise variables
@@ -79,7 +69,10 @@ function startGame() {
 function generateQuestions() {
     for (let i = 0; i < MAX_QUESTIONS; i++) {
         let RandomQuestions = questions[Math.floor(Math.random() * questions.length)];
+       
+        removeItem(questions, RandomQuestions);
         randomQuestionArray.push(RandomQuestions); 
+        
     }
     console.log(randomQuestionArray);
 }
@@ -108,8 +101,15 @@ function showQuestions(questionBank) {
 /**
  * Will remove any duplicate questions from the randomly selected questions in generateQuestions
  */
-function removeDuplicates() {
+const removeItem = (arr, item) => {
+    let newArray = [...arr];
+    const index = newArray.findIndex((element) => element === item)
+    if(index !== -1){
+        newArray.splice(index, 1)
+        return newArray
+    }
 
+    console.log(newArray);
 }
 
 /**
@@ -162,7 +162,6 @@ start_btn.addEventListener("click", function () {
     next_btn.classList.add("hidden");
     generateQuestions();
     showQuestions(randomQuestionArray[que_count]);
-    console.log(question_numb);
 });
 
 //The Replay Button
@@ -200,8 +199,7 @@ next_btn.addEventListener("click", function () {
         showResult();
         clearInterval(int);
         UserTime = timeTaken;
-        // localStorage.setItem("mostRecentScore", score);
-        localStorage.setItem('mostRecentScore', JSON.stringify(score));
+      
     }
 });
 
@@ -244,13 +242,9 @@ function optionSelected(answer) {
 
     if (userAns == correcAns) { //if user selected option is equal to array's correct answer
         UserScore += 1;
-        console.log("UserScore: " + UserScore);
-      
+        //green
     } else {
-        console.log("UserScore: " + UserScore);
-       
-        //add green colour to correct correctAns
-        //add red colour to their userAns
+        //green and red
     }
 
     const allOptions = options.length;
@@ -271,11 +265,19 @@ function showResult() {
 
 }
 
-function addValuesToLocalStorage(score, time) {
-    savedScores.push(score);
-    localStorage.setItem('points', JSON.stringify(savedScores));
+function addValuesToLocalStorage(uscore, time) {
+    highScores.push(uscore);
+    highScores.push(time);
 
-    savedTimes.push(time);
-    localStorage.setItem('time', JSON.stringify(savedTimes));
-
+    localStorage.setItem('mostRecentScore', JSON.stringify(highScores));
+   
 }
+
+// highScoresList.innerHTML = highScores.map(score => {
+//     return `
+//     <tr>
+//         <td> ${score.UserTime} </td>
+//         <td> ${score.UserScore} </td>
+//     </tr>
+//     `;
+// }).join("");
