@@ -210,6 +210,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - Validated JavaScript using [JSHint](https://jshint.com/)
 
+    ![script.js](docs/testing/script.png)
+    ![questions.js](docs/testing/questionjshint.png)
+
 ## Website Testing (Solving Issues):
 ---
 Due to the size of the testing section for Crypto-Quiz I have created another README.md which holds all of my testing screenshots and any errors and problems I incurred when creating this project. 
@@ -328,10 +331,6 @@ $ git clone https://github.com/RiyadhKh4n/crypto-quiz
 
 ## Content:
 * All information on the website was taken from different souces as well as a large marjority being my own - Links to all sources are below:
-
-## Media
-
-### Images
 
 ## Code
  
