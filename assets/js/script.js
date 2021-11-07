@@ -16,7 +16,7 @@ const exit_btn = document.getElementById("quit");
 let timerRef = document.querySelector('.timer-sec');
 let questionCount = document.getElementById("qs-count");
 
-const highScoresList = document.getElementById("user-infromation");
+// const highScoresList = document.getElementById("user-infromation");
 /* Initialsing varibales relating to time */
 let [milliseconds, seconds, minutes] = [0, 0, 0];
 let int;
@@ -28,10 +28,24 @@ let timeTaken;
 let UserScore = 0;
 
 /* Initialing variable which hold arrays */
-const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];
-const savedScores = JSON.parse(localStorage.getItem('highScores')) || [];
+// const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];
+// const savedScores = JSON.parse(localStorage.getItem('highScores')) || [];
+
+let score = 0;
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const highScoresList = document.getElementById("user-infromation");
 
 let randomQuestionArray = [];
+
+highScoresList.innerHTML = highScores.map(score => {
+    return `
+    <tr>
+        <td> ${score.UserTime} </td>
+        <td> ${score.UserScore} </td>
+    </tr>
+    `
+}).join("");
+
 
 /**
  * This event listener listens for the DOM to load, once it does it calls the function to initialise variables
@@ -186,6 +200,8 @@ next_btn.addEventListener("click", function () {
         showResult();
         clearInterval(int);
         UserTime = timeTaken;
+        // localStorage.setItem("mostRecentScore", score);
+        localStorage.setItem('mostRecentScore', JSON.stringify(score));
     }
 });
 
@@ -252,15 +268,15 @@ function showResult() {
     quizBox.classList.add("hidden");
     resultBox.classList.remove("hidden");
 
-    addValuesToLocalStorage(UserScore, timeTaken);
+    // addValuesToLocalStorage(UserScore, timeTaken);
 
 }
 
-function addValuesToLocalStorage(score, time) {
-    savedScores.push(score);
-    localStorage.setItem('points', JSON.stringify(savedScores));
+// function addValuesToLocalStorage(score, time) {
+//     savedScores.push(score);
+    // localStorage.setItem('points', JSON.stringify(savedScores));
 
-    savedTimes.push(time);
-    localStorage.setItem('time', JSON.stringify(savedTimes));
+//     savedTimes.push(time);
+//     localStorage.setItem('time', JSON.stringify(savedTimes));
 
-}
+// }

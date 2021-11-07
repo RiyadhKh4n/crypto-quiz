@@ -285,7 +285,7 @@ let questions = [{
   {
     questionID: 27,
     question: "What is a Decentralised Exchange?",
-    answer: "A type of cryptocurrency exchange which allows for direct peer-to-peer cryptocurrency transactions",
+    answer: "An exchange which allows for direct peer-to-peer cryptocurrency transactions",
 
     ans1: "An exchange which is controlled by a single entity",
     ans2: "An exchange which you can only hold cryptocurrencies, not buy or sell",
@@ -318,7 +318,7 @@ let questions = [{
   {
     questionID: 30,
     question: "What is the disadvantage of using a Decentralised Exchange?",
-    answer: "",
+    answer: "Higher gas fees and order type limitations",
 
     ans1: "You don't have custody of your private keys",
     ans2: "There is manipulation and downtime on exchanges",

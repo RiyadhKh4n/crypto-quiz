@@ -109,6 +109,7 @@ body {
     padding: 3px;
     display: block;
     text-align: left;
+    font-family: "Roboto Condensed";
 }
 
 .button-div {
@@ -199,7 +200,7 @@ body {
 }
 
 .quiz_box header .title {
-    font-size: 26px;
+    font-size: 20px;
     letter-spacing: 2px;
     font-weight: 600;
     color: #006E91;
@@ -213,19 +214,26 @@ body {
     border: 1px solid black;
     height: 45px;
     margin-left: 10px;
-    padding: 0 8px;
+    padding: 0 4px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 65%;
+    width: 70%;
     font-weight: bold;
 }
 
 .quiz_box header .time-passed {
     color: #263a44;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 15px;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 2px;
+}
+
+.quiz_box header .timer-sec {
+    font-size: 15px;
+    font-family: 'Odibee Sans', cursive;
 }
 
 .que_text {
@@ -535,11 +543,18 @@ td {
         margin-left: 8px;
         padding: 0 6px;
         justify-content: space-around;
+        width: 60%;
 
     }
 
     .quiz_box .timer .time-passed {
         font-size: 20px;
+    }
+
+    .quiz_box header .timer-sec {
+        font-size: 18px;
+        margin-left: 1px;
+        margin-right: 1px;
     }
 
     .question-section .que_text .questions {
@@ -658,7 +673,7 @@ td {
 
     .quiz_box .timer .time-passed {
         font-size: 20px;
-        margin-bottom: 3px;
+        margin-bottom: 1px;
     }
 
     #question {
@@ -767,13 +782,13 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 3.5em;
+        font-size: 3.2em;
     }
 
     .back-card-button {
         width: 300px;
         height: 180px;
-        font-size: 2em;
+        font-size: 3em;
 
     }
 

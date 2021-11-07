@@ -29,12 +29,16 @@ Crypto Quiz is a Javascript web application that is aimed at anyone who wishes t
 
         c. As a First Time Visitor, once the game is finished I want to be able to play again.
 
+        d. As a First Time Visitor, once the game is finished I want to be able to exit the game
+
+        e. As a First Time Visitor, I want to be able to see my previous scores and times
+
     * #### Returning Visitor Goals:
        a. As a Returning Visitor, I want the questions to be different than the previous ones.
 
-       b. As a Returning Visitor, I want to be able to beat my previous scores.
+       b. As a Returning Visitor, I want the game to be responsive to whichever device I am playing on.
 
-       c.  As a Returning Visitor, I want to be able to see my previous scores.
+       c.  As a Returning Visitor, I want to be able to see my previous scores and times.
 
     * #### Frequent Visitor Goals:
        a. As a Frequent Visitor, I want to see if any new questions have been added to the game.
@@ -133,7 +137,17 @@ Here describes the main features of the website and what the user can expect whe
 
 
 
-## Features Left to Implement:
+## Future Features:
+
+Some future features I would like to implement into Crypto Quiz:
+
+* Ideally I'd like to add a proper contact form so users can contact me on any topics they would like to be implemented into the quiz or any suggestion
+
+* Add a level progression mode so users can chose the difficulty of the questions
+
+* 
+
+*
 
 # Technologies 
 
