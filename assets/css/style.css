@@ -561,7 +561,7 @@ td {
     }
 
     .question-section .que_text .questions {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .question-section .option_list .option {
@@ -755,7 +755,7 @@ td {
 @media only screen and (min-width: 1440px) {
     .maincontainer {
         width: 1000px;
-        height: 1000px;
+        height: 980px;
     }
 
     .game-title {
