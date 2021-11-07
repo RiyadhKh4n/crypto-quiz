@@ -28,8 +28,8 @@ let timeTaken;
 let UserScore = 0;
 
 /* Initialing variable which hold arrays */
-// const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];
-// const savedScores = JSON.parse(localStorage.getItem('highScores')) || [];
+const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];
+const savedScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 let score = 0;
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
@@ -43,7 +43,7 @@ highScoresList.innerHTML = highScores.map(score => {
         <td> ${score.UserTime} </td>
         <td> ${score.UserScore} </td>
     </tr>
-    `
+    `;
 }).join("");
 
 
@@ -60,8 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
  */
 function initialseVariables() {
     [milliseconds, seconds, minutes] = [0, 0, 0];
-    int;
-    UserTime;
     UserScore = 0;
     que_count = 0; 
     question_numb = 1; 
@@ -169,7 +167,7 @@ start_btn.addEventListener("click", function () {
 
 //The Replay Button
 replay_quiz.addEventListener("click", function () {
-    resetGame()
+    resetGame();
 });
 
 //The Clear Board Button
@@ -249,7 +247,6 @@ function optionSelected(answer) {
         console.log("UserScore: " + UserScore);
       
     } else {
-        UserScore == UserScore;
         console.log("UserScore: " + UserScore);
        
         //add green colour to correct correctAns
@@ -270,15 +267,15 @@ function showResult() {
     quizBox.classList.add("hidden");
     resultBox.classList.remove("hidden");
 
-    // addValuesToLocalStorage(UserScore, timeTaken);
+    addValuesToLocalStorage(UserScore, timeTaken);
 
 }
 
-// function addValuesToLocalStorage(score, time) {
-//     savedScores.push(score);
-    // localStorage.setItem('points', JSON.stringify(savedScores));
+function addValuesToLocalStorage(score, time) {
+    savedScores.push(score);
+    localStorage.setItem('points', JSON.stringify(savedScores));
 
-//     savedTimes.push(time);
-//     localStorage.setItem('time', JSON.stringify(savedTimes));
+    savedTimes.push(time);
+    localStorage.setItem('time', JSON.stringify(savedTimes));
 
-// }
+}

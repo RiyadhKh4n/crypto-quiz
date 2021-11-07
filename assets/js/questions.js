@@ -241,12 +241,12 @@ let questions = [{
   {
     questionID: 23,
     question: "What is a stable coin?",
-    answer: "Cryptocurrencies where the price is designed to be pegged to a cryptocurrency",
+    answer: "Cryptocurrencies where the price is designed to be pegged to a cryptocurrency or fiat",
 
-    ans1: "Cryptocurrencies where the price is designed to be pegged to a cryptocurrency",
+    ans1: "Cryptocurrencies where the price is designed to be pegged to a cryptocurrency or fiat",
     ans2: "Cryptocurrencies which you can put normal fiat currencies into",
     ans3: "The crypto equivalent for commodities",
-    ans4: "A coin whose price stays stable"
+    ans4: "A coin whose price stays stable 24/7"
 
   },
   {

@@ -206,7 +206,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-
+    ![CSS](docs/testing/w3ccss.png)
 
 - Validated JavaScript using [JSHint](https://jshint.com/)
 
