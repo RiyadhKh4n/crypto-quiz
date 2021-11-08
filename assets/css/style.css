@@ -495,7 +495,6 @@ td {
     .maincontainer {
         width: 65vw;
         height: 70vh;
-        transform: translate(-50%, -60%);
     }
 
     .game-title {
@@ -536,7 +535,6 @@ td {
 
     .quiz_box {
         width: 600px;
-        transform: translate(-50%, -60%);
     }
 
     .quiz_box header .title {
@@ -593,7 +591,6 @@ td {
 
     .result_box {
         width: 500px;
-        transform: translate(-50%, -60%);
     }
 
     .result_box .icon .fa-crown {
@@ -622,13 +619,13 @@ td {
 @media only screen and (min-width: 1024px) {
     .maincontainer {
         width: 60vw;
-        height: 60vh;
+        height: 90vh;
     }
 
     .game-title {
         font-weight: bold;
         color: #006E91;
-        font-size: 6.6em;
+        font-size:8em;
     }
 
     .fake-btn {
@@ -652,7 +649,7 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     .back-card-button {
