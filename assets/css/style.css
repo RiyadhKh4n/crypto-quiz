@@ -493,19 +493,19 @@ td {
 
 @media only screen and (min-width: 768px) {
     .maincontainer {
-        width: 500px;
-        height: 560px;
+        width: 65vw;
+        height: 70vh;
     }
 
     .game-title {
         font-weight: bold;
         color: #006E91;
-        font-size: 4em;
+        font-size: 6em;
     }
 
     .fake-btn {
-        width: 175px;
-        height: 80px;
+        width: 195px;
+        height: 100px;
         font-size: 1.5em;
     }
 
@@ -524,12 +524,12 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .back-card-button {
         width: 175px;
-        height: 80px;
+        height: 100px;
         font-size: 1.5em;
     }
 
@@ -625,12 +625,12 @@ td {
     .game-title {
         font-weight: bold;
         color: #006E91;
-        font-size: 7em;
+        font-size: 6.6em;
     }
 
     .fake-btn {
-        width: 230px;
-        height: 130px;
+        width: 220px;
+        height: 120px;
         font-size: 2em;
     }
 
