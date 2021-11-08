@@ -152,6 +152,8 @@ body {
     background-color: white;
     border-color: #006E91;
     color: #006E91;
+    margin-left: 55px;
+    margin-top: 10px;
 }
 
 .quit:hover {
