@@ -435,9 +435,9 @@ let questions = [{
   {
     questionID: 41,
     question: "What is a miner?",
-    answer: "On an exchange",
+    answer: "Computers that validate and process blockchain transactions",
 
-    ans1: "A type of blockchain",
+    ans1: "A special type of blockchain",
     ans2: "An algorithm that predicts the next part of the chain",
     ans3: "A person doing calculations to verify a transaction",
     ans4: "Computers that validate and process blockchain transactions"

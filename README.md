@@ -31,7 +31,7 @@ Crypto Quiz is a Javascript web application that is aimed at anyone who wishes t
 
         d. As a First Time Visitor, once the game is finished I want to be able to exit the game
 
-        e. As a First Time Visitor, I want to be able to see my previous scores and times
+        e. As a First Time Visitor, I want to be able to set new scores and times
 
     * #### Returning Visitor Goals:
        a. As a Returning Visitor, I want the questions to be different than the previous ones.
@@ -65,8 +65,8 @@ Crypto Quiz is a Javascript web application that is aimed at anyone who wishes t
 
     * Icons:
     
-        I decided to use the [Font Awesome](https://fontawesome.com/start) icons. The icons that I chose fit in well with the overall theme of cryptocurrencies. The icons are styled in accordance with my website, with the same colors and font size.
-
+        For Crypto Quix there will be no icons used as I do not see them necessary however I may add a few crypto related icons throughout the game where I see fit.
+        
 * ## Scope 
 
     * When creating Crypto Quiz I will take a waterfall approach when developing. That is, creating sections of the website at a time and ensuring they work as intended before going onto the next section. I will be able to break up development by choosing small elements to work on daily, ensuring the website can be built and published in a timely fashion. As this porject incorporates JavaScript a large majoirty of my time will be spend developing and testing the logic behind the game as opposed to the aesthetics of the game as it will have a fairly simple design. 
@@ -215,7 +215,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Website Testing (Solving Issues):
 ---
-Due to the size of the testing section for Crypto-Quiz I have created another README.md which holds all of my testing screenshots and any errors and problems I incurred when creating this project. 
+Due to the size of the testing section for Crypto-Quiz I have created TESTING.md which holds all of my testing screenshots and any errors and problems I incurred when creating this project. This is also where you can find any responsiveness screenshots and browser compatibility.
 
 [Link To Testing README.md](TESTING.md)
    

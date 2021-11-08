@@ -272,13 +272,64 @@ Crypto Quiz when being viewed at mobile small (320px):
 
 ![320px](docs/testing/320px.png)
 ![320px](docs/testing/320px1.png)
-![320px](docs/testing/320px2.png)
 ![320px](docs/testing/320px3.png)
+![320px](docs/testing/320px2.png)
 
 ## Testing User Stories from User Experience (UX) Section
 
 * ### First Time Visitor Goals:
-    
+a. As a First Time Visitor, I want to easily understand the purpose of the site and learn how to play the game.
+
+![Back of Card](docs/readme/flipcardback.png)
+
+- Here the user is given clear directions on how to navigate through the program via the buttons. Once they flip the card, they are met with a Rules section which highlights to the user how to play the game as intended.
+
+b. As a First Time Visitor, I want the game to be enjoyable and challenging.
+
+c. As a First Time Visitor, once the game is finished I want to be able to play again.
+
+![Result](docs/readme/result_page.png)
+
+- Once the user has played the game, they will be met with the Results Page which will show them their score and the time it took them to complete. They have the option to replay the quiz if they wish by 
+selecting the appropriate button.
+
+d. As a First Time Visitor, once the game is finished I want to be able to exit the game
+
+![Result](docs/readme/result_page.png)
+
+- Once the user has played the game, they will be met with the Results Page which will show them their score and the time it took them to complete. They have the option to quit the game if they wish by 
+selecting the appropriate button.
+
+e. As a First Time Visitor, I want to be able to set new scores and times
+
+- By playing through the game the user is able to set new scores and times which are displayed at the end.
+
 * ### Returning Visitor Goals:
+
+a. As a Returning Visitor, I want the questions to be different than the previous ones.
+
+![qs](docs/testing/diffqs.png)
+![run1](docs/testing/run1.png)
+![run2](docs/testing/run3.png)
+
+- The image above outputs the array of questions generated each time a new game. Showing that the questions are different each time they play.
+
+b. As a Returning Visitor, I want the game to be responsive to whichever device I am playing on.
+
+- By navigating to the 'Browser Compatibility & Responsiveness' section of TESTING.md you will be able to see the game being played on different screen sizes 
+
+c. As a Returning Visitor, I want to be able to see my previous scores and times.
+
+![times](docs/testing/prevtimes.png)
+
+- The above image shows all previous times and scores the user achieved
    
 * ### Frequent User Goals:
+
+a. As a Frequent Visitor, I want to see if any new questions have been added to the game.
+
+- By playing through the game at a later date, if there have been new questions added they will generate when playing.
+
+b. As a Frequent Visitor, I want to see if I can beat my old score.
+
+- By playing through the game again, new scores and times can be generated allowing the player to attempt at beating old scores.

@@ -258,18 +258,14 @@ function optionSelected(answer) {
 function showResult() {
     quizBox.classList.add("hidden");
     resultBox.classList.remove("hidden");
-
     addValuesToLocalStorage(UserScore, timeTaken);
-
 }
 
 function addValuesToLocalStorage(uscore, time) {
-
     let newScore = {
         "QsCorrect": uscore,
         "timeTaken": time
     };
-
     savedScores.push(newScore);
     localStorage.setItem('scores', JSON.stringify(savedScores));
     displayScores(); 
