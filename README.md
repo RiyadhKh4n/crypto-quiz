@@ -145,7 +145,7 @@ Some future features I would like to implement into Crypto Quiz:
 
 * Add a level progression mode so users can chose the difficulty of the questions
 
-* 
+* Double the question bank to make the game more interesting
 
 *
 
@@ -224,15 +224,19 @@ Due to the size of the testing section for Crypto-Quiz I have created another RE
 
 The output of Crypto Quiz when being viewed on Microsoft Edge can be seen below:
 
-![edge]()
+![edge](docs/testing/edgetest.png)
+![edgeqs](docs/testing/edgeqs.png)
+![edgeres](docs/testing/edgeresult.png)
 
 The output of Crypto Quiz when being viewed on Brave Browser can be seen below:
-
-![brave]()
+* Only one output will be shown because the rest of the testing and devlopment was done on Brave Browser 
+![brave](docs/testing/brave.png)
 
 The output of Crypto Quiz when being viewed on Firefox can be seen below:
 
-![firefox]()
+![firefox](docs/testing/firestart.png)
+![firefoxqs](docs/testing/fireqs.png)
+![fireres](docs/testing/fireres.png)
 
 Crypto Quiz when being viewed at 1440px:
 
