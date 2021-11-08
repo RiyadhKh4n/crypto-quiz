@@ -110,7 +110,7 @@ body {
     display: block;
     text-align: justify;
     font-family: "Roboto Condensed";
-    
+
 }
 
 .button-div {
@@ -618,7 +618,7 @@ td {
 
 @media only screen and (min-width: 1024px) {
     .maincontainer {
-        width: 65vw;
+        width: 50vw;
         height: 80vh;
     }
 
@@ -649,7 +649,7 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     .back-card-button {
@@ -755,7 +755,7 @@ td {
 
 @media only screen and (min-width: 1440px) {
     .maincontainer {
-        width: 65vw;
+        width: 50vw;
         height: 90vh;
     }
 
