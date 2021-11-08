@@ -277,7 +277,7 @@ function displayScores(){
         return `
         <tr>
             <td> ${score.timeTaken} </td>
-            <td> ${score.QsCorrect} </td>
+            <td> ${score.QsCorrect + " / 10"} </td>
         </tr>
         `;
     }).join("");
