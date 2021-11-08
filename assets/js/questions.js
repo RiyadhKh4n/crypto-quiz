@@ -373,11 +373,11 @@ let questions = [{
   {
     questionID: 35,
     question: "What are the most important features to look for in a token fund platform?",
-    answer: "Liquidity, a wide choice of popular cryptocurrencies and a dashboard to help control the overal performance",
+    answer: "Liquidity, wide choice of popular cryptocurrencies and a way to measure overall performance",
 
-    ans1: "A platform where portfolio managers have full control over investor funds",
+    ans1: "Platform where portfolio managers have full control over investor funds",
     ans2: "A crypto-only platform where bank card deposits are not accepted",
-    ans3: "Liquidity, a wide choice of popular cryptocurrencies and a dashboard to help control the overal performance",
+    ans3: "Liquidity, wide choice of popular cryptocurrencies and a way to measure overall performance",
     ans4: "Scalability and security, meaning that the fund will likely do very well in the future"
 
   },
