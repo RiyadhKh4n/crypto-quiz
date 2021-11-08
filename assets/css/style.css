@@ -524,7 +524,7 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .back-card-button {
@@ -564,6 +564,7 @@ td {
 
     .question-section .que_text .questions {
         font-size: 35px;
+        letter-spacing: 0;
     }
 
     .question-section .option_list .option {
@@ -599,6 +600,7 @@ td {
 
     .congrat-text {
         font-size: 35px;
+        text-align: center;
     }
 
     thead {
@@ -619,7 +621,7 @@ td {
 @media only screen and (min-width: 1024px) {
     .maincontainer {
         width: 60vw;
-        height: 90vh;
+        height: 80vh;
     }
 
     .game-title {
@@ -833,7 +835,6 @@ td {
         font-size: 1.2em;
     }
 }
-
 
 @media only screen and (min-width: 1440px) {
     .maincontainer {

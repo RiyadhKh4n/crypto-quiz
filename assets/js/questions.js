@@ -17,10 +17,10 @@ let questions = [{
     question: "What is a smart contract?",
     answer: "Programs stored on a blockchain that run when predetermined conditions are met",
 
-    ans1: "A computer protocol that runs 24/7",
-    ans2: "A cloud-based contract stored on a blockchain",
-    ans3: "Programs stored on a blockchain that run when predetermined conditions are met",
-    ans4: "Artificial intelligence assisted contract",
+    ans1: "A computer protocol that runs 24/7 without breakdowns",
+    ans2: "Programs stored on a blockchain that run when predetermined conditions are met",
+    ans3: "A cloud-based contract stored on a public blockchain",
+    ans4: "Artificial intelligence assisted contract which run when conditions are met",
 
 
   },
