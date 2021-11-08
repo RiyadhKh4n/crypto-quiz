@@ -15,7 +15,6 @@ body {
 }
 
 /* Flip Card */
-
 .maincontainer {
     position: absolute;
     width: 300px;
@@ -110,7 +109,6 @@ body {
     display: block;
     text-align: justify;
     font-family: "Roboto Condensed";
-
 }
 
 .button-div {
@@ -328,7 +326,6 @@ footer .total_que #qs-count {
 }
 
 .total_que span span {
-
     padding: 0 5px;
 }
 
@@ -352,7 +349,6 @@ footer #next-btn {
     border: 2px solid #CF9FFF;
     letter-spacing: 1px;
     line-height: 10px;
-
     transform: scale(0.95);
     transition: all 0.3s ease;
 }
@@ -367,7 +363,6 @@ footer #next-btn {
 }
 
 /* Results Screen*/
-
 .result_box {
     display: flex;
     flex-direction: column;
@@ -399,7 +394,6 @@ footer #next-btn {
     font-family: "Roboto Condensed";
     color: #006E91;
     font-weight: bold;
-
 }
 
 .leaderboard-container {
@@ -437,7 +431,6 @@ thead {
     text-transform: uppercase;
 }
 
-
 tbody tr:nth-child(2n) {
     background: #006E91;
 }
@@ -465,7 +458,6 @@ td {
 
 .result-btn {
     margin: 2em;
-
 }
 
 .replay {
@@ -549,7 +541,6 @@ td {
         padding: 0 6px;
         justify-content: space-around;
         width: 60%;
-
     }
 
     .quiz_box .timer .time-passed {
@@ -772,6 +763,7 @@ td {
         height: 130px;
         font-size: 2.4em;
     }
+    
     .info-title {
         font-size: 4em;
     }

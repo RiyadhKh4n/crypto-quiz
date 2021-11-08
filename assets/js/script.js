@@ -16,25 +16,20 @@ const exit_btn = document.getElementById("quit");
 let timerRef = document.querySelector('.timer-sec');
 let questionCount = document.getElementById("qs-count");
 let option_list = document.querySelectorAll(".option");
+const highScoresList = document.getElementById("user-infromation");
 
-/* Initialsing varibales relating to time */
-let [milliseconds, seconds, minutes] = [0, 0, 0];
-let int;
-let UserTime;
-let question_numb;
-
-/* Initialsing varibales which hold values*/
+/* Initialsing varibales */
 const MAX_QUESTIONS = 10;
 let timeTaken;
 let UserScore = 0;
 let que_count = 0;
+let UserTime;
+let question_numb;
+let [milliseconds, seconds, minutes] = [0, 0, 0];
+let int;
 
 /* Initialing variable which hold arrays */
-// const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];
 let savedScores = JSON.parse(localStorage.getItem('scores')) || [];
-
-const highScoresList = document.getElementById("user-infromation");
-
 let randomQuestionArray = [];
 
 /**
@@ -51,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
 function initialseVariables() {
     [milliseconds, seconds, minutes] = [0, 0, 0];
     UserScore = 0;
-    que_count = 0; 
-    question_numb = 1; 
+    que_count = 0;
+    question_numb = 1;
 }
 
 /**
@@ -69,26 +64,19 @@ function startGame() {
 function generateQuestions() {
     for (let i = 0; i < MAX_QUESTIONS; i++) {
         let RandomQuestions = questions[Math.floor(Math.random() * questions.length)];
-        randomQuestionArray.push(RandomQuestions);  
+        randomQuestionArray.push(RandomQuestions);
     }
-    console.log(randomQuestionArray);
 }
-
-
 
 function showQuestions(questionBank) {
     let questions_to_user = document.getElementById("question");
     questions_to_user.innerHTML = questionBank.question;
 
-    //Get relevant ids for all answer btns
     document.getElementById("ans1").innerText = questionBank.ans1;
     document.getElementById("ans2").innerText = questionBank.ans2;
     document.getElementById("ans3").innerText = questionBank.ans3;
     document.getElementById("ans4").innerText = questionBank.ans4;
 
-    // const option = option_list123.querySelectorAll(".option_list");
-
-    // set onclick attribute to all available options
     for (let i = 0; i < option_list.length; i++) {
         option_list[i].setAttribute("onclick", "optionSelected(this)");
     }
@@ -97,22 +85,23 @@ function showQuestions(questionBank) {
 /**
  * Will remove any duplicate questions from the randomly selected questions in generateQuestions
  */
+function removeDuplicates(){
 
-
+}
 
 /**
  * Function which is called when the user wants to replay the quiz
  */
 function resetGame() {
-    resultBox.classList.add("hidden"); //hide results
-    quizBox.classList.remove("hidden"); //show flipcard
+    resultBox.classList.add("hidden"); 
+    quizBox.classList.remove("hidden"); 
     next_btn.classList.add("hidden");
 
     const options = document.querySelectorAll(".option_list");
-    const allOptions = options.length; //getting all option items
+    const allOptions = options.length; 
 
     for (let i = 0; i < allOptions; i++) {
-        options[i].classList.remove("disabled"); //once user select an option then disabled all options
+        options[i].classList.remove("disabled");
     }
 
     int = setInterval(startTimer, 10);
@@ -120,21 +109,21 @@ function resetGame() {
     initialseVariables();
     questionCount.innerText = question_numb;
     startGame();
-    showQuestions(randomQuestionArray[que_count]);  
+    showQuestions(randomQuestionArray[que_count]);
 }
 
 /**
  * Function which is called when the user Quits the quiz
  */
 function exitGame() {
-    resultBox.classList.add("hidden"); //hide results
-    flipcard.classList.remove("hidden"); //show flipcard 
+    resultBox.classList.add("hidden"); 
+    flipcard.classList.remove("hidden"); 
 
     const options = document.querySelectorAll(".option_list");
-    const allOptions = options.length; //getting all option items
+    const allOptions = options.length; 
 
     for (let i = 0; i < allOptions; i++) {
-        options[i].classList.remove("disabled"); //once user select an option then disabled all options
+        options[i].classList.remove("disabled"); 
     }
 
     randomQuestionArray = [];
@@ -170,33 +159,36 @@ exit_btn.addEventListener("click", function () {
 });
 
 next_btn.addEventListener("click", function () {
-    next_btn1();
+    next_btn_call()
 });
 
-function next_btn1(){
+/**
+ * This function is responsible handling the next_btn events each time it is called
+ */
+function next_btn_call() {
 
-    option_list.forEach(option =>{
+    option_list.forEach(option => {
         option.classList.remove("correct", "incorrect");
     });
 
     if (que_count < 9) {
         next_btn.classList.add("hidden");
         const options = document.querySelectorAll(".option_list");
-        const allOptions = options.length; //getting all option items
+        const allOptions = options.length; 
 
         for (let i = 0; i < allOptions; i++) {
-            options[i].classList.remove("disabled"); 
+            options[i].classList.remove("disabled");
         }
 
         que_count++;
         question_numb++;
-        showQuestions(randomQuestionArray[que_count]); //works when questions is passed
+        showQuestions(randomQuestionArray[que_count]); 
         questionCount.innerText = question_numb;
 
     } else {
         showResult();
         clearInterval(int);
-        UserTime = timeTaken; 
+        UserTime = timeTaken;
     }
 }
 
@@ -233,11 +225,11 @@ function startTimer() {
  */
 function optionSelected(answer) {
     let userAns = answer.textContent;
-    let correcAns = randomQuestionArray[que_count].answer; 
+    let correcAns = randomQuestionArray[que_count].answer;
 
     const options = document.querySelectorAll(".option_list");
 
-    if (userAns == correcAns) { 
+    if (userAns == correcAns) {
         UserScore += 1;
         answer.classList.add("correct");
 
@@ -268,10 +260,10 @@ function addValuesToLocalStorage(uscore, time) {
     };
     savedScores.push(newScore);
     localStorage.setItem('scores', JSON.stringify(savedScores));
-    displayScores(); 
+    displayScores();
 }
 
-function displayScores(){
+function displayScores() {
     console.log(savedScores);
     highScoresList.innerHTML = savedScores.map(score => {
         return `
