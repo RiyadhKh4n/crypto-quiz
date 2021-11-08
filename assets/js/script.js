@@ -65,8 +65,10 @@ function generateQuestions() {
     for (let i = 0; i < MAX_QUESTIONS; i++) {
         let RandomQuestions = questions[Math.floor(Math.random() * questions.length)];
         randomQuestionArray.push(RandomQuestions);
+        }
+        // console.log(randomQuestionArray)
     }
-}
+
 
 function showQuestions(questionBank) {
     let questions_to_user = document.getElementById("question");
