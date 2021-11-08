@@ -266,10 +266,15 @@ function showResult() {
 }
 
 function addValuesToLocalStorage(uscore, time) {
-    highScores.push(uscore);
-    highScores.push(time);
+    // highScores.push(uscore);
+    // highScores.push(time);
 
-    localStorage.setItem('mostRecentScore', JSON.stringify(highScores));
+    savedScores.push(UserScore);
+    savedScores.push(timeTaken);
+    // savedTimes.push(timeTaken);
+
+    localStorage.setItem('scores', JSON.stringify(savedScores));
+    // localStorage.setItem('time', JSON.stringify(savedTimes));
    
 }
 

@@ -245,8 +245,8 @@ let questions = [{
 
     ans1: "Cryptocurrencies where the price is designed to be pegged to a cryptocurrency or fiat",
     ans2: "Cryptocurrencies which you can put normal fiat currencies into",
-    ans3: "The crypto equivalent for commodities",
-    ans4: "A coin whose price stays stable 24/7"
+    ans3: "The cryptocurrency equivalent for commodities",
+    ans4: "A coin whose price stays stable 24/7 regardless of market volatility"
 
   },
   {
