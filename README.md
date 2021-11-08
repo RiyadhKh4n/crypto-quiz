@@ -184,14 +184,12 @@ Some future features I would like to implement into Crypto Quiz:
 10. [Autoprefixer](https://autoprefixer.github.io/):
     * It allowed me to write your CSS rules without vendor prefixes, it takes care of doing that based on current browser popularity and property support.
 
----
 # Testing 
 
 Due to the size of the testing section for Crypto Quiz I have created TESTING.md which holds all of my testing screenshots and any errors and problems I incurred when creating this project. This is also where you can find any responsiveness screenshots and browser compatibility.
 
 [Link To Testing README.md](TESTING.md)
    
----
 # Deployment 
 
 ## GitHub Pages

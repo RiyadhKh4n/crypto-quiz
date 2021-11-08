@@ -1,9 +1,9 @@
 
 ## Initial Testing
 
-* The website was tested on Google Chrome, Microsoft Edge, Brave browsers as well as Safari.
-* The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhone 11.
-* Testing was completed to ensure that all pages were linking correctly from the navigation bar and footer.
+* The website was tested on Firefox, Microsoft Edge, Brave browsers and developed and tested on Google Chrome.
+* The website was viewed on a variety of devices such as Desktop, Laptop, iPhone 7, iPhone 8 & iPhone 11.
+* Testing was completed to ensure that the game worked and displayed as intended on different browsers and viewports.
 * Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
