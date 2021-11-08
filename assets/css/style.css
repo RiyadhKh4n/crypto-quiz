@@ -617,19 +617,19 @@ td {
 
 @media only screen and (min-width: 1024px) {
     .maincontainer {
-        width: 700px;
-        height: 760px;
+        width: 55vw;
+        height: 80vh;
     }
 
     .game-title {
         font-weight: bold;
         color: #006E91;
-        font-size: 6em;
+        font-size: 8em;
     }
 
     .fake-btn {
-        width: 200px;
-        height: 110px;
+        width: 240px;
+        height: 140px;
         font-size: 2.5em;
     }
 
@@ -652,10 +652,9 @@ td {
     }
 
     .back-card-button {
-        width: 200px;
-        height: 110px;
-        font-size: 2em;
-
+        width: 240px;
+        height: 140px;
+        font-size: 2.2em;
     }
 
     .quiz_box {
@@ -755,8 +754,8 @@ td {
 
 @media only screen and (min-width: 1440px) {
     .maincontainer {
-        width: 1000px;
-        height: 980px;
+        width: 60vw;
+        height: 90vh;
     }
 
     .game-title {
@@ -786,7 +785,7 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 3.2em;
+        font-size: 2.8em;
     }
 
     .back-card-button {

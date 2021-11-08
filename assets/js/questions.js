@@ -213,7 +213,7 @@ let questions = [{
     ans1: "It mandates that renewable power must be used for coin mining",
     ans2: "It's less popular and smaller than BTC, so it simply uses less energy",
     ans3: "The method for verifying transactions is different and less energy intensive than for Bitcoin",
-    ans4: "Its logo is green"
+    ans4: "Its logo for the coin is green"
 
   },
   {

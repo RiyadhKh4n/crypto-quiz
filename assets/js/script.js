@@ -15,6 +15,7 @@ const exit_btn = document.getElementById("quit");
 
 let timerRef = document.querySelector('.timer-sec');
 let questionCount = document.getElementById("qs-count");
+let option_list = document.querySelectorAll(".option");
 
 /* Initialsing varibales relating to time */
 let [milliseconds, seconds, minutes] = [0, 0, 0];
@@ -26,13 +27,12 @@ let question_numb;
 const MAX_QUESTIONS = 10;
 let timeTaken;
 let UserScore = 0;
+let que
 
 /* Initialing variable which hold arrays */
-const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];
-const savedScores = JSON.parse(localStorage.getItem('highScores')) || [];
+// const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];
+let savedScores = JSON.parse(localStorage.getItem('scores')) || [];
 
-let score = 0;
-const highScores = JSON.parse(localStorage.getItem("123")) || [];
 const highScoresList = document.getElementById("user-infromation");
 
 let randomQuestionArray = [];
@@ -69,10 +69,7 @@ function startGame() {
 function generateQuestions() {
     for (let i = 0; i < MAX_QUESTIONS; i++) {
         let RandomQuestions = questions[Math.floor(Math.random() * questions.length)];
-       
-        removeItem(questions, RandomQuestions);
-        randomQuestionArray.push(RandomQuestions); 
-        
+        randomQuestionArray.push(RandomQuestions);  
     }
     console.log(randomQuestionArray);
 }
@@ -92,8 +89,7 @@ function showQuestions(questionBank) {
     // const option = option_list123.querySelectorAll(".option_list");
 
     // set onclick attribute to all available options
-    const option_list = document.querySelectorAll(".option");
-    for (i = 0; i < option_list.length; i++) {
+    for (let i = 0; i < option_list.length; i++) {
         option_list[i].setAttribute("onclick", "optionSelected(this)");
     }
 }
@@ -101,16 +97,8 @@ function showQuestions(questionBank) {
 /**
  * Will remove any duplicate questions from the randomly selected questions in generateQuestions
  */
-const removeItem = (arr, item) => {
-    let newArray = [...arr];
-    const index = newArray.findIndex((element) => element === item)
-    if(index !== -1){
-        newArray.splice(index, 1)
-        return newArray
-    }
 
-    console.log(newArray);
-}
+
 
 /**
  * Function which is called when the user wants to replay the quiz
@@ -123,7 +111,7 @@ function resetGame() {
     const options = document.querySelectorAll(".option_list");
     const allOptions = options.length; //getting all option items
 
-    for (i = 0; i < allOptions; i++) {
+    for (let i = 0; i < allOptions; i++) {
         options[i].classList.remove("disabled"); //once user select an option then disabled all options
     }
 
@@ -145,7 +133,7 @@ function exitGame() {
     const options = document.querySelectorAll(".option_list");
     const allOptions = options.length; //getting all option items
 
-    for (i = 0; i < allOptions; i++) {
+    for (let i = 0; i < allOptions; i++) {
         options[i].classList.remove("disabled"); //once user select an option then disabled all options
     }
 
@@ -172,7 +160,8 @@ replay_quiz.addEventListener("click", function () {
 //The Clear Board Button
 clearBoard_button.addEventListener("click", function () {
     localStorage.clear();
-    userInformation.style.display = "none";
+    savedScores = [];
+    displayScores();
 });
 
 // The Quit Quiz Button
@@ -181,12 +170,21 @@ exit_btn.addEventListener("click", function () {
 });
 
 next_btn.addEventListener("click", function () {
+    next_btn1();
+});
+
+function next_btn1(){
+
+    option_list.forEach(option =>{
+        option.classList.remove("correct", "incorrect");
+    });
+
     if (que_count < 9) {
         next_btn.classList.add("hidden");
         const options = document.querySelectorAll(".option_list");
         const allOptions = options.length; //getting all option items
 
-        for (i = 0; i < allOptions; i++) {
+        for (let i = 0; i < allOptions; i++) {
             options[i].classList.remove("disabled"); 
         }
 
@@ -198,10 +196,9 @@ next_btn.addEventListener("click", function () {
     } else {
         showResult();
         clearInterval(int);
-        UserTime = timeTaken;
-      
+        UserTime = timeTaken; 
     }
-});
+}
 
 /**
  * 
@@ -235,20 +232,21 @@ function startTimer() {
  * This will check if the users answer is the correct one
  */
 function optionSelected(answer) {
-    let userAns = answer.textContent; //getting user selected option
-    let correcAns = randomQuestionArray[que_count].answer; //getting correct answer from array
+    let userAns = answer.textContent;
+    let correcAns = randomQuestionArray[que_count].answer; 
 
     const options = document.querySelectorAll(".option_list");
 
-    if (userAns == correcAns) { //if user selected option is equal to array's correct answer
+    if (userAns == correcAns) { 
         UserScore += 1;
-        //green
+        answer.classList.add("correct");
+
     } else {
-        //green and red
+        answer.classList.add("incorrect");
     }
 
     const allOptions = options.length;
-    for (i = 0; i < allOptions; i++) {
+    for (let i = 0; i < allOptions; i++) {
         options[i].classList.add("disabled");
     }
     next_btn.classList.remove("hidden");
@@ -266,23 +264,25 @@ function showResult() {
 }
 
 function addValuesToLocalStorage(uscore, time) {
-    // highScores.push(uscore);
-    // highScores.push(time);
 
-    savedScores.push(UserScore);
-    savedScores.push(timeTaken);
-    // savedTimes.push(timeTaken);
+    let newScore = {
+        "QsCorrect": uscore,
+        "timeTaken": time
+    };
 
+    savedScores.push(newScore);
     localStorage.setItem('scores', JSON.stringify(savedScores));
-    // localStorage.setItem('time', JSON.stringify(savedTimes));
-   
+    displayScores(); 
 }
 
-// highScoresList.innerHTML = highScores.map(score => {
-//     return `
-//     <tr>
-//         <td> ${score.UserTime} </td>
-//         <td> ${score.UserScore} </td>
-//     </tr>
-//     `;
-// }).join("");
+function displayScores(){
+    console.log(savedScores);
+    highScoresList.innerHTML = savedScores.map(score => {
+        return `
+        <tr>
+            <td> ${score.timeTaken} </td>
+            <td> ${score.QsCorrect} </td>
+        </tr>
+        `;
+    }).join("");
+}

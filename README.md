@@ -218,68 +218,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 Due to the size of the testing section for Crypto-Quiz I have created another README.md which holds all of my testing screenshots and any errors and problems I incurred when creating this project. 
 
 [Link To Testing README.md](TESTING.md)
-
-##  Browser Compatibility & Responsiveness
----
-
-The output of Crypto Quiz when being viewed on Microsoft Edge can be seen below:
-
-![edge](docs/testing/edgetest.png)
-![edgeqs](docs/testing/edgeqs.png)
-![edgeres](docs/testing/edgeresult.png)
-
-The output of Crypto Quiz when being viewed on Brave Browser can be seen below:
-* Only one output will be shown because the rest of the testing and devlopment was done on Brave Browser 
-![brave](docs/testing/brave.png)
-
-The output of Crypto Quiz when being viewed on Firefox can be seen below:
-
-![firefox](docs/testing/firestart.png)
-![firefoxqs](docs/testing/fireqs.png)
-![fireres](docs/testing/fireres.png)
-
-Crypto Quiz when being viewed at 1440px:
-
-![1140px](docs/testing/1440px.png)
-![1140px](docs/testing/1440px1.png)
-![1140px](docs/testing/1440px2.png)
-![1140px](docs/testing/1440px3.png)
-
-Crypto Quiz when being viewed at 1024px: 
-
-![1024px](docs/testing/1024px1.png)
-![1024px](docs/testing/1024px.png)
-![1024px](docs/testing/1024px2.png)
-![1024px](docs/testing/1024px3.png)
-
-Crypto Quiz when being viewed at 768px:
-
-![768px](docs/testing/768px.png)
-![768px](docs/testing/768px1.png)
-![768px](docs/testing/768px2.png)
-![768px](docs/testing/768px3.png)
-
-Crypto Quiz when being viewed at mobile (425px):
-
-![425px](docs/testing/425px1.png)
-![425px](docs/testing/425pxup.png)
-![425px](docs/testing/425px3.png)
-![425px](docs/testing/425px4.png)
-
-Crypto Quiz when being viewed at mobile small (320px):
-
-![320px](docs/testing/320px.png)
-![320px](docs/testing/320px1.png)
-![320px](docs/testing/320px2.png)
-![320px](docs/testing/320px3.png)
-
-## Testing User Stories from User Experience (UX) Section
-
-* ### First Time Visitor Goals:
-    
-* ### Returning Visitor Goals:
-   
-* ### Frequent User Goals:
    
 ## Bugs
 
