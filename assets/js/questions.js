@@ -49,10 +49,10 @@ let questions = [{
   {
     questionID: 5,
     question: "What is a Bitcoin Block?",
-    answer: "A Bitcoin Transaction",
+    answer: "A Bitcoin transaction",
 
-    ans1: "A Bitcoin Transaction",
-    ans2: "The main community behind Bitcoin",
+    ans1: "A Bitcoin transaction",
+    ans2: "All the Bitcoin transactions",
     ans3: "A virtual brick used in Minecraft",
     ans4: "A set of Bitcoin transactions"
 
@@ -60,19 +60,19 @@ let questions = [{
   {
     questionID: 6,
     question: "What is cold storage?",
-    answer: "Storing your Private key offline",
+    answer: "Storing your private key offline not connected to the internet",
 
     ans1: "Switching your phone off as you make a transaction",
-    ans2: "Running a Bitcoin node offline",
+    ans2: "When you store you wallet in a cold room",
     ans3: "Cooling your mining equipment with extra fans to stop over heating",
-    ans4: "Storing your Private key offline"
+    ans4: "Storing your private key offline not connected to the internet"
   },
   {
     questionID: 7,
     question: "What is a Blockchain?",
     answer: "A set of blocks containing transactions",
 
-    ans1: "A centralised database",
+    ans1: "A centralised database that stores transactions",
     ans2: "The Bitcoin software protocol",
     ans3: "A set of blocks containing transactions",
     ans4: "A set of transactions"
@@ -213,7 +213,7 @@ let questions = [{
     ans1: "It mandates that renewable power must be used for coin mining",
     ans2: "It's less popular and smaller than BTC, so it simply uses less energy",
     ans3: "The method for verifying transactions is different and less energy intensive than for Bitcoin",
-    ans4: "Its logo for the coin is green"
+    ans4: "The logo for the coin is green and they promote recycling"
 
   },
   {
@@ -307,9 +307,9 @@ let questions = [{
   {
     questionID: 29,
     question: "What is the advantage of using a Decentralised Exchange?",
-    answer: "You have access to loads more tokens and you don't have to do KYC",
+    answer: "You have access to alot more tokens and you don't have to KYC if you want to trade",
 
-    ans1: "You have access to loads more tokens and you don't have to do KYC",
+    ans1: "You have access to alot more tokens and you don't have to KYC if you want to trade",
     ans2: "There is high volumes of liquidity meanining you dont have to worry about them running out of tokens",
     ans3: "Speed and cost means transactions take place quicky with minimal fails",
     ans4: "You can use trading bots to place trades for you"
@@ -405,22 +405,22 @@ let questions = [{
   {
     questionID: 38,
     question: "What is a node?",
-    answer: "A computer on a Blockchain network",
+    answer: "A computer on a blockchain network",
 
     ans1: "A type of cryptocurrency",
-    ans2: "A blockchain",
-    ans3: "A computer on a Blockchain network",
-    ans4: "An exchange"
+    ans2: "A blockchain containing transactions",
+    ans3: "A computer on a blockchain network",
+    ans4: "An exchange where you buy coins"
   },
   {
     questionID: 39,
-    question: "What is a node?",
-    answer: "A computer on a Blockchain network",
+    question: "Which one of the following is a DEX?",
+    answer: "Uniswap",
 
-    ans1: "A type of cryptocurrency",
-    ans2: "A blockchain",
-    ans3: "A computer on a Blockchain network",
-    ans4: "An exchange"
+    ans1: "Binance",
+    ans2: "KuCoin",
+    ans3: "Gate.io",
+    ans4: "Uniswap"
   },
   {
     questionID: 40,
@@ -531,5 +531,15 @@ let questions = [{
     ans2: "A unique and interchangeable unit of data stored on a digital ledger",
     ans3: "A unique and non-interchangeable unit of data stored on a digital ledger",
     ans4: "A unique and interchangeable unit of data stored on a cloud computer"
-  }
+  },
+  {
+    questionID: 51,
+    question: "Which one of the following is a CEX?",
+    answer: "KuCoin",
+
+    ans1: "PancakeSwap",
+    ans2: "KuCoin",
+    ans3: "1inch",
+    ans4: "Uniswap"
+  },
 ];
