@@ -264,14 +264,14 @@ Crypto Quiz when being viewed at mobile (425px):
 ![425px](docs/testing/425px1.png)
 ![425px](docs/testing/425pxup.png)
 ![425px](docs/testing/425px3.png)
-![425px]()
+![425px](docs/testing/425px4.png)
 
 Crypto Quiz when being viewed at mobile small (320px):
 
 ![320px](docs/testing/320px.png)
 ![320px](docs/testing/320px1.png)
 ![320px](docs/testing/320px2.png)
-![320px]()
+![320px](docs/testing/320px3.png)
 
 ## Testing User Stories from User Experience (UX) Section
 
