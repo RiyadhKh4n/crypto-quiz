@@ -495,6 +495,7 @@ td {
     .maincontainer {
         width: 65vw;
         height: 70vh;
+        transform: translate(-50%, -60%);
     }
 
     .game-title {
@@ -535,6 +536,7 @@ td {
 
     .quiz_box {
         width: 600px;
+        transform: translate(-50%, -60%);
     }
 
     .quiz_box header .title {
@@ -591,6 +593,7 @@ td {
 
     .result_box {
         width: 500px;
+        transform: translate(-50%, -60%);
     }
 
     .result_box .icon .fa-crown {
@@ -618,8 +621,8 @@ td {
 
 @media only screen and (min-width: 1024px) {
     .maincontainer {
-        width: 50vw;
-        height: 80vh;
+        width: 60vw;
+        height: 60vh;
     }
 
     .game-title {
@@ -767,9 +770,9 @@ td {
     }
 
     .fake-btn {
-        width: 280px;
-        height: 170px;
-        font-size: 3em;
+        width: 260px;
+        height: 150px;
+        font-size: 2.4em;
     }
 
     .info-title {
