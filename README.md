@@ -66,7 +66,7 @@ Crypto Quiz is a Javascript web application that is aimed at anyone who wishes t
     * Icons:
     
         For Crypto Quix there will be no icons used as I do not see them necessary however I may add a few crypto related icons throughout the game where I see fit.
-        
+
 * ## Scope 
 
     * When creating Crypto Quiz I will take a waterfall approach when developing. That is, creating sections of the website at a time and ensuring they work as intended before going onto the next section. I will be able to break up development by choosing small elements to work on daily, ensuring the website can be built and published in a timely fashion. As this porject incorporates JavaScript a large majoirty of my time will be spend developing and testing the logic behind the game as opposed to the aesthetics of the game as it will have a fairly simple design. 
@@ -135,22 +135,17 @@ Here describes the main features of the website and what the user can expect whe
 
     ![Result](docs/readme/result_page.png)
 
-
-
 ## Future Features:
 
 Some future features I would like to implement into Crypto Quiz:
 
 * Ideally I'd like to add a proper contact form so users can contact me on any topics they would like to be implemented into the quiz or any suggestion
 
-* Add a level progression mode so users can chose the difficulty of the questions
+* Add a level progression mode so users can chose the difficulty of the questions making the game more accessible
 
-* Double the question bank to make the game more interesting
-
-*
+* Double the question bank to make the game more interesting and allow for more difficult questions to be added
 
 # Technologies 
-
 ## Languages Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -189,38 +184,14 @@ Some future features I would like to implement into Crypto Quiz:
 10. [Autoprefixer](https://autoprefixer.github.io/):
     * It allowed me to write your CSS rules without vendor prefixes, it takes care of doing that based on current browser popularity and property support.
 
-
+---
 # Testing 
 
-## Initial Testing
-
-* The website was tested on Google Chrome, Microsoft Edge, Brave browsers as well as Safari.
-* The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhone 11.
-* Testing was completed to ensure that all pages were linking correctly from the navigation bar and footer.
-* Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
-
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-
-- [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
-    ![HTML](docs/testing/w3chtml.png)
-
-
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-    ![CSS](docs/testing/w3ccss.png)
-
-- Validated JavaScript using [JSHint](https://jshint.com/)
-
-    ![script.js](docs/testing/script.png)
-    ![questions.js](docs/testing/questionjshint.png)
-
-## Website Testing (Solving Issues):
----
-Due to the size of the testing section for Crypto-Quiz I have created TESTING.md which holds all of my testing screenshots and any errors and problems I incurred when creating this project. This is also where you can find any responsiveness screenshots and browser compatibility.
+Due to the size of the testing section for Crypto Quiz I have created TESTING.md which holds all of my testing screenshots and any errors and problems I incurred when creating this project. This is also where you can find any responsiveness screenshots and browser compatibility.
 
 [Link To Testing README.md](TESTING.md)
    
-## Bugs
-
+---
 # Deployment 
 
 ## GitHub Pages

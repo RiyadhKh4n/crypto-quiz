@@ -27,7 +27,7 @@ let question_numb;
 const MAX_QUESTIONS = 10;
 let timeTaken;
 let UserScore = 0;
-let que
+let que_count = 0;
 
 /* Initialing variable which hold arrays */
 // const savedTimes = JSON.parse(localStorage.getItem('highScores')) || [];

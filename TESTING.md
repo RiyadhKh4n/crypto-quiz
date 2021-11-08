@@ -1,3 +1,27 @@
+
+## Initial Testing
+
+* The website was tested on Google Chrome, Microsoft Edge, Brave browsers as well as Safari.
+* The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhone 11.
+* Testing was completed to ensure that all pages were linking correctly from the navigation bar and footer.
+* Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+- [W3C Markup Validator](https://validator.w3.org/#validate_by_input)
+    ![HTML](docs/testing/w3chtml.png)
+
+
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+    ![CSS](docs/testing/w3ccss.png)
+
+- Validated JavaScript using [JSHint](https://jshint.com/)
+
+    ![script.js](docs/testing/jshintupdate.png)
+    ![questions.js](docs/testing/questionjshint.png)
+
+## Website Testing (Solving Issues):
+
 The first problem I had to solve on the JavaScript side, was that I needed to randomly generate 10 questions for the user to go through from my question bank. In order to do this, I had to first create my questions which contain the question itself, the correct answer as well as a list of four potential answers.
 
 An output of some of the questions from the question bank is below: 
@@ -333,3 +357,6 @@ a. As a Frequent Visitor, I want to see if any new questions have been added to 
 b. As a Frequent Visitor, I want to see if I can beat my old score.
 
 - By playing through the game again, new scores and times can be generated allowing the player to attempt at beating old scores.
+
+## Bugs
+
