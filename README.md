@@ -1,10 +1,10 @@
 # Crypto Quiz
 
-[Link to Quiz Website Here](https://riyadhkh4n.github.io/crypto-quiz/)
+[Link to Live Site Here](https://riyadhkh4n.github.io/crypto-quiz/)
 
 The purpose of this project is to create an Interactive Frontend Website using HTML, CSS and JavaScript. In order to do this I have built a Cryptocurrency Quiz game, where the users have to answer 10 questions about the industry.
 
-Crypto Quiz is a Javascript web application that is aimed at anyone who wishes to put their crypto knowledge to the test. This quiz is designed to test your knowledge and the questions are based from [Cryptools](https://riyadhkh4n.github.io/cryptools/), so having a read will give you a good foundation in order to succeed at the game. Questions and answers will be produced on the screen one after the other in a randomised order. The user will then select the correct option or the option they think is correct, where their score will be logged letting them know how they did. Once finished they will be met with a results screen allowing them to see their score give them the option to play again or quit. 
+Crypto Quiz is a Javascript web application that is aimed at anyone who wishes to put their crypto knowledge to the test. This quiz is designed to test your knowledge and the questions are based from [Cryptools](https://riyadhkh4n.github.io/cryptools/), so having a read will give you a good foundation in order to succeed at the game. Questions and answers will be produced on the screen one after the other in a randomised order. The user will then select the correct option or the option they think is correct, and their score will be logged and outputted at the end letting them know how they did. Once finished they will be met with a results screen allowing them to see their score and time taken and give them the option to play again or quit. 
 
 ---
 ![AmIResponsive](docs/testing/updatedamiresponsive.png)
@@ -13,13 +13,13 @@ Crypto Quiz is a Javascript web application that is aimed at anyone who wishes t
 # User Experience (UX) 
 
 * ## Vision
-   Crypto Quiz is a game which aims to test your knowledge about the world of cryptocurrencies and to engage people who want to learn and get into the space, whether you are a complete beginner or want to expand what you already know. This game will take you through the core concepts of cryptocurrencies and and test everything you have learnt. As someone who is invested in crypto and really believes in the technology behind it, I would have loved to have an interactive game where I could have tested my knowledge so I am doing just that and creating it myself. I want this game to be inclusive and accessible for everyone, I want it to be engaging and to encourage the you into getting involved in the space.
+   Crypto Quiz is a game which aims to test your knowledge about the world of cryptocurrencies and to engage people who want to learn and get into the space, whether you are a complete beginner or want to expand what you already know. This game will take you through the core concepts of cryptocurrencies and and test everything you have learnt. As someone who is invested in crypto and really believes in the technology behind it, I would have loved to have an interactive game where I could have tested my knowledge so I am doing just that and creating it myself. I want this game to be inclusive and accessible for everyone, I want it to be engaging and to encourage you into getting involved in the space.
 
 * ## Aims
    To give provide a platform for crypto newbies or experts to test what they know in an all in one game, and to allow them to quickly learn the core concepts of this complex industry giving them the opportunity to make smarter investment decisions, in a fun and interactive way. I want the game to be fun and have re-play value so I will make the questions random each time so you can play and get tested on different aspects of the industry. 
 
 * ## Target Audience
-    There are a number of target audiences for this game due to the fact that crypto is for everyone. We welcome new and experienced people from ages, to come and learn adn test their knowledge about this fascinating industry. However, Crypto Quiz is mainly aimed at educating people who know nothing about crypto as it the questions will not be extremly diffuclt and just touch on the main aspects of the indusrty. 
+    There are a number of target audiences for this game due to the fact that crypto is for everyone. We welcome new and experienced people from ages, to come and learn and test their knowledge about this fascinating industry. However, Crypto Quiz is mainly aimed at educating people who know little about crypto as it the questions will not be extremly diffuclt and just touch on the main aspects of the indusrty. 
 
 * ## User Stories
     * #### First Time Visitor Goals:
@@ -65,7 +65,7 @@ Crypto Quiz is a Javascript web application that is aimed at anyone who wishes t
 
     * Icons:
     
-        For Crypto Quix there will be no icons used as I do not see them necessary however I may add a few crypto related icons throughout the game where I see fit.
+        For Crypto Quiz I will use one icon which is taken from Font Awesome. The icon will be used in the results page to help fill up the space and break up the section.
 
 * ## Scope 
 
@@ -75,7 +75,7 @@ Crypto Quiz is a Javascript web application that is aimed at anyone who wishes t
 
     * I have chosen to create the game with a single html page which will have multiple sections which the user will see when playing the game, once they move onto the next part of the game the prvious sections will be hidden from view and the new section will be displayed to them. The game will not have a navigation bar at the top as I want the user to follow a set path when navigating the wesbite.
 
-    * On the 'index.html page', I will have multiple divs which will contain each section of the game, for example, the 'Start Section' which is the first thing that will load when they open the game. The next section will be the 'Rules Section' which will explain the rules of the quiz and give them the option to either quit or continue. The section after this will be the actual game e.g. 'Quiz Section', this is where the questions and answers will be presented to them, as well as this where their scores will be present. Once the game is complete, they will be met with the 'Results Section' which will show them their score and give the user the option to exit or play again. As mentioned before, once the user progresses to the next section all previous sections will be hidden to them.
+    * On the 'index.html page', I will have multiple divs which will contain each section of the game, for example, the 'maincontainer' which is the first thing that will load when they open the game. The next section will be the 'Rules Section' which will explain the rules of the quiz and allow them to navigate to the quiz itself. The section after this will be the actual game e.g. 'Quiz Section', this is where the questions and answers will be presented to them, as well as this a timer will be present so they can see how long they have taken. Once the game is complete, they will be met with the 'Results Section' which will show them their score and give the user the option to exit or play again. As mentioned before, once the user progresses to the next section all previous sections will be hidden to them.
 
 * ## Wireframes
 
@@ -131,7 +131,7 @@ Here describes the main features of the website and what the user can expect whe
 
     * This is the final section of the game that the player will interact with. Once they have completed the quiz this screen will appear showing them their score as well as the time taken to complete the quiz. Once the user has played a couple games, their previous scores and times will be displayed in the score board for them to see.
 
-    * The user will also be met with three buttons which they can interact with, a 'Clear Board' button which when clicked will wipe the leaderboard of all old times and scores. The 'Replay Quiz' button which will reload the game so they are back at question one and can play through the quiz again. Finally, the 'Quit Quiz' button which will reload the whole website so they are met with the landing screen again.
+    * The user will also be met with three buttons which they can interact with, a 'Clear Board' button which when clicked will clear the leaderboard of all times and scores. The 'Replay Quiz' button which will reload the game so they are back at question one and can play through the quiz again. Finally, the 'Quit Quiz' button which will reload the whole website so they are met with the landing screen again.
 
     ![Result](docs/readme/result_page.png)
 
@@ -139,7 +139,7 @@ Here describes the main features of the website and what the user can expect whe
 
 Some future features I would like to implement into Crypto Quiz:
 
-* Ideally I'd like to add a proper contact form so users can contact me on any topics they would like to be implemented into the quiz or any suggestion
+* Ideally I'd like to add a proper contact form so users can contact me on any topics they would like to be implemented into the quiz or any suggestions they have in order to improve the game
 
 * Add a level progression mode so users can chose the difficulty of the questions making the game more accessible
 
@@ -186,7 +186,7 @@ Some future features I would like to implement into Crypto Quiz:
 
 # Testing 
 
-Due to the size of the testing section for Crypto Quiz I have created TESTING.md which holds all of my testing screenshots and any errors and problems I incurred when creating this project. This is also where you can find any responsiveness screenshots and browser compatibility.
+Due to the size of the testing section for Crypto Quiz I have created TESTING.md which holds all of my testing screenshots and any errors and problems I incurred when creating this project. This is also where you can find any responsiveness screenshots and browser compatibility tests.
 
 [Link To Testing README.md](TESTING.md)
    
@@ -241,8 +241,29 @@ $ git clone https://github.com/RiyadhKh4n/crypto-quiz
 # Credits 
 
 ## Content:
-* All information on the website was taken from different souces as well as a large marjority being my own - Links to all sources are below:
+* All information on the website was taken from different souces as well as a large marjority being my own
+
+ - Links to all sources where I got questions from are below:
+
+    - [Survey Monkey](https://www.surveymonkey.com/survey-taken/?sm=foGJXlvgq3EfAV4uQN4438lZl7TVh9_2F92g4PRj6Ax8quTZUboqlP6nzfbDa4AP1hrcnH72SH7XDwP5UCkCXhdXI0jKGhjq7mOZgRfvGzUsQ_3D)
+
+    - [Lovatts](https://lovattspuzzles.com/online-puzzles-competitions/crypto-quiz/)
+
+    - [CryptoCompare](cryptocompare.com)
+
+    - [Bloomberg](https://www.bloomberg.com/features/crypto-knowledge-quiz/)
+
+    - [bitpanda](https://www.bitpanda.com/academy/en/tests/beginner-test/)
+
+    - [COINTELEGRAPH](https://cointelegraph.com/category/quiz)
 
 ## Code
- 
 ---
+
+When developing the game I spent alot of time breaking down how I would code each section and what I needed to implement to ensure it looked and worked how I wanted it to. Therefore the vast majority of the code is orginal and my own however there were times where I did need help in progressing and when this happened I went on slack to ask fellow students if they knew how to help. If this did not work I would use StackOverflow and YouTube which more often then not allowed me to get to the bottom of my problem and progress in developing Crypto Quiz. 
+
+When researching how to make JavaScript quizes I came across many different people who had made similar games to what I wanted to make. One YouTube video which I found particularly helpful was from [CodingNepal](https://www.youtube.com/watch?v=pQr4O1OITJo), I was inspired by the way their game looked hence why the quiz section of my game looks similar. I liked their clean and simple design however the styling is not copied line for line I only took sections from them and then styled the rest myself. I knew I wanted to add a flip card affect for the start of my game so I did some research on how to implement it and I came across [this](https://jefferson-cuartas.medium.com/how-to-create-a-flip-card-effect-using-javascript-767dd945210c) article which allowed me to create one for myself which you can see working in the game. The only code in the webiste that was copied from a third - party was the timer functionality in script.js which was taken from YouTube by [Coding Artist](https://www.youtube.com/watch?v=3Re18DCjJ4s) whose video is linked. 
+I also used w3Schools JavaScript lessons as well as they provide very helpful guides and examples which allowed me to overcome a vast majority of issues I had when developing.
+When developing Crypto Quiz, I did have a problem which I went to Tutor Support for however after three different tutors they were unable to help me hence I asked my Mentor, Tim, who after working with me was able to identify and fix the problem which I am very grateful for.
+
+
