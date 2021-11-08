@@ -102,8 +102,8 @@ let questions = [{
     question: "What is an advantage of Bitcoin?",
     answer: "The total money supply is pre-determined",
 
-    ans1: "It's the fastest confirming crypto currency",
-    ans2: "Your grandma will be totally ok to use it to buy groceries",
+    ans1: "It's the fastest cryptocurrency there is",
+    ans2: "You can deposit it in a bank account",
     ans3: "The total money supply is pre-determined",
     ans4: "It's in-built Inflation"
   },

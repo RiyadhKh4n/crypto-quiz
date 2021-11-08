@@ -108,8 +108,9 @@ body {
     margin-left: 15px;
     padding: 3px;
     display: block;
-    text-align: left;
+    text-align: justify;
     font-family: "Roboto Condensed";
+    
 }
 
 .button-div {
@@ -762,6 +763,7 @@ td {
         font-weight: bold;
         color: #006E91;
         font-size: 10em;
+        margin-top: 20%;
     }
 
     .fake-btn {
@@ -785,14 +787,13 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 2.8em;
+        font-size: 3em;
     }
 
     .back-card-button {
-        width: 300px;
-        height: 180px;
+        width: 280px;
+        height: 140px;
         font-size: 3em;
-
     }
 
     .quiz_box {
