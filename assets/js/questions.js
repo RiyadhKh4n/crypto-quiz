@@ -128,7 +128,7 @@ let questions = [{
   },
   {
     question: "When was the Bitcoin software first released?",
-    answer: "2012",
+    answer: "2009",
 
     ans1: "2002",
     ans2: "2009",

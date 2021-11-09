@@ -360,3 +360,13 @@ b. As a Frequent Visitor, I want to see if I can beat my old score.
 
 ## Bugs
 
+The game as a whole works as intended however there are a few bugs and responsivness issues that I have noticed when testing on different devices.
+
+* When being viewed on a vertical monitor the styling causes the text on the flipcard to look out of place and there is a lot of white space. This is because I have used the 'vh' unit so when being viewed on a longer monitor the card takes up 90vh which makes it look stretched and because the text is not responsive on a longer monitor is makes the flip card look odd.
+
+* Some of the questions are quite long, which means if you have a monitor which is not as tall the question can be cut off or the timer is hidden off the screen. However when being viewed on other monitors you are able to scroll in order to see the rest of the question. However when testing I noticed this is not always the case.
+
+* On very specific monitor dimensions, the 'Continue' button on the back of the flip card can sometimes overflow and not be fully visible. Meaning sometimes the bottom half or quarter of the button will be off the card which is not ideal. 
+
+
+
