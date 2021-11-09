@@ -143,8 +143,6 @@ When testing accessibility contrast of the game I made ensured that all scores w
 
 When assessing the accessibility score of the answer buttons they score under 5 due to the colour contrasting so I changed the background of the buttons in order to improve the score.
 
-![cont5](docs/tetsing/failedscore.png)]
-
 By changing the background-color to #006E91 I was able to get the score to 5.77 which meant it passed the accessibility test
 
 ![cont6](docs/testing/changedfail.png)
@@ -301,14 +299,14 @@ Crypto Quiz when being viewed at mobile small (320px):
 ![320px](docs/testing/320px.png)
 ![320px](docs/testing/320px1.png)
 ![320px](docs/testing/320px3.png)
-![320px](docs/testing/320px2.png)
+![320px](docs/testing/viewedat320.png)
 
 ## Testing User Stories from User Experience (UX) Section
 
 * ### First Time Visitor Goals:
 a. As a First Time Visitor, I want to easily understand the purpose of the site and learn how to play the game.
 
-![Back of Card](docs/readme/flipcardback.png)
+![Back of Card](docs/readme/flipcardbackupdated.png)
 
 - Here the user is given clear directions on how to navigate through the program via the buttons. Once they flip the card, they are met with a Rules section which highlights to the user how to play the game as intended.
 
@@ -316,14 +314,14 @@ b. As a First Time Visitor, I want the game to be enjoyable and challenging.
 
 c. As a First Time Visitor, once the game is finished I want to be able to play again.
 
-![Result](docs/readme/result_page.png)
+![Result](docs/readme/quizresults.png)
 
 - Once the user has played the game, they will be met with the Results Page which will show them their score and the time it took them to complete. They have the option to replay the quiz if they wish by 
 selecting the appropriate button.
 
 d. As a First Time Visitor, once the game is finished I want to be able to exit the game
 
-![Result](docs/readme/result_page.png)
+![Result](docs/readme/quizresults.png)
 
 - Once the user has played the game, they will be met with the Results Page which will show them their score and the time it took them to complete. They have the option to quit the game if they wish by 
 selecting the appropriate button.
