@@ -20,6 +20,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
     ![script.js](docs/testing/jshintupdate.png)
     ![questions.js](docs/testing/questionjshint.png)
 
+- Lighthouse Score
+
+    ![lighthouse](docs/testing/lighthouse.png)
+
 ## Website Testing (Solving Issues):
 
 The first problem I had to solve on the JavaScript side, was that I needed to randomly generate 10 questions for the user to go through from my question bank. In order to do this, I had to first create my questions which contain the question itself, the correct answer as well as a list of four potential answers.

@@ -74,12 +74,10 @@ function generateQuestions() {
 function showQuestions(questionBank) {
     let questions_to_user = document.getElementById("question");
     questions_to_user.innerHTML = questionBank.question;
-
     document.getElementById("ans1").innerText = questionBank.ans1;
     document.getElementById("ans2").innerText = questionBank.ans2;
     document.getElementById("ans3").innerText = questionBank.ans3;
     document.getElementById("ans4").innerText = questionBank.ans4;
-
     for (let i = 0; i < option_list.length; i++) {
         option_list[i].setAttribute("onclick", "optionSelected(this)");
     }
@@ -92,14 +90,11 @@ function resetGame() {
     resultBox.classList.add("hidden"); 
     quizBox.classList.remove("hidden"); 
     next_btn.classList.add("hidden");
-
     const options = document.querySelectorAll(".option_list");
     const allOptions = options.length; 
-
     for (let i = 0; i < allOptions; i++) {
         options[i].classList.remove("disabled");
     }
-
     int = setInterval(startTimer, 10);
     randomQuestionArray = [];
     initialseVariables();
@@ -114,14 +109,11 @@ function resetGame() {
 function exitGame() {
     resultBox.classList.add("hidden"); 
     flipcard.classList.remove("hidden"); 
-
     const options = document.querySelectorAll(".option_list");
     const allOptions = options.length; 
-
     for (let i = 0; i < allOptions; i++) {
         options[i].classList.remove("disabled"); 
     }
-
     randomQuestionArray = [];
     initialseVariables();
     questionCount.innerText = question_numb;
@@ -154,6 +146,7 @@ exit_btn.addEventListener("click", function () {
     exitGame();
 });
 
+// The Next Button Event Listener
 next_btn.addEventListener("click", function () {
     next_btn_call()
 });
@@ -162,25 +155,20 @@ next_btn.addEventListener("click", function () {
  * This function is responsible handling the next_btn events each time it is called
  */
 function next_btn_call() {
-
     option_list.forEach(option => {
         option.classList.remove("correct", "incorrect");
     });
-
     if (que_count < 9) {
         next_btn.classList.add("hidden");
         const options = document.querySelectorAll(".option_list");
         const allOptions = options.length; 
-
         for (let i = 0; i < allOptions; i++) {
             options[i].classList.remove("disabled");
         }
-
         que_count++;
         question_numb++;
         showQuestions(randomQuestionArray[que_count]); 
         questionCount.innerText = question_numb;
-
     } else {
         showResult();
         clearInterval(int);
@@ -205,7 +193,6 @@ function startTimer() {
             }
         }
     }
-
     let m = minutes < 10 ? "0" + minutes : minutes;
     let s = seconds < 10 ? "0" + seconds : seconds;
     let ms = milliseconds < 10 ? "00" + milliseconds : milliseconds < 100 ? "0" + milliseconds : milliseconds;
@@ -222,9 +209,7 @@ function startTimer() {
 function optionSelected(answer) {
     let userAns = answer.textContent;
     let correcAns = randomQuestionArray[que_count].answer;
-
     const options = document.querySelectorAll(".option_list");
-
     if (userAns == correcAns) {
         UserScore += 1;
         answer.classList.add("correct");
