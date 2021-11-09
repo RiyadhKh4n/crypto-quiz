@@ -31,7 +31,7 @@ let int;
 /* Initialing variable which hold arrays */
 let savedScores = JSON.parse(localStorage.getItem('scores')) || [];
 let randomQuestionArray = [];
-
+let questionIndex;
 /**
  * This event listener listens for the DOM to load, once it does it calls the function to initialise variables
  * the function that starts the game 
@@ -63,12 +63,13 @@ function startGame() {
  */
 function generateQuestions() {
     for (let i = 0; i < MAX_QUESTIONS; i++) {
-        let RandomQuestions = questions[Math.floor(Math.random() * questions.length)];
+        questionIndex = Math.floor(Math.random() * questions.length);
+        let RandomQuestions = questions[questionIndex];
+        questions.splice(questionIndex,1);
         randomQuestionArray.push(RandomQuestions);
-        }
-        // console.log(randomQuestionArray)
     }
-
+    console.log(randomQuestionArray);
+}
 
 function showQuestions(questionBank) {
     let questions_to_user = document.getElementById("question");
@@ -266,7 +267,6 @@ function addValuesToLocalStorage(uscore, time) {
 }
 
 function displayScores() {
-    console.log(savedScores);
     highScoresList.innerHTML = savedScores.map(score => {
         return `
         <tr>

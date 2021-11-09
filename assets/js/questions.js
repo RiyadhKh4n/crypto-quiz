@@ -3,7 +3,6 @@
 // creating an array and passing the number, questions, options, and answers
 let questions = [{
 
-    questionID: 1,
     question: "How much has Bitcoin's value grown since it started?",
     answer: "1000%",
 
@@ -13,7 +12,6 @@ let questions = [{
     ans4: "850%"
   },
   {
-    questionID: 2,
     question: "What is a smart contract?",
     answer: "Programs stored on a blockchain that run when predetermined conditions are met",
 
@@ -25,7 +23,6 @@ let questions = [{
 
   },
   {
-    questionID: 3,
     question: "Who invented Bitcoin?",
     answer: "Satoshi Nakamoto",
 
@@ -36,7 +33,6 @@ let questions = [{
 
   },
   {
-    questionID: 4,
     question: "What is a Private Key?",
     answer: "The ability to access the Blockchain",
 
@@ -47,7 +43,6 @@ let questions = [{
 
   },
   {
-    questionID: 5,
     question: "What is a Bitcoin Block?",
     answer: "A Bitcoin transaction",
 
@@ -58,7 +53,6 @@ let questions = [{
 
   },
   {
-    questionID: 6,
     question: "What is cold storage?",
     answer: "Storing your private key offline not connected to the internet",
 
@@ -68,7 +62,6 @@ let questions = [{
     ans4: "Storing your private key offline not connected to the internet"
   },
   {
-    questionID: 7,
     question: "What is a Blockchain?",
     answer: "A set of blocks containing transactions",
 
@@ -78,7 +71,6 @@ let questions = [{
     ans4: "A set of transactions"
   },
   {
-    questionID: 8,
     question: "How many Bitcoins will ever be mined?",
     answer: "21 Million",
 
@@ -88,7 +80,6 @@ let questions = [{
     ans4: "20 Billion"
   },
   {
-    questionID: 9,
     question: "What is Proof of Work?",
     answer: "The competition between miners to find the correct hash",
 
@@ -98,7 +89,6 @@ let questions = [{
     ans4: "The competition between miners to not fully disclose transactions"
   },
   {
-    questionID: 10,
     question: "What is an advantage of Bitcoin?",
     answer: "The total money supply is pre-determined",
 
@@ -108,7 +98,6 @@ let questions = [{
     ans4: "It's in-built Inflation"
   },
   {
-    questionID: 11,
     question: "What is the second largest cryptocurrency?",
     answer: "Ethereum",
 
@@ -118,7 +107,6 @@ let questions = [{
     ans4: "Dodge"
   },
   {
-    questionID: 12,
     question: "What is Proof of Stake?",
     answer: "A type of consensus mechanism used to validate cryptocurrency transactions",
 
@@ -129,7 +117,6 @@ let questions = [{
 
   },
   {
-    questionID: 13,
     question: "How long is a Bitcoin Block?",
     answer: "10 Minutes",
 
@@ -140,7 +127,6 @@ let questions = [{
 
   },
   {
-    questionID: 14,
     question: "When was the Bitcoin software first released?",
     answer: "2012",
 
@@ -151,7 +137,6 @@ let questions = [{
 
   },
   {
-    questionID: 15,
     question: "What is Ether’s connection to Ethereum?",
     answer: "Ether is a cryptocurrency, Ethereum is a blockchain platform",
 
@@ -162,7 +147,6 @@ let questions = [{
 
   },
   {
-    questionID: 16,
     question: "Which of these cryptocurrencies is the oldest?",
     answer: "Dogecoin",
 
@@ -173,7 +157,6 @@ let questions = [{
 
   },
   {
-    questionID: 17,
     question: "What is a CBDC?",
     answer: "A digital currency issued by a central bank",
 
@@ -184,18 +167,16 @@ let questions = [{
 
   },
   {
-    questionID: 18,
     question: "What is staking?",
     answer: "Pledging your tokens for use to help verify transactions",
 
     ans1: "Pledging your tokens for use to help verify transactions",
-    ans2: "Slang for buying crypto",
-    ans3: "Lending your cryptocurrency to other users",
+    ans2: "When you donate your tokens to an exchange",
+    ans3: "Lending your cryptocurrency to other users with no reward",
     ans4: "A way of buying crypto through a third party application"
 
   },
   {
-    questionID: 19,
     question: "What is a rug pull?",
     answer: "The crypto equivalent of a pump and dump",
 
@@ -206,7 +187,6 @@ let questions = [{
 
   },
   {
-    questionID: 20,
     question: "Why is Cardano often described as a green coin?",
     answer: "The method for verifying transactions is different and less energy intensive than for Bitcoin",
 
@@ -217,7 +197,6 @@ let questions = [{
 
   },
   {
-    questionID: 21,
     question: "What are Tokenomics?",
     answer: "The science of the tokens economy",
 
@@ -228,7 +207,6 @@ let questions = [{
 
   },
   {
-    questionID: 22,
     question: "What is Total Supply?",
     answer: "The number of tokens that exist at present, excluding any that might have gotten burned",
 
@@ -239,7 +217,6 @@ let questions = [{
 
   },
   {
-    questionID: 23,
     question: "What is a stable coin?",
     answer: "Cryptocurrencies where the price is designed to be pegged to a cryptocurrency or fiat",
 
@@ -250,7 +227,6 @@ let questions = [{
 
   },
   {
-    questionID: 24,
     question: "Who should have access to your private key?",
     answer: "You and only you",
 
@@ -261,7 +237,6 @@ let questions = [{
 
   },
   {
-    questionID: 25,
     question: "What is a Decentralised Application?",
     answer: "An application which runs on a decentralised computing system",
 
@@ -272,7 +247,6 @@ let questions = [{
 
   },
   {
-    questionID: 26,
     question: "What are the sidechains built for scalability on top of other blockchain called?",
     answer: "Layer 2's",
 
@@ -283,7 +257,6 @@ let questions = [{
 
   },
   {
-    questionID: 27,
     question: "What is a Decentralised Exchange?",
     answer: "An exchange which allows for direct peer-to-peer cryptocurrency transactions",
 
@@ -294,7 +267,6 @@ let questions = [{
 
   },
   {
-    questionID: 28,
     question: "What is a Centralised Exchange?",
     answer: "A business that allows customers to trade cryptocurrencies or digital currencies for other assets",
 
@@ -305,7 +277,6 @@ let questions = [{
 
   },
   {
-    questionID: 29,
     question: "What is the advantage of using a Decentralised Exchange?",
     answer: "You have access to alot more tokens and you don't have to KYC if you want to trade",
 
@@ -316,7 +287,6 @@ let questions = [{
 
   },
   {
-    questionID: 30,
     question: "What is the disadvantage of using a Decentralised Exchange?",
     answer: "Higher gas fees and order type limitations",
 
@@ -327,7 +297,6 @@ let questions = [{
 
   },
   {
-    questionID: 31,
     question: "Why was Ethereum created?",
     answer: "To enable developers to build and publish smart contracts and distributed applications",
 
@@ -338,7 +307,6 @@ let questions = [{
 
   },
   {
-    questionID: 32,
     question: "Where do you store Cryptocurrencies?",
     answer: "On a Blockchain",
 
@@ -349,7 +317,6 @@ let questions = [{
 
   },
   {
-    questionID: 33,
     question: "What is a cryptocurrency fund?",
     answer: "A portfolio containing a variety of digital assets",
 
@@ -360,7 +327,6 @@ let questions = [{
 
   },
   {
-    questionID: 34,
     question: "What does HODL stand for?",
     answer: "Hold On For Dear Life",
 
@@ -371,7 +337,6 @@ let questions = [{
 
   },
   {
-    questionID: 35,
     question: "What are the most important features to look for in a token fund platform?",
     answer: "Liquidity, wide choice of popular cryptocurrencies and a way to measure overall performance",
 
@@ -382,18 +347,16 @@ let questions = [{
 
   },
   {
-    questionID: 36,
     question: "How Do Bitcoin Miners Make Money?",
     answer: "Through transaction fees and block rewards",
 
     ans1: "Through transaction fees and block rewards",
-    ans2: "Transaction fees only",
+    ans2: "Transaction fees and through a salary",
     ans3: "The block reward only",
-    ans4: "They earn a salary"
+    ans4: "They earn a salary and get paid commision"
 
   },
   {
-    questionID: 37,
     question: "What does P2P stand for?",
     answer: "Peer to Peer",
 
@@ -403,7 +366,6 @@ let questions = [{
     ans4: "Private Key to Private Key"
   },
   {
-    questionID: 38,
     question: "What is a node?",
     answer: "A computer on a blockchain network",
 
@@ -413,7 +375,6 @@ let questions = [{
     ans4: "An exchange where you buy coins"
   },
   {
-    questionID: 39,
     question: "Which one of the following is a DEX?",
     answer: "Uniswap",
 
@@ -423,7 +384,6 @@ let questions = [{
     ans4: "Uniswap"
   },
   {
-    questionID: 40,
     question: "Where is the least safe place to store you crypto assets?",
     answer: "On an exchange",
 
@@ -433,17 +393,15 @@ let questions = [{
     ans4: "At your work desk"
   },
   {
-    questionID: 41,
     question: "What is a miner?",
     answer: "Computers that validate and process blockchain transactions",
 
-    ans1: "A special type of blockchain",
+    ans1: "A special device that allows you to buy tokens",
     ans2: "An algorithm that predicts the next part of the chain",
     ans3: "A person doing calculations to verify a transaction",
     ans4: "Computers that validate and process blockchain transactions"
   },
   {
-    questionID: 42,
     question: "Where can you buy cryptocurrency?",
     answer: "All of the above",
 
@@ -453,7 +411,6 @@ let questions = [{
     ans4: "All of the above"
   },
   {
-    questionID: 43,
     question: "What is the term for when a blockchain splits?",
     answer: "A fork",
 
@@ -463,7 +420,6 @@ let questions = [{
     ans4: "A division"
   },
   {
-    questionID: 44,
     question: "What is a genesis block?",
     answer: "The first block on the Blockchain",
 
@@ -473,7 +429,6 @@ let questions = [{
     ans4: "The first block on the Blockchain"
   },
   {
-    questionID: 45,
     question: "Asymmetric encryption uses:",
     answer: "Public and Private keys",
 
@@ -483,7 +438,6 @@ let questions = [{
     ans4: "Proof of Stake"
   },
   {
-    questionID: 46,
     question: "Which of these was the first meme coin?",
     answer: "Dogecoin",
 
@@ -493,7 +447,6 @@ let questions = [{
     ans4: "Shiba Inu"
   },
   {
-    questionID: 47,
     question: "Who created Ethereum?",
     answer: "Vitalik Buterin",
 
@@ -503,7 +456,6 @@ let questions = [{
     ans4: "Anatoly Yakovenko"
   },
   {
-    questionID: 48,
     question: "What year did BTC first hit $50,000?",
     answer: "2021",
 
@@ -513,7 +465,6 @@ let questions = [{
     ans4: "2018"
   },
   {
-    questionID: 49,
     question: "What is Circulating Supply?",
     answer: "The number of cryptocurrency coins or tokens that are publicly available and circulating in the market",
 
@@ -523,7 +474,6 @@ let questions = [{
     ans4: "The number of cryptocurrency coins or tokens that will be publicly available once all the coins are mined"
   },
   {
-    questionID: 50,
     question: "What is an NFT?",
     answer: "A unique and non-interchangeable unit of data stored on a digital ledger",
 
@@ -533,7 +483,6 @@ let questions = [{
     ans4: "A unique and interchangeable unit of data stored on a cloud computer"
   },
   {
-    questionID: 51,
     question: "Which one of the following is a CEX?",
     answer: "KuCoin",
 
@@ -541,5 +490,95 @@ let questions = [{
     ans2: "KuCoin",
     ans3: "1inch",
     ans4: "Uniswap"
+  },
+  {
+    question: "What was the first tangible item purchased with BTC?",
+    answer: "Pizza",
+
+    ans1: "A house",
+    ans2: "Pizza",
+    ans3: "A Boat",
+    ans4: "Beer"
+  },
+  {
+    question: "What was the name of the paper introducing Bitcoin?",
+    answer: "Bitcoin: A Peer-to-Peer Electronic Cash System",
+
+    ans1: "Bitcoin: A Peer-to-Peer Electronic Cash System",
+    ans2: "Bitcoin: A Decentralised Digital Currency",
+    ans3: "Bitcoin: A Peer-to-Peer Digital Currency",
+    ans4: "Bitcoin: A Decentralised Electronic Cash System"
+  },
+  {
+    question: "What is the name of the smallest denomination of Bitcoin?",
+    answer: "Satoshi",
+
+    ans1: "Wei",
+    ans2: "Satoshi",
+    ans3: "MiniBit",
+    ans4: "MicroBit"
+  },
+  {
+    question: "Approximately how often does the Bitcoin block subsidy halve?",
+    answer: "4 Years",
+
+    ans1: "5 Years",
+    ans2: "7 Years",
+    ans3: "2 Years",
+    ans4: "4 Years"
+  },
+  {
+    question: "Finality is considered to be achieved after:",
+    answer: "6 Confirmations",
+
+    ans1: "3 Confirmations",
+    ans2: "6 Confirmations",
+    ans3: "10 Confirmations",
+    ans4: "1 Confirmations"
+  },
+  {
+    question: "When is the last BTC estimated to be mined?",
+    answer: "2140",
+
+    ans1: "2140",
+    ans2: "2041",
+    ans3: "2100",
+    ans4: "2086"
+  },
+  {
+    question: "What is the name of a fundraising method in which new projects will sell their cryptocurrency to investors?",
+    answer: "Initial Coin Offering (ICO)",
+
+    ans1: "Initial Dex Offering (IDO)",
+    ans2: "Initial Coin Offering (ICO)",
+    ans3: "Initial Public Offering (IPO)",
+    ans4: "Initial Exchange Offering (IEO)"
+  },
+  {
+    question: "What is the name used to describe the moment when/if ETH surpasses BTC in terms of Market Cap?",
+    answer: "Flippening",
+
+    ans1: "Flippening",
+    ans2: "The Surpassing",
+    ans3: "The Bitcoin Fall",
+    ans4: "ETH Dominance"
+  },
+  {
+    question: "What is the name of the list of allowed/trusted individuals, programs, or cryptocurrency addresses in relation to a service or event?",
+    answer: "Whitelist",
+
+    ans1: "The Chosen Ones",
+    ans2: "Dead Cat Bounce",
+    ans3: "Order Book",
+    ans4: "Whitelist"
+  },
+  {
+    question: "The pricing mechanism employed on the Ethereum blockchain to calculate the costs of smart contracts operations and transaction fees is called?",
+    answer: "Gas",
+
+    ans1: "Honeypot",
+    ans2: "Fuel",
+    ans3: "Gas",
+    ans4: "Wallet Fees"
   },
 ];
