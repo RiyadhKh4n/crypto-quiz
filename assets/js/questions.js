@@ -231,9 +231,9 @@ let questions = [{
     answer: "An application which runs on a decentralised computing system",
 
     ans1: "An application which runs on a decentralised computing system",
-    ans2: "An application which runs off the use of smart contracts",
+    ans2: "An application which runs off smart contracts",
     ans3: "An token which can be used on centralised browesers like Google",
-    ans4: "An app that you can only access with crypto"
+    ans4: "An application that you can only access with crypto"
 
   },
   {
@@ -258,12 +258,12 @@ let questions = [{
   },
   {
     question: "What is a Centralised Exchange?",
-    answer: "A business that allows customers to trade cryptocurrencies or digital currencies for other assets",
+    answer: "A business who allow customers to trade cryptocurrencies for other assets",
 
-    ans1: "A business that allows customers to trade cryptocurrencies or digital currencies for other assets",
+    ans1: "A business who allow customers to trade cryptocurrencies for other assets",
     ans2: "An exchange which allows for peer-to-peer transactions to take place on the chain",
-    ans3: "An exchange where your private keys are held by you as opposed to held by a business",
-    ans4: "A business that allows customers to trade cryptocurrencies via a peer-to-peer manor"
+    ans3: "An when your private keys are held by you as opposed to held by a business",
+    ans4: "A business where customers can trade cryptocurrencies via a peer-to-peer manor"
 
   },
   {
@@ -324,16 +324,6 @@ let questions = [{
     ans2: "Heros Only Die Last",
     ans3: "Holy Crypto Only Dies Lonely",
     ans4: "Hold Only Until Debts Leave"
-
-  },
-  {
-    question: "What are the most important features to look for in a token fund platform?",
-    answer: "Liquidity, wide choice of popular cryptocurrencies and a way to measure overall performance",
-
-    ans1: "Platform where portfolio managers have full control over investor funds",
-    ans2: "A crypto-only platform where bank card deposits are not accepted",
-    ans3: "Liquidity, wide choice of popular cryptocurrencies and a way to measure overall performance",
-    ans4: "Scalability and security, meaning that the fund will likely do very well in the future"
 
   },
   {

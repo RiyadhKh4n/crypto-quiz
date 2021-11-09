@@ -98,7 +98,7 @@ main{
 .info-title {
     font-weight: bold;
     color: #006E91;
-    padding-top: 1em;
+    padding-top: 0.5em;
     font-family: "Odibee Sans";
     letter-spacing: 2px;
     font-size: 1.5em;
@@ -184,7 +184,7 @@ main{
 /* Quiz Box */
 .quiz_box {
     box-shadow: 10px 10px rgba(0, 0, 0, .5);
-    width: 90%;
+    width: 90vw;
     background: #fff;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -377,7 +377,7 @@ footer #next-btn {
     align-items: center;
     border-radius: 10px;
     background-color: #fff;
-    width: 300px;
+    width: 90vw;
     box-shadow: 10px 10px rgba(0, 0, 0, .5);
     position: absolute;
     top: 50%;
@@ -393,7 +393,7 @@ footer #next-btn {
     align-content: center;
     justify-content: center;
     color: #5D3FD3;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .congrat-text {
@@ -550,7 +550,7 @@ td {
     }
 
     .quiz_box {
-        width: 600px;
+        width: 90vw;
     }
 
     .quiz_box header .title {
@@ -588,7 +588,7 @@ td {
     }
 
     footer {
-        height: 80px;
+        height: 60px;
     }
 
     footer .total_que span {
@@ -606,11 +606,11 @@ td {
     }
 
     .result_box {
-        width: 500px;
+        width: 90vw;
     }
 
     .result_box .icon .fa-crown {
-        font-size: 140px;
+        font-size: 100px;
     }
 
     .congrat-text {
@@ -676,7 +676,7 @@ td {
     }
 
     .quiz_box {
-        width: 800px;
+        width: 90vw;
     }
 
     .quiz_box header .title {
@@ -707,7 +707,7 @@ td {
     }
 
     footer {
-        height: 100px;
+        height: 80px;
     }
 
     footer .total_que span {
@@ -725,11 +725,11 @@ td {
     }
 
     .result_box {
-        width: 800px;
+        width: 90vw;
     }
 
     .result_box .icon .fa-crown {
-        font-size: 200px;
+        font-size: 140px;
         padding: .3em 0;
     }
 
@@ -767,6 +767,21 @@ td {
         width: 150px;
         height: 80px;
         font-size: 1.2em;
+    }
+
+    #game-footer{
+        background: white;
+        height: 30px;
+    }
+    
+    .center{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .fa-github, .fa-bitcoin, .fa-linkedin{
+        font-size: 1.4em;
+        color: #006E91;
     }
 }
 
@@ -808,20 +823,20 @@ td {
 
     .back-card-button {
         width: 220px;
-        height: 110px;
+        height: 100px;
         font-size: 2em;
     }
 
     .quiz_box {
-        width: 50vw;
+        width: 90vw;
     }
 
     .result_box {
-        width: 50vw;
+        width: 90vw;
     }
 
     .result_box .icon .fa-crown {
-        font-size: 150px;
+        font-size: 140px;
         padding: .2em 0;
     }
 
@@ -895,7 +910,7 @@ td {
     }
 
     .quiz_box {
-        width: 1000px;
+        width: 90vw;
     }
 
     .quiz_box header .title {
@@ -930,7 +945,7 @@ td {
     }
 
     footer {
-        height: 105px;
+        height: 100px;
     }
 
     footer .total_que span {
@@ -948,11 +963,11 @@ td {
     }
 
     .result_box {
-        width: 1000px;
+        width: 90vw;
     }
 
     .result_box .icon .fa-crown {
-        font-size: 225px;
+        font-size: 180px;
         padding: .3em 0;
     }
 
@@ -999,7 +1014,7 @@ td {
 
     #game-footer{
         background: white;
-        height: 25px;
+        height: 30px;
     }
     
     .center{

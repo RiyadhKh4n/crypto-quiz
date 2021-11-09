@@ -184,14 +184,14 @@ Some future features I would like to implement into Crypto Quiz:
 10. [Autoprefixer](https://autoprefixer.github.io/):
     * It allowed me to write your CSS rules without vendor prefixes, it takes care of doing that based on current browser popularity and property support.
 
-11 [Google Developer Tools](https://developer.chrome.com/docs/devtools/)
+11. [Google Developer Tools](https://developer.chrome.com/docs/devtools/):
     * Used to test code throughout development
 
 # Testing 
 
-Due to the size of the testing section for Crypto Quiz I have created TESTING.md which holds my W3C Validator and JSHint output. It also shows all testing screenshots and any errors/bugs and how I fixed them when creating this project. This is also where you can find any responsiveness screenshots and browser compatibility tests.
+Due to the size of the testing section for Crypto Quiz I have created [TESTING.md](TESTING.md), which holds my W3C Validator and JSHint outputs. It also shows all tested screenshots, any errors/bugs I encountered, and how I fixed them when creating this project. This is also where you can find any responsiveness screenshots, and browser compatibility tests.
 
-[Link To Testing README.md](TESTING.md)
+[Link To Testing.md](TESTING.md)
    
 # Deployment 
 
@@ -204,7 +204,7 @@ The project was deployed to GitHub Pages using the following steps...
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
     
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-    Under "Source", click the dropdown called "None" and select "Master Branch".
+    Under "Source", click the dropdown called "None" and select "Main Branch".
    
 4. The page will automatically refresh.
     
@@ -233,13 +233,17 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 7. Press Enter. Your local clone will be created. 
 
 ```
-$ git clone https://github.com/RiyadhKh4n/crypto-quiz
+$ git clone https://github.com/RiyadhKh4n/crypto-quiz.git
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
 > remove: Total 10 (delta 1), reused 10 (delta 1)
 > Unpacking objects: 100% (10/10), done.
 ```
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/RiyadhKh4n/crypto-quiz)
 
 # Credits 
 
@@ -264,8 +268,19 @@ $ git clone https://github.com/RiyadhKh4n/crypto-quiz
 
 When developing the game I spent alot of time breaking down how I would code each section and what I needed to implement to ensure it looked and worked how I wanted it to. Therefore the vast majority of the code is orginal and my own however there were times where I did need help in progressing and when this happened I went on slack to ask fellow students if they knew how to help. If this did not work I would use StackOverflow and YouTube which more often then not allowed me to get to the bottom of my problem and progress in developing Crypto Quiz. 
 
-When researching how to make JavaScript quizes I came across many different people who had made similar games to what I wanted to make. One YouTube video which I found particularly helpful was from [CodingNepal](https://www.youtube.com/watch?v=pQr4O1OITJo), I was inspired by the way their game looked hence why the quiz section of my game looks similar. I liked their clean and simple design however the styling is not copied line for line I only took sections from them and then styled the rest myself. I knew I wanted to add a flip card affect for the start of my game so I did some research on how to implement it and I came across [this](https://jefferson-cuartas.medium.com/how-to-create-a-flip-card-effect-using-javascript-767dd945210c) article which allowed me to create one for myself which you can see working in the game. The only code in the webiste that was copied from a third - party was the timer functionality in script.js which was taken from YouTube by [Coding Artist](https://www.youtube.com/watch?v=3Re18DCjJ4s) whose video is linked. 
+When researching how to make JavaScript quizes I came across many different people who had made similar games to what I wanted to make. One YouTube video which I found particularly helpful was from [CodingNepal](https://www.youtube.com/watch?v=pQr4O1OITJo), I was inspired by the way their game looked hence why the quiz section of my game looks similar. I liked their clean and simple design however the styling is not copied line for line I only took sections from them and then styled the rest myself.
+
+I knew I wanted to add a flip card affect for the start of my game so I did some research on how to implement it and I came across [this](https://jefferson-cuartas.medium.com/how-to-create-a-flip-card-effect-using-javascript-767dd945210c) article which allowed me to create one for myself which you can see working in the game.
+
+The only code in the webiste that was copied from a third - party was the timer functionality in script.js which was taken from YouTube by [Coding Artist](https://www.youtube.com/watch?v=3Re18DCjJ4s) whose video is linked. 
+
 I also used w3Schools JavaScript lessons as well as they provide very helpful guides and examples which allowed me to overcome a vast majority of issues I had when developing.
+
 When developing Crypto Quiz, I did have a problem which I went to Tutor Support for however after three different tutors they were unable to help me hence I asked my Mentor, Tim, who after working with me was able to identify and fix the problem which I am very grateful for.
+
+### Acknowledgements
+* Tim - My Mentor
+* Tutor Support
+
 
 

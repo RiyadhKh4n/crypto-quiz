@@ -20,13 +20,13 @@ const highScoresList = document.getElementById("user-infromation");
 
 /* Initialsing varibales */
 const MAX_QUESTIONS = 10;
-let timeTaken;
+let timeTaken = 0;
 let UserScore = 0;
 let que_count = 0;
-let UserTime;
+let UserTime = 0;
 let question_numb;
 let [milliseconds, seconds, minutes] = [0, 0, 0];
-let int;
+let int = 0;
 
 /* Initialing variable which hold arrays */
 let savedScores = JSON.parse(localStorage.getItem('scores')) || [];
