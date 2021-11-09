@@ -187,16 +187,6 @@ let questions = [{
 
   },
   {
-    question: "Why is Cardano often described as a green coin?",
-    answer: "The method for verifying transactions is different and less energy intensive than for Bitcoin",
-
-    ans1: "It mandates that renewable power must be used for coin mining",
-    ans2: "It's less popular and smaller than BTC, so it simply uses less energy",
-    ans3: "The method for verifying transactions is different and less energy intensive than for Bitcoin",
-    ans4: "The logo for the coin is green and they promote recycling"
-
-  },
-  {
     question: "What are Tokenomics?",
     answer: "The science of the tokens economy",
 
@@ -465,15 +455,6 @@ let questions = [{
     ans4: "2018"
   },
   {
-    question: "What is Circulating Supply?",
-    answer: "The number of cryptocurrency coins or tokens that are publicly available and circulating in the market",
-
-    ans1: "The number of cryptocurrency coins or tokens that will be publicly available and circulating in the market after release",
-    ans2: "The number of cryptocurrency coins or tokens that are publicly available and circulating in the market",
-    ans3: "The number of cryptocurrency coins or tokens that are publicly available including the coins that are burnt",
-    ans4: "The number of cryptocurrency coins or tokens that will be publicly available once all the coins are mined"
-  },
-  {
     question: "What is an NFT?",
     answer: "A unique and non-interchangeable unit of data stored on a digital ledger",
 
@@ -580,5 +561,5 @@ let questions = [{
     ans2: "Fuel",
     ans3: "Gas",
     ans4: "Wallet Fees"
-  },
+  }
 ];

@@ -32,6 +32,7 @@ let int;
 let savedScores = JSON.parse(localStorage.getItem('scores')) || [];
 let randomQuestionArray = [];
 let questionIndex;
+
 /**
  * This event listener listens for the DOM to load, once it does it calls the function to initialise variables
  * the function that starts the game 
@@ -39,6 +40,13 @@ let questionIndex;
 document.addEventListener('DOMContentLoaded', function () {
     initialseVariables();
 });
+
+/**
+ * Function which calls generateQuestions()
+ */
+function startGame(){
+    generateQuestions();
+}
 
 /** This function sets all the variables to the condition they should be in to start the game, this function should be called
  * before the game either begins or restarts
@@ -75,13 +83,6 @@ function showQuestions(questionBank) {
     for (let i = 0; i < option_list.length; i++) {
         option_list[i].setAttribute("onclick", "optionSelected(this)");
     }
-}
-
-/**
- * Will remove any duplicate questions from the randomly selected questions in generateQuestions
- */
-function removeDuplicates(){
-
 }
 
 /**
