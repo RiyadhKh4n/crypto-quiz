@@ -130,7 +130,7 @@ let timerRef = document.querySelector('.timer-sec');
 
 This will cause the time to actually change in real time when the user selected one of the buttons mentioned earlier. A working view of the timer can be seen below:
 
-![Working Timer](docs/testing/working_time.png)
+![Working Timer](docs/testing/workingtime.png)
 
 ---
 

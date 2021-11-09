@@ -248,7 +248,7 @@ let questions = [{
   },
   {
     question: "What is the advantage of using a Decentralised Exchange?",
-    answer: "You have access to alot more tokens and you don't have to KYC if you want to trade",
+    answer: "You have access to more tokens and don't have to KYC when trading",
 
     ans1: "You have access to more tokens and don't have to KYC when trading",
     ans2: "There is high volumes of liquidity",
