@@ -184,9 +184,12 @@ Some future features I would like to implement into Crypto Quiz:
 10. [Autoprefixer](https://autoprefixer.github.io/):
     * It allowed me to write your CSS rules without vendor prefixes, it takes care of doing that based on current browser popularity and property support.
 
+11 [Google Developer Tools](https://developer.chrome.com/docs/devtools/)
+    * Used to test code throughout development
+
 # Testing 
 
-Due to the size of the testing section for Crypto Quiz I have created TESTING.md which holds all of my testing screenshots and any errors and problems I incurred when creating this project. This is also where you can find any responsiveness screenshots and browser compatibility tests.
+Due to the size of the testing section for Crypto Quiz I have created TESTING.md which holds my W3C Validator and JSHint output. It also shows all testing screenshots and any errors/bugs and how I fixed them when creating this project. This is also where you can find any responsiveness screenshots and browser compatibility tests.
 
 [Link To Testing README.md](TESTING.md)
    
@@ -258,7 +261,6 @@ $ git clone https://github.com/RiyadhKh4n/crypto-quiz
     - [COINTELEGRAPH](https://cointelegraph.com/category/quiz)
 
 ## Code
----
 
 When developing the game I spent alot of time breaking down how I would code each section and what I needed to implement to ensure it looked and worked how I wanted it to. Therefore the vast majority of the code is orginal and my own however there were times where I did need help in progressing and when this happened I went on slack to ask fellow students if they knew how to help. If this did not work I would use StackOverflow and YouTube which more often then not allowed me to get to the bottom of my problem and progress in developing Crypto Quiz. 
 
