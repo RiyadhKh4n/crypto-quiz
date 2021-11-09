@@ -276,7 +276,7 @@ The only code in the webiste that was copied from a third - party was the timer 
 
 I also used w3Schools JavaScript lessons as well as they provide very helpful guides and examples which allowed me to overcome a vast majority of issues I had when developing.
 
-When developing Crypto Quiz, I did have a problem which I went to Tutor Support for however after three different tutors they were unable to help me hence I asked my Mentor, Tim, who after working with me was able to identify and fix the problem which I am very grateful for.
+When developing Crypto Quiz, I did have a problem which I went to Tutor Support for however after three different tutors they were unable to help me hence I asked my Mentor, who after working with me was able to identify and fix the problem.
 
 ### Acknowledgements
 * Tim - My Mentor
