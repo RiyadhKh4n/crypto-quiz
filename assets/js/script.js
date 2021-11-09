@@ -68,7 +68,6 @@ function generateQuestions() {
         questions.splice(questionIndex,1);
         randomQuestionArray.push(RandomQuestions);
     }
-    console.log(randomQuestionArray);
 }
 
 function showQuestions(questionBank) {

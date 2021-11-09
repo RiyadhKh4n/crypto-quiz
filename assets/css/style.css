@@ -98,7 +98,7 @@ body {
 }
 
 .info-list {
-    padding-top: 0.5em;
+    padding-top: 0.3em;
 }
 
 .rules {
@@ -109,10 +109,11 @@ body {
     display: block;
     text-align: justify;
     font-family: "Roboto Condensed";
+    font-size: 1em;
 }
 
 .button-div {
-    margin-top: .5em;
+    margin-top: .3em;
     width: 100%;
 }
 
