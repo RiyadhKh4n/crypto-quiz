@@ -492,7 +492,7 @@ td {
     border: 2px solid #5D3FD3;
 }
 
-/* #game-footer{
+#game-footer{
     background: white;
     height: 5vh;
 }
@@ -505,7 +505,7 @@ td {
 .fa-github, .fa-bitcoin, .fa-linkedin{
     font-size: 2.1em;
     color: #006E91;
-} */
+}
 
 @media only screen and (min-width: 768px) {
     .maincontainer {
@@ -642,7 +642,7 @@ td {
     .game-title {
         font-weight: bold;
         color: #006E91;
-        font-size: 6em;
+        font-size: 7em;
     }
 
     .fake-btn {
@@ -670,8 +670,8 @@ td {
     }
 
     .back-card-button {
-        width: 220px;
-        height: 120px;
+        width: 200px;
+        height: 100px;
         font-size: 2.2em;
     }
 
@@ -865,17 +865,17 @@ td {
     }
 
     .fake-btn {
-        width: 240px;
-        height: 130px;
+        width: 220px;
+        height: 110px;
         font-size: 2.4em;
     }
 
     .info-title {
-        font-size: 5em;
+        font-size: 4em;
     }
 
     .info-list {
-        padding-top: 2em;
+        padding-top: 1em;
     }
 
     .rules {
@@ -885,13 +885,13 @@ td {
         padding: 1.5px;
         display: block;
         text-align: left;
-        font-size: 2.2em;
+        font-size: 2em;
     }
 
     .back-card-button {
-        width: 260px;
-        height: 120px;
-        font-size: 3em;
+        width: 240px;
+        height: 100px;
+        font-size: 2em;
     }
 
     .quiz_box {
@@ -995,6 +995,21 @@ td {
         width: 200px;
         height: 100px;
         font-size: 1.6em;
+    }
+
+    #game-footer{
+        background: white;
+        height: 25px;
+    }
+    
+    .center{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .fa-github, .fa-bitcoin, .fa-linkedin{
+        font-size: 1.4em;
+        color: #006E91;
     }
 }
 
