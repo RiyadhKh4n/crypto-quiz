@@ -63,7 +63,7 @@ main{
     border-radius: 10px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: white;
     color: #000;
 }
@@ -86,13 +86,13 @@ main{
 }
 
 .game-title {
-    margin-top: 30%;
     text-align: center;
     color: #006E91;
     text-shadow: 1.3px 1.3px black;
     letter-spacing: 2px;
     font-family: 'Odibee Sans', cursive;
     font-size: 3em;
+    margin-top: 10px;
 }
 
 .info-title {
@@ -492,7 +492,7 @@ td {
     border: 2px solid #5D3FD3;
 }
 
-#game-footer{
+/* #game-footer{
     background: white;
     height: 5vh;
 }
@@ -505,7 +505,7 @@ td {
 .fa-github, .fa-bitcoin, .fa-linkedin{
     font-size: 2.1em;
     color: #006E91;
-}
+} */
 
 @media only screen and (min-width: 768px) {
     .maincontainer {
@@ -540,11 +540,11 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .back-card-button {
-        width: 175px;
+        width: 165px;
         height: 100px;
         font-size: 1.5em;
     }
@@ -666,12 +666,12 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
 
     .back-card-button {
-        width: 240px;
-        height: 140px;
+        width: 220px;
+        height: 120px;
         font-size: 2.2em;
     }
 
@@ -780,7 +780,6 @@ td {
         font-weight: bold;
         color: #006E91;
         font-size: 7.5em;
-        margin-top: 20%;
     }
 
     .fake-btn {
@@ -804,12 +803,12 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 
     .back-card-button {
-        width: 240px;
-        height: 120px;
+        width: 220px;
+        height: 110px;
         font-size: 2em;
     }
 
@@ -863,7 +862,6 @@ td {
         font-weight: bold;
         color: #006E91;
         font-size: 9em;
-        margin-top: 10%;
     }
 
     .fake-btn {
@@ -887,12 +885,12 @@ td {
         padding: 1.5px;
         display: block;
         text-align: left;
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     .back-card-button {
-        width: 280px;
-        height: 140px;
+        width: 260px;
+        height: 120px;
         font-size: 3em;
     }
 
