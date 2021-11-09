@@ -65,7 +65,7 @@ Crypto Quiz is a Javascript web application that is aimed at anyone who wishes t
 
     * Icons:
     
-        For Crypto Quiz I will use one icon which is taken from Font Awesome. The icon will be used in the results page to help fill up the space and break up the section.
+        For Crypto Quiz I will use one icon which is taken from [Font Awesome](https://fontawesome.com/start). The icon will be used in the results page to help fill up the space and break up the section.
 
 * ## Scope 
 
@@ -112,7 +112,7 @@ Here describes the main features of the website and what the user can expect whe
     * Once the card has flipped over, the user will be able to click the 'Continue' button. If selected, this will cause the card to disapear and the quiz section of the game to appear for the users to begin playing. 
 
     ![Front of Card](docs/readme/flipcardfront.png)
-     ![Back of Card](docs/readme/flipcardback.png)
+     ![Back of Card](docs/readme/flipcardbackupdated.png)
 
 * ### Quiz Interface
 
@@ -124,8 +124,9 @@ Here describes the main features of the website and what the user can expect whe
 
     * The footer section holds the question count as well as the 'Next' button which will be made visible to the user once a selection has been made. The question count will iterate as they move through the questions until they reach to the final question which will be number 10. Where at that point the quiz section will be hidden from the user and the results box will be displayed.
 
-    ![Quiz1](docs/readme/quiz.png)
-    ![Quiz2](docs/readme/newquiz.png)
+    ![Quiz1](docs/readme/quizplay.png)
+    ![Quiz2](docs/readme/correctansquiz.png)
+    ![Quiz3](docs/readme/incorrectansquiz.png)
 
 * ### Results Page
 
@@ -133,7 +134,8 @@ Here describes the main features of the website and what the user can expect whe
 
     * The user will also be met with three buttons which they can interact with, a 'Clear Board' button which when clicked will clear the leaderboard of all times and scores. The 'Replay Quiz' button which will reload the game so they are back at question one and can play through the quiz again. Finally, the 'Quit Quiz' button which will reload the whole website so they are met with the landing screen again.
 
-    ![Result](docs/readme/result_page.png)
+    ![Result](docs/readme/emptyresultsbox.png)
+    ![Result](docs/readme/quizresults.png)
 
 ## Future Features:
 
@@ -209,15 +211,6 @@ The project was deployed to GitHub Pages using the following steps...
 4. The page will automatically refresh.
     
 5. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
-
-## Forking the GitHub Repository
-
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
-
-1. Log in to GitHub and locate the GitHub Repository
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
-
 
 ## Making a Local Clone
 

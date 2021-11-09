@@ -4,6 +4,7 @@
 const flipcard = document.querySelector(".maincontainer");
 const quizBox = document.querySelector(".quiz_box");
 const resultBox = document.querySelector(".result_box");
+const gameFooter = document.getElementById("game-footer");
 
 /* select the required buttons */
 const start_btn = document.getElementById("continue");
@@ -109,6 +110,7 @@ function resetGame() {
 function exitGame() {
     resultBox.classList.add("hidden"); 
     flipcard.classList.remove("hidden"); 
+    gameFooter.classList.remove("hidden");
     const options = document.querySelectorAll(".option_list");
     const allOptions = options.length; 
     for (let i = 0; i < allOptions; i++) {
@@ -123,6 +125,7 @@ function exitGame() {
 start_btn.addEventListener("click", function () {
     flipcard.classList.add("hidden");
     quizBox.classList.remove("hidden");
+    gameFooter.classList.add("hidden");
     int = setInterval(startTimer, 10);
     next_btn.classList.add("hidden");
     generateQuestions();

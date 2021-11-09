@@ -13,12 +13,12 @@ let questions = [{
   },
   {
     question: "What is a smart contract?",
-    answer: "Programs stored on a blockchain that run when predetermined conditions are met",
+    answer: "Program which is intended to automatically execute",
 
     ans1: "A computer protocol that runs 24/7 without breakdowns",
-    ans2: "Programs stored on a blockchain that run when predetermined conditions are met",
+    ans2: "Program which is intended to automatically execute",
     ans3: "A cloud-based contract stored on a public blockchain",
-    ans4: "Artificial intelligence assisted contract which run when conditions are met",
+    ans4: "AI assisted contract which run when conditions are met",
 
 
   },
@@ -83,10 +83,10 @@ let questions = [{
     question: "What is Proof of Work?",
     answer: "The competition between miners to find the correct hash",
 
-    ans1: "A way of proving that Bitcoins have been sent and received from your wallet",
+    ans1: "The way to prove you own a certain cryptocurrency",
     ans2: "The competition between miners to find the correct hash",
     ans3: "A tool used in mining to generate the next transaction",
-    ans4: "The competition between miners to not fully disclose transactions"
+    ans4: "A way of validating your transactions"
   },
   {
     question: "What is an advantage of Bitcoin?",
@@ -197,26 +197,6 @@ let questions = [{
 
   },
   {
-    question: "What is Total Supply?",
-    answer: "The number of tokens that exist at present, excluding any that might have gotten burned",
-
-    ans1: "The number of tokens that exist at present, excluding any that might have gotten burned",
-    ans2: "The maximum amount of tokens that can ever exist",
-    ans3: "The price of the coin multiplied by the quantity available",
-    ans4: "The final value of the coin once all of them have been generated"
-
-  },
-  {
-    question: "What is a stable coin?",
-    answer: "Cryptocurrencies where the price is designed to be pegged to a cryptocurrency or fiat",
-
-    ans1: "Cryptocurrencies where the price is designed to be pegged to a cryptocurrency or fiat",
-    ans2: "Cryptocurrencies which you can put normal fiat currencies into",
-    ans3: "The cryptocurrency equivalent for commodities",
-    ans4: "A coin whose price stays stable 24/7 regardless of market volatility"
-
-  },
-  {
     question: "Who should have access to your private key?",
     answer: "You and only you",
 
@@ -248,12 +228,12 @@ let questions = [{
   },
   {
     question: "What is a Decentralised Exchange?",
-    answer: "An exchange which allows for direct peer-to-peer cryptocurrency transactions",
+    answer: "An exchange which allows for peer-to-peer cryptocurrency transactions",
 
     ans1: "An exchange which is controlled by a single entity",
-    ans2: "An exchange which you can only hold cryptocurrencies, not buy or sell",
-    ans3: "An exchange which allows for direct peer-to-peer cryptocurrency transactions",
-    ans4: "An exchange which dont allow for peer-to-peer transactions"
+    ans2: "An exchange which you can only hold cryptocurrencies",
+    ans3: "An exchange which allows for peer-to-peer cryptocurrency transactions",
+    ans4: "An exchange which does not allow for peer-to-peer transactions"
 
   },
   {
@@ -270,8 +250,8 @@ let questions = [{
     question: "What is the advantage of using a Decentralised Exchange?",
     answer: "You have access to alot more tokens and you don't have to KYC if you want to trade",
 
-    ans1: "You have access to alot more tokens and you don't have to KYC if you want to trade",
-    ans2: "There is high volumes of liquidity meanining you dont have to worry about them running out of tokens",
+    ans1: "You have access to more tokens and don't have to KYC when trading",
+    ans2: "There is high volumes of liquidity",
     ans3: "Speed and cost means transactions take place quicky with minimal fails",
     ans4: "You can use trading bots to place trades for you"
 
@@ -288,12 +268,12 @@ let questions = [{
   },
   {
     question: "Why was Ethereum created?",
-    answer: "To enable developers to build and publish smart contracts and distributed applications",
+    answer: "To enable developers to build and publish smart contracts",
 
-    ans1: "To be a platform where NFTs can be minted on and to overtake Bitcoin",
-    ans2: "To enable developers to build and publish smart contracts and distributed applications",
-    ans3: "To be a store of value for the whole crypto space and allow for new development",
-    ans4: "To enable developers to build centralised appliactions which run quickly and are scalable"
+    ans1: "To be a platform where NFTs can be minted",
+    ans2: "To enable developers to build and publish smart contracts",
+    ans3: "To be a store of value for the whole crypto ecosystem",
+    ans4: "To enable developers to build centralised appliactions"
 
   },
   {
@@ -304,16 +284,6 @@ let questions = [{
     ans2: "On a Chain Wallet",
     ans3: "On a private key",
     ans4: "In a Bank Account"
-
-  },
-  {
-    question: "What is a cryptocurrency fund?",
-    answer: "A portfolio containing a variety of digital assets",
-
-    ans1: "A way for people new to crypto to get their hands on some coins",
-    ans2: "An opportunity that's only available to high net worth individuals",
-    ans3: "A portfolio containing a variety of digital assets",
-    ans4: "A crowdfunding initiative to launch a new cryptocurrency"
 
   },
   {
@@ -517,7 +487,7 @@ let questions = [{
     ans4: "2086"
   },
   {
-    question: "What is the name of a fundraising method in which new projects will sell their cryptocurrency to investors?",
+    question: "Which of these is the correct term used when new projects try raise investor capital?",
     answer: "Initial Coin Offering (ICO)",
 
     ans1: "Initial Dex Offering (IDO)",
@@ -535,7 +505,7 @@ let questions = [{
     ans4: "ETH Dominance"
   },
   {
-    question: "What is the name of the list of allowed/trusted individuals, programs, or cryptocurrency addresses in relation to a service or event?",
+    question: "What is the name used for the allowed/trusted individuals or cryptocurrency addresses in relation to a service or event?",
     answer: "Whitelist",
 
     ans1: "The Chosen Ones",
@@ -544,7 +514,7 @@ let questions = [{
     ans4: "Whitelist"
   },
   {
-    question: "The pricing mechanism employed on the Ethereum blockchain to calculate the costs of smart contracts operations and transaction fees is called?",
+    question: "What is the name of the pricing mechanism used by ETH for transaction fees?",
     answer: "Gas",
 
     ans1: "Honeypot",
