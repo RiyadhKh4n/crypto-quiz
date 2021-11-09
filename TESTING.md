@@ -63,7 +63,7 @@ To begin with I created and styled the section which would display how long they
 
 ![timer](docs/testing/timer.png)
 
-Once it was styled I writting the functionality to which would allow the timer to start once the relevant buttons had been selected. I knew that there were two instances where I wanted the timer to begin; when they begin the quiz and if they decide to replay the quiz. The relevant buttons are displayed below: 
+Once it was styled I began writting the functionality to which would allow the timer to start once the relevant buttons had been selected. I knew that there were two instances where I wanted the timer to begin; when they begin the quiz and if they decide to replay the quiz. The relevant buttons are displayed below: 
 
 
 ![start](docs/testing/continue.png)
