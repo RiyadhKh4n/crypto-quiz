@@ -50,13 +50,6 @@ function initialseVariables() {
     question_numb = 1;
 }
 
-/**
- * This function calls the generateQuestion function when the DOM loads
- */
-function startGame() {
-    generateQuestions();
-}
-
 /** 
  * 
  * This will randomly display the questions to the user
