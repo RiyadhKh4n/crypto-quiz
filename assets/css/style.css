@@ -55,7 +55,7 @@ main{
 }
 
 .thefront {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -494,7 +494,7 @@ td {
 
 #game-footer{
     background: white;
-    height: 4vh;
+    height: 5vh;
 }
 
 .center{
@@ -503,7 +503,7 @@ td {
 }
 
 .fa-github, .fa-bitcoin, .fa-linkedin{
-    font-size: 2.4em;
+    font-size: 2.1em;
     color: #006E91;
 }
 
@@ -540,7 +540,7 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
 
     .back-card-button {
@@ -642,7 +642,7 @@ td {
     .game-title {
         font-weight: bold;
         color: #006E91;
-        font-size: 8em;
+        font-size: 6em;
     }
 
     .fake-btn {
@@ -666,7 +666,7 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 2em;
+        font-size: 1.4em;
     }
 
     .back-card-button {
@@ -804,7 +804,7 @@ td {
         padding: 3px;
         display: block;
         text-align: left;
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .back-card-button {
@@ -862,13 +862,13 @@ td {
     .game-title {
         font-weight: bold;
         color: #006E91;
-        font-size: 8.6em;
-        margin-top: 20%;
+        font-size: 9em;
+        margin-top: 10%;
     }
 
     .fake-btn {
-        width: 260px;
-        height: 150px;
+        width: 240px;
+        height: 130px;
         font-size: 2.4em;
     }
 
@@ -884,10 +884,10 @@ td {
         font-weight: bold;
         margin: 5px;
         margin-left: 30px;
-        padding: 3px;
+        padding: 1.5px;
         display: block;
         text-align: left;
-        font-size: 2.3em;
+        font-size: 2em;
     }
 
     .back-card-button {

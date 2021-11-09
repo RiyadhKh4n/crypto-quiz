@@ -148,7 +148,7 @@ exit_btn.addEventListener("click", function () {
 
 // The Next Button Event Listener
 next_btn.addEventListener("click", function () {
-    next_btn_call()
+    next_btn_call();
 });
 
 /**
